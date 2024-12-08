@@ -7,21 +7,7 @@ using UnityEngine.UI;
 
 public class SettingsController : MonoBehaviour
 {
-    public static SettingsController Instance { get; private set;}
-    
     [SerializeField] AudioMixer audioMixer;
-
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(Instance);
-        }
-        else
-        {
-            DontDestroyOnLoad(this.gameObject);
-        }
-    }
 
     public void SetFullscreen(bool isFullscreen)
     {
