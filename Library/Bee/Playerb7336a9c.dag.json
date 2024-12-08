@@ -435,9 +435,9 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
+        "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
-        "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
@@ -1604,6 +1604,18 @@
       "DebugActionIndex": 105
     },
     {
+      "Annotation": "CopyFiles Новая папка/Cosmofleet_Data/Managed/DOTween.dll",
+      "DisplayName": "Copying DOTween.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+      ],
+      "Outputs": [
+        "Новая папка/Cosmofleet_Data/Managed/DOTween.dll"
+      ],
+      "DebugActionIndex": 106
+    },
+    {
       "Annotation": "CopyFiles Новая папка/Cosmofleet_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
       "DisplayName": "Copying Unity.VisualScripting.Antlr3.Runtime.dll",
       "ActionType": "CopyFiles",
@@ -1613,7 +1625,7 @@
       "Outputs": [
         "Новая папка/Cosmofleet_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles Новая папка/Cosmofleet_Data/Managed/Unity.Burst.Unsafe.dll",
@@ -1624,18 +1636,6 @@
       ],
       "Outputs": [
         "Новая папка/Cosmofleet_Data/Managed/Unity.Burst.Unsafe.dll"
-      ],
-      "DebugActionIndex": 107
-    },
-    {
-      "Annotation": "CopyFiles Новая папка/Cosmofleet_Data/Managed/DOTween.dll",
-      "DisplayName": "Copying DOTween.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll"
-      ],
-      "Outputs": [
-        "Новая папка/Cosmofleet_Data/Managed/DOTween.dll"
       ],
       "DebugActionIndex": 108
     },
@@ -2002,9 +2002,9 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
+        "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
-        "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",

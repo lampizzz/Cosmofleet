@@ -12,7 +12,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -34,8 +33,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.LineBrush
     - UnityEditor.Tilemaps.RandomBrush
     Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
-    - Packages.Rider.Editor.RiderScriptEditorPersistedState
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
     - TMPro.TMP_FontAsset
@@ -44,6 +41,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -62,6 +60,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -79,6 +81,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
@@ -100,16 +107,21 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: MenuController
-    methodName: SettingsMenu
+    methodName: CancelServers
   - assembly: Assembly-CSharp
     fullTypeName: MenuController
     methodName: CancelSettings
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuController
+    methodName: SettingsMenu
   - assembly: Assembly-CSharp
     fullTypeName: SettingsController
     methodName: SetFullscreen
@@ -147,49 +159,61 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1658}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 1666}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 1814}
     - Class: 114
-      Script: {instanceID: 3638}
+      Script: {instanceID: 2432}
     - Class: 114
-      Script: {instanceID: 4960}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 5302}
+      Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 6104}
+      Script: {instanceID: 4090}
     - Class: 114
-      Script: {instanceID: 6182}
+      Script: {instanceID: 4656}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 4700}
     - Class: 114
-      Script: {instanceID: 6276}
+      Script: {instanceID: 4956}
     - Class: 114
-      Script: {instanceID: 7016}
+      Script: {instanceID: 4980}
     - Class: 114
-      Script: {instanceID: 7264}
+      Script: {instanceID: 5322}
     - Class: 114
-      Script: {instanceID: 7688}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 8236}
+      Script: {instanceID: 6124}
     - Class: 114
-      Script: {instanceID: 26284}
+      Script: {instanceID: 6202}
     - Class: 114
-      Script: {instanceID: 28590}
+      Script: {instanceID: 6212}
     - Class: 114
-      Script: {instanceID: 30168}
+      Script: {instanceID: 6296}
     - Class: 114
-      Script: {instanceID: 30892}
+      Script: {instanceID: 6418}
     - Class: 114
-      Script: {instanceID: 30946}
+      Script: {instanceID: 7046}
     - Class: 114
-      Script: {instanceID: 37672}
+      Script: {instanceID: 7294}
     - Class: 114
-      Script: {instanceID: 40338}
+      Script: {instanceID: 7686}
+    - Class: 114
+      Script: {instanceID: 7720}
+    - Class: 114
+      Script: {instanceID: 7728}
+    - Class: 114
+      Script: {instanceID: 8268}
+    - Class: 114
+      Script: {instanceID: 9100}
+    - Class: 114
+      Script: {instanceID: 9208}
+    - Class: 114
+      Script: {instanceID: 9666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -215,6 +239,18 @@ ScriptsOnlyBuild:
     - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 915204dac8acad99f076d6e72ada0a0f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 3e146f548abd4d7d32ac4d806b885e00
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FloatingText
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -547,12 +583,6 @@ ScriptsOnlyBuild:
     className: CinemachineMixingCamera
   - hash:
       serializedVersion: 2
-      Hash: 915204dac8acad99f076d6e72ada0a0f
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: d90629714fa6b0145fcaffc87f5c6559
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -623,6 +653,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 2a4bf9bfa4fc85b7c3fd76767f844af6
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 4f1dec93fa2a0b0e7b8b47518da31b1c
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenSettings
   - hash:
       serializedVersion: 2
       Hash: cf32d98954e63b8e30e9334b152e9b8e
@@ -701,6 +743,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: 8929062916c5ee113f539e2dc6cc49c1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SettingsController
   - hash:
       serializedVersion: 2
       Hash: e636708ac1677b6f3be0cafe31e1bf77
@@ -985,6 +1033,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 7a7a76bc4a44f2c930dd16a469ace182
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BlinkingText
+  - hash:
+      serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1115,6 +1169,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerStay2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: d62a768248051aa6bf1337d29b9caa67
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MenuController
   - hash:
       serializedVersion: 2
       Hash: 9104447b683bf70406fa01f12ecb564a
@@ -1375,6 +1435,12 @@ ScriptsOnlyBuild:
     className: CinemachineStoryboard
   - hash:
       serializedVersion: 2
+      Hash: e0e9e3e33be12e177a0aca88f22df000
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RGBTextMesh
+  - hash:
+      serializedVersion: 2
       Hash: a049c5dd35cb574ae69ebee47a5f1bb8
     assemblyName: Cinemachine
     namespaceName: Cinemachine
@@ -1433,6 +1499,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteLibrarySourceAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 2187c6bee40807c4486aaa6da0c9a26a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioController
   - hash:
       serializedVersion: 2
       Hash: c8efb8be0478240d4791acc3735f449b
@@ -1499,54 +1571,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: e0e9e3e33be12e177a0aca88f22df000
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: RGBTextMesh
-  - hash:
-      serializedVersion: 2
-      Hash: 7a7a76bc4a44f2c930dd16a469ace182
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: BlinkingText
-  - hash:
-      serializedVersion: 2
-      Hash: d62a768248051aa6bf1337d29b9caa67
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MenuController
-  - hash:
-      serializedVersion: 2
-      Hash: 3e146f548abd4d7d32ac4d806b885e00
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FloatingText
-  - hash:
-      serializedVersion: 2
-      Hash: 2a4bf9bfa4fc85b7c3fd76767f844af6
-    assemblyName: DOTween.dll
-    namespaceName: DG.Tweening.Core
-    className: DOTweenComponent
-  - hash:
-      serializedVersion: 2
-      Hash: 4f1dec93fa2a0b0e7b8b47518da31b1c
-    assemblyName: DOTween.dll
-    namespaceName: DG.Tweening.Core
-    className: DOTweenSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 8929062916c5ee113f539e2dc6cc49c1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SettingsController
-  - hash:
-      serializedVersion: 2
-      Hash: 2187c6bee40807c4486aaa6da0c9a26a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AudioController
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
