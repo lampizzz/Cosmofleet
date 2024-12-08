@@ -13,7 +13,7 @@ public class AudioController : MonoBehaviour
         }
         else
         {
-            DontDestroyOnLoad(this);
+            DontDestroyOnLoad(this.gameObject);
         }
     }
 }
