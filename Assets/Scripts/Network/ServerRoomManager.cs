@@ -13,6 +13,7 @@ public class ServerRoomManager : MonoBehaviourPunCallbacks
     public void CreateRoom()
     {
         PhotonNetwork.CreateRoom(textRoomName.text, new RoomOptions() {MaxPlayers = 2, IsVisible = true, IsOpen = true}, TypedLobby.Default, null);
+        Debug.Log($"The room \"{textRoomName.text}\" was created");
     }
 
     public void JoinRoom(string roomName)
