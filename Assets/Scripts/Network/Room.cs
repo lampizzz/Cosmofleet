@@ -8,10 +8,11 @@ public class Room : MonoBehaviour
 {
     public TextMeshProUGUI capacityText;
     public TextMeshProUGUI roomName;
+    public Button connectButton;
 
     public void JoinRoom()
     {
         Debug.Log(roomName.text);
-        GameObject.Find("NetworkManager").GetComponent<ServerRoomManager>().JoinRoom(roomName.text);
+        GameObject.Find("LobbyNetwork").GetComponent<ServerRoomManager>().JoinRoom(roomName.text);
     }
 }

@@ -70,6 +70,22 @@ MonoBehaviour:
     m_Localized: Connect
     m_Metadata:
       m_Items: []
+  - m_Id: 529799077171200
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 529845692665856
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 529884280262656
+    m_Localized: Waiting for opponent...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 530280654573568
+    m_Localized: Are you sure you want to quit?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

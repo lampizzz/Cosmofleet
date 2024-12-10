@@ -45,6 +45,11 @@ public class RoomList : MonoBehaviourPunCallbacks
                     continue;
                 }
 
+                if (roomList[i].PlayerCount == roomList[i].MaxPlayers)
+                {
+                    roomComponent.connectButton.interactable = false;
+                }
+                
                 roomComponent.roomName.text = roomList[i].Name;
                 roomComponent.capacityText.text = $"{roomList[i].PlayerCount}/{roomList[i].MaxPlayers}";
                 AllRooms[i] = room;
