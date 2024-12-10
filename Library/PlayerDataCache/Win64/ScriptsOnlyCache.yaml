@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - RGBTextMesh
     - Room
     - RoomList
+    - RoomPlayerMonitor
     - ServerController
     - ServerLobbyManager
     - ServerRoomManager
@@ -223,10 +224,10 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
-    methodName: SettingsMenu
+    methodName: CancelSettings
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
-    methodName: CancelSettings
+    methodName: SettingsMenu
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -267,11 +268,11 @@ ScriptsOnlyBuild:
     fullTypeName: LobbyMenuManager
     methodName: CreateRoom
   - assembly: Assembly-CSharp
-    fullTypeName: LobbyMenuManager
-    methodName: BackToLobby
-  - assembly: Assembly-CSharp
     fullTypeName: ServerLobbyManager
     methodName: LeaveLobby
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbyMenuManager
+    methodName: BackToLobby
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: CreateRoom
@@ -287,6 +288,9 @@ ScriptsOnlyBuild:
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: RoomList
+    methodName: OnSearchInputChanged
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -304,13 +308,13 @@ ScriptsOnlyBuild:
     methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
-    methodName: NegativeAnswer
+    methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: LeaveRoom
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
-    methodName: QuitGame
+    methodName: NegativeAnswer
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -365,6 +369,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 70488}
     - Class: 114
       Script: {instanceID: 91244}
+    - Class: 114
+      Script: {instanceID: 227172}
+    - Class: 114
+      Script: {instanceID: 227192}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1672,7 +1680,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 1f2171355dcb9506df165d7ef49ae6fb
+      Hash: d09d47c7d48cc127815f96265532bcdc
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RoomList
@@ -3062,6 +3070,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: NetworkDebugger
+  - hash:
+      serializedVersion: 2
+      Hash: 0f3042d2366604279a4e597384eb8bbd
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RoomPlayerMonitor
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

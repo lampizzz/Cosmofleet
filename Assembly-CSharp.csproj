@@ -51,6 +51,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Scripts\Tools\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Network\ServerLobbyManager.cs" />
+    <Compile Include="Assets\Scripts\Game\RoomPlayerMonitor.cs" />
     <Compile Include="Assets\Scripts\Network\ServerRoomManager.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
     <Compile Include="Assets\Scripts\Text\TransparencyText.cs" />

@@ -361,6 +361,7 @@
 "Assets/Scripts/Controllers/AudioController.cs"
 "Assets/Scripts/Controllers/GameConroller.cs"
 "Assets/Scripts/Game/GameMenuConroller.cs"
+"Assets/Scripts/Game/RoomPlayerMonitor.cs"
 "Assets/Scripts/Lobby/LobbyMenuManager.cs"
 "Assets/Scripts/MainMenu/MainMenuController.cs"
 "Assets/Scripts/MainMenu/SettingsController.cs"
