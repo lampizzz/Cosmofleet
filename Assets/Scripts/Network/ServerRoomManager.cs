@@ -29,8 +29,6 @@ public class ServerRoomManager : MonoBehaviourPunCallbacks
         // Создаем комнату с указанным именем
         PhotonNetwork.CreateRoom(textRoomName.text, new RoomOptions() { MaxPlayers = 2, IsVisible = true, IsOpen = true }, TypedLobby.Default, null);
         Debug.Log($"Комната \"{textRoomName.text}\" успешно создана!");
-        
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void JoinRoom(string roomName)

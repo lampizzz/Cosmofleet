@@ -264,14 +264,14 @@ ScriptsOnlyBuild:
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
   - assembly: Assembly-CSharp
-    fullTypeName: ServerLobbyManager
-    methodName: LeaveLobby
+    fullTypeName: LobbyMenuManager
+    methodName: CreateRoom
   - assembly: Assembly-CSharp
     fullTypeName: LobbyMenuManager
     methodName: BackToLobby
   - assembly: Assembly-CSharp
-    fullTypeName: LobbyMenuManager
-    methodName: CreateRoom
+    fullTypeName: ServerLobbyManager
+    methodName: LeaveLobby
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: CreateRoom
@@ -303,14 +303,14 @@ ScriptsOnlyBuild:
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
   - assembly: Assembly-CSharp
+    fullTypeName: GameMenuConroller
+    methodName: NegativeAnswer
+  - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: LeaveRoom
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
     methodName: QuitGame
-  - assembly: Assembly-CSharp
-    fullTypeName: GameMenuConroller
-    methodName: NegativeAnswer
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -1672,7 +1672,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: a218d414a8797cfe22a9a74e6d14054d
+      Hash: 1f2171355dcb9506df165d7ef49ae6fb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RoomList
