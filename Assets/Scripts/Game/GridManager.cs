@@ -1,3 +1,4 @@
+using GameClasses;
 using UnityEngine;
 
 public class GridManager : MonoBehaviour
@@ -8,7 +9,7 @@ public class GridManager : MonoBehaviour
 
     private GameObject[,] gridCells; // Хранение ссылок на ячейки
 
-    public void GenerateGrid(Cell.CellType type)
+    public void GenerateGrid(GameClasses.CellType type)
     {
         Debug.Log("Generating grid...");
         gridCells = new GameObject[gridSize, gridSize];
@@ -45,11 +46,32 @@ public class GridManager : MonoBehaviour
         for (int i = 0; i < dx.Length; i++)
         {
             var cell = GetCell(x + dx[i], y + dy[i]);
-            if (cell != null && cell.GetComponent<Cell>().GetState() == Cell.CellState.Occupied)
+            if (cell != null && cell.GetComponent<Cell>().GetState() == GameClasses.CellState.Occupied)
             {
                 return true;
             }
         }
         return false;
+    }
+
+    // Метод для получения матрицы состояний клеток
+    public CellState[,] GetCellStateMatrix()
+    {
+        GameClasses.CellState[,] stateMatrix = new GameClasses.CellState[gridSize, gridSize];
+
+        for (int x = 0; x < gridSize; x++)
+        {
+            for (int y = 0; y < gridSize; y++)
+            {
+                var cell = GetCell(x, y);
+                if (cell != null)
+                {
+                    var cellScript = cell.GetComponent<Cell>();
+                    stateMatrix[x, y] = cellScript.GetState(); // Сохраняем состояние клетки в матрицу
+                }
+            }
+        }
+
+        return stateMatrix;
     }
 }

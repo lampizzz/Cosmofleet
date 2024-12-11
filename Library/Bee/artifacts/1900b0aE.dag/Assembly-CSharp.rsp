@@ -414,6 +414,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/GameClasses/CellStateEnum.cs"
+"Assets/GameClasses/CellTypeEnum.cs"
 "Assets/GameClasses/Field.cs"
 "Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
 "Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
@@ -436,6 +438,7 @@
 "Assets/Scripts/Game/GridManager.cs"
 "Assets/Scripts/Game/Player.cs"
 "Assets/Scripts/Game/RoomPlayerMonitor.cs"
+"Assets/Scripts/Game/ShipAnalytics.cs"
 "Assets/Scripts/Game/ShipPlacementManager.cs"
 "Assets/Scripts/Lobby/LobbyMenuManager.cs"
 "Assets/Scripts/MainMenu/MainMenuController.cs"
@@ -455,6 +458,7 @@
 "Assets/Scripts/Tools/CameraShake.cs"
 "Assets/Scripts/Tools/LanguageSwitcher.cs"
 "Assets/Scripts/Tools/MoveTextureOffset.cs"
+"Assets/ToolClasses/Parser.cs"
 -langversion:9.0
 /deterministic
 /optimize+
