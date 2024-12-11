@@ -108,11 +108,11 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
--define:DOTWEEN
 -define:PHOTON_UNITY_NETWORKING
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
 -define:PUN_2_19_OR_NEWER
+-define:DOTWEEN
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
@@ -347,6 +347,9 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/GameClasses/CellStateEnum.cs"
+"Assets/GameClasses/CellTypeEnum.cs"
+"Assets/GameClasses/Field.cs"
 "Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
 "Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
 "Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs"
@@ -361,13 +364,21 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/Controllers/AudioController.cs"
 "Assets/Scripts/Controllers/GameConroller.cs"
+"Assets/Scripts/Game/AttackManager.cs"
+"Assets/Scripts/Game/Cell.cs"
+"Assets/Scripts/Game/GameManager.cs"
 "Assets/Scripts/Game/GameMenuConroller.cs"
+"Assets/Scripts/Game/GridManager.cs"
+"Assets/Scripts/Game/Player.cs"
 "Assets/Scripts/Game/RoomPlayerMonitor.cs"
+"Assets/Scripts/Game/ShipAnalytics.cs"
+"Assets/Scripts/Game/ShipPlacementManager.cs"
 "Assets/Scripts/Lobby/LobbyMenuManager.cs"
 "Assets/Scripts/MainMenu/MainMenuController.cs"
 "Assets/Scripts/MainMenu/SettingsController.cs"
 "Assets/Scripts/Network/ConenctLobby.cs"
 "Assets/Scripts/Network/NetworkDebugger.cs"
+"Assets/Scripts/Network/PhotonSetup.cs"
 "Assets/Scripts/Network/Room.cs"
 "Assets/Scripts/Network/RoomList.cs"
 "Assets/Scripts/Network/ServerController.cs"
@@ -381,6 +392,7 @@
 "Assets/Scripts/Tools/CameraShake.cs"
 "Assets/Scripts/Tools/LanguageSwitcher.cs"
 "Assets/Scripts/Tools/MoveTextureOffset.cs"
+"Assets/ToolClasses/Parser.cs"
 -langversion:9.0
 /deterministic
 /optimize+

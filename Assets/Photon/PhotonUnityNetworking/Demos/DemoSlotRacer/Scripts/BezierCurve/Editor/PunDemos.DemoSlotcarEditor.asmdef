@@ -1,10 +1,7 @@
 {
     "name": "PunDemos.DemoSlotcarEditor",
     "references": [
-        "PhotonUnityNetworking.Demos",
-        "PhotonRealtime",
-        "PhotonUnityNetworking",
-        "PhotonUnityNetworking.Utilities"
+        "PhotonUnityNetworking.Demos"
     ],
     "includePlatforms": [
         "Editor"

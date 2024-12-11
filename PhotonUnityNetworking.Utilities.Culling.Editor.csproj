@@ -746,14 +746,6 @@
       <Project>{ab6a2d22-9052-0336-f95a-cf0367346b70}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{c11c26b8-5ce6-52a9-ab35-8cdd62c0593d}</Project>
-      <Name>PhotonRealtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{3ff384f5-8021-ac29-4e00-2c64a30f7726}</Project>
-      <Name>PhotonUnityNetworking</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

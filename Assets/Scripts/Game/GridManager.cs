@@ -40,19 +40,24 @@ public class GridManager : MonoBehaviour
 
     public bool IsAreaAroundOccupied(int x, int y)
     {
-        int[] dx = { -1, 0, 1, -1, 1, -1, 0, 1 };
-        int[] dy = { -1, -1, -1, 0, 0, 1, 1, 1 };
+        int[] dx = { -1, -1, -1, 0, 1, 1, 1, 0 };
+        int[] dy = { -1, 0, 1, 1, 1, 0, -1, -1 };
 
-        for (int i = 0; i < dx.Length; i++)
+        for (int i = 0; i < 8; i++) // Проверяем 8 соседей
         {
-            var cell = GetCell(x + dx[i], y + dy[i]);
-            if (cell != null && cell.GetComponent<Cell>().GetState() == GameClasses.CellState.Occupied)
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+
+            var neighbor = GetCell(nx, ny);
+            if (neighbor != null && neighbor.GetComponent<Cell>().GetState() == GameClasses.CellState.Occupied)
             {
                 return true;
             }
         }
+
         return false;
     }
+
 
     // Метод для получения матрицы состояний клеток
     public CellState[,] GetCellStateMatrix()
@@ -67,11 +72,30 @@ public class GridManager : MonoBehaviour
                 if (cell != null)
                 {
                     var cellScript = cell.GetComponent<Cell>();
-                    stateMatrix[x, y] = cellScript.GetState(); // Сохраняем состояние клетки в матрицу
+                    // Для транспонирования инвертируем индексы x и y
+                    stateMatrix[y, x] = cellScript.GetState(); // Сохраняем состояние клетки в транспонированную матрицу
                 }
             }
         }
 
+        // PrintField(stateMatrix);
+
         return stateMatrix;
     }
+
+    
+    // private void PrintField(CellState[,] matrix)
+    // {
+    //     int size = matrix.GetLength(0);
+    //
+    //     for (int y = 0; y < size; y++)
+    //     {
+    //         string row = "";
+    //         for (int x = 0; x < size; x++)
+    //         {
+    //             row += $"{(int)matrix[x, y]} "; // Преобразуем CellState в целое число для упрощения вывода
+    //         }
+    //         Debug.Log(row);
+    //     }
+    // }
 }

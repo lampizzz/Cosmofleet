@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Tools\LanguageSwitcher.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Scripts\Game\ShipAnalytics.cs" />
+    <Compile Include="Assets\Scripts\Network\PhotonSetup.cs" />
     <Compile Include="Assets\GameClasses\Field.cs" />
     <Compile Include="Assets\ToolClasses\Parser.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />

@@ -1,20 +1,27 @@
+using System;
+using GameClasses;
+using Photon.Pun;
 using UnityEngine;
-public class ShipPlacementManager : MonoBehaviour
-{
-    public GridManager placementGrid;
-    public ShipAnalytics shipAnalytics;
-    public int selectedShipLength = 0;
-    private bool isHorizontal = true;
-    private GameObject[] previewCells;
+using UnityEngine.UI;
 
-    // Генерирует сетку
+public class ShipPlacementManager : MonoBehaviourPun
+{
+    [SerializeField] Button readyButton;
+    [SerializeField] ShipAnalytics analytics;
+    
+    public GridManager placementGrid; // Грид для расстановки
+    public int selectedShipLength = 0; // Длина выбранного корабля
+    private bool isHorizontal = true; // Ориентация корабля
+    private GameObject[] previewCells; // Ячейки для предпросмотра
+    
+    [SerializeField] GameManager gm;
+
     private void Start()
     {
         placementGrid.GenerateGrid(GameClasses.CellType.Placement);
     }
-    
-    // На пробел меняет ориентацию
-     private void Update()
+
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -22,7 +29,6 @@ public class ShipPlacementManager : MonoBehaviour
         }
     }
 
-     // Количество отображаемых ячеек
     public void SelectShip(int length)
     {
         selectedShipLength = selectedShipLength == length ? 0 : length;
@@ -32,8 +38,7 @@ public class ShipPlacementManager : MonoBehaviour
     {
         isHorizontal = !isHorizontal;
     }
-    
-    // Отображение ячеек при наведении
+
     public void HoverOverCell(int x, int y)
     {
         ClearPreview();
@@ -49,7 +54,9 @@ public class ShipPlacementManager : MonoBehaviour
                 int targetY = isHorizontal ? y : y + i;
 
                 var cell = placementGrid.GetCell(targetX, targetY);
-                if (cell != null && cell.GetComponent<Cell>().GetState() == GameClasses.CellState.Default && !placementGrid.IsAreaAroundOccupied(targetX, targetY))
+                if (cell != null &&
+                    cell.GetComponent<Cell>().GetState() == GameClasses.CellState.Default &&
+                    !placementGrid.IsAreaAroundOccupied(targetX, targetY))
                 {
                     previewCells[i] = cell;
                     cell.GetComponent<Cell>().SetState(GameClasses.CellState.Hovered);
@@ -80,13 +87,22 @@ public class ShipPlacementManager : MonoBehaviour
         {
             foreach (var cell in previewCells)
             {
+                if (cell == null || cell.GetComponent<Cell>().GetState() != GameClasses.CellState.Hovered)
+                {
+                    ClearPreview();
+                    return;
+                }
+            }
+
+            foreach (var cell in previewCells)
+            {
                 if (cell != null)
                 {
                     cell.GetComponent<Cell>().SetState(GameClasses.CellState.Occupied);
                 }
             }
             
-            shipAnalytics.DecrementShip(selectedShipLength);
+            analytics.DecrementShip(selectedShipLength);
             
             selectedShipLength = 0;
             ClearPreview();
@@ -110,5 +126,54 @@ public class ShipPlacementManager : MonoBehaviour
             }
         }
         previewCells = null;
+    }
+
+    public void OnReadyButtonClick()
+    {
+        readyButton.interactable = false;
+
+        // Получаем матрицу состояний текущей расстановки
+        CellState[,] matrix = placementGrid.GetCellStateMatrix();
+
+        // Сериализуем её и отправляем через RPC
+        CellState[] serializedMatrix = SerializeMatrix(matrix);
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            gm.Player1.PlacementField.SetCellStateMatrix(matrix);
+        }
+        else
+        {
+            gm.Player2.PlacementField.SetCellStateMatrix(matrix);
+        }
+
+        // Проверяем наличие PhotonView на gm перед вызовом RPC
+        if (gm != null && gm.photonView != null)
+        {
+            gm.photonView.RPC("SetPlayerReady", RpcTarget.AllBuffered, PhotonNetwork.IsMasterClient ? 1 : 2, serializedMatrix);
+        }
+        else
+        {
+            Debug.LogError("PhotonView отсутствует на GameManager! RPC не может быть вызван.");
+        }
+    }
+
+
+    
+    private CellState[] SerializeMatrix(CellState[,] matrix)
+    {
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+        CellState[] serialized = new CellState[rows * cols];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                serialized[i * cols + j] = matrix[i, j];
+            }
+        }
+
+        return serialized;
     }
 }
