@@ -2,16 +2,19 @@ using UnityEngine;
 public class ShipPlacementManager : MonoBehaviour
 {
     public GridManager placementGrid;
+    public ShipAnalytics shipAnalytics;
     public int selectedShipLength = 0;
     private bool isHorizontal = true;
     private GameObject[] previewCells;
 
+    // Генерирует сетку
     private void Start()
     {
-        placementGrid.GenerateGrid(Cell.CellType.Placement);
+        placementGrid.GenerateGrid(GameClasses.CellType.Placement);
     }
     
-    private void Update()
+    // На пробел меняет ориентацию
+     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -19,6 +22,7 @@ public class ShipPlacementManager : MonoBehaviour
         }
     }
 
+     // Количество отображаемых ячеек
     public void SelectShip(int length)
     {
         selectedShipLength = selectedShipLength == length ? 0 : length;
@@ -28,7 +32,8 @@ public class ShipPlacementManager : MonoBehaviour
     {
         isHorizontal = !isHorizontal;
     }
-
+    
+    // Отображение ячеек при наведении
     public void HoverOverCell(int x, int y)
     {
         ClearPreview();
@@ -44,10 +49,10 @@ public class ShipPlacementManager : MonoBehaviour
                 int targetY = isHorizontal ? y : y + i;
 
                 var cell = placementGrid.GetCell(targetX, targetY);
-                if (cell != null && cell.GetComponent<Cell>().GetState() == Cell.CellState.Default && !placementGrid.IsAreaAroundOccupied(targetX, targetY))
+                if (cell != null && cell.GetComponent<Cell>().GetState() == GameClasses.CellState.Default && !placementGrid.IsAreaAroundOccupied(targetX, targetY))
                 {
                     previewCells[i] = cell;
-                    cell.GetComponent<Cell>().SetState(Cell.CellState.Hovered);
+                    cell.GetComponent<Cell>().SetState(GameClasses.CellState.Hovered);
                 }
                 else
                 {
@@ -62,7 +67,7 @@ public class ShipPlacementManager : MonoBehaviour
                 {
                     if (cell != null)
                     {
-                        cell.GetComponent<Cell>().SetState(Cell.CellState.Invalid);
+                        cell.GetComponent<Cell>().SetState(GameClasses.CellState.Invalid);
                     }
                 }
             }
@@ -77,9 +82,12 @@ public class ShipPlacementManager : MonoBehaviour
             {
                 if (cell != null)
                 {
-                    cell.GetComponent<Cell>().SetState(Cell.CellState.Occupied);
+                    cell.GetComponent<Cell>().SetState(GameClasses.CellState.Occupied);
                 }
             }
+            
+            shipAnalytics.DecrementShip(selectedShipLength);
+            
             selectedShipLength = 0;
             ClearPreview();
         }
@@ -94,9 +102,9 @@ public class ShipPlacementManager : MonoBehaviour
                 if (cell != null)
                 {
                     var cellScript = cell.GetComponent<Cell>();
-                    if (cellScript.GetState() == Cell.CellState.Hovered || cellScript.GetState() == Cell.CellState.Invalid)
+                    if (cellScript.GetState() == GameClasses.CellState.Hovered || cellScript.GetState() == GameClasses.CellState.Invalid)
                     {
-                        cellScript.SetState(Cell.CellState.Default);
+                        cellScript.SetState(GameClasses.CellState.Default);
                     }
                 }
             }

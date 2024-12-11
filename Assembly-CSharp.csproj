@@ -48,12 +48,14 @@
     <Compile Include="Assets\Scripts\Game\GameMenuConroller.cs" />
     <Compile Include="Assets\Scripts\Network\ConenctLobby.cs" />
     <Compile Include="Assets\Scripts\Lobby\LobbyMenuManager.cs" />
+    <Compile Include="Assets\GameClasses\CellStateEnum.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Scripts\Tools\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Network\ServerLobbyManager.cs" />
     <Compile Include="Assets\Scripts\Game\AttackManager.cs" />
     <Compile Include="Assets\Scripts\Game\RoomPlayerMonitor.cs" />
     <Compile Include="Assets\Scripts\Network\ServerRoomManager.cs" />
+    <Compile Include="Assets\GameClasses\CellTypeEnum.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
     <Compile Include="Assets\Scripts\Text\TransparencyText.cs" />
     <Compile Include="Assets\Scripts\Network\NetworkDebugger.cs" />
@@ -71,7 +73,9 @@
     <Compile Include="Assets\Scripts\Tools\MoveTextureOffset.cs" />
     <Compile Include="Assets\Scripts\Tools\LanguageSwitcher.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\Scripts\Game\ShipAnalytics.cs" />
     <Compile Include="Assets\GameClasses\Field.cs" />
+    <Compile Include="Assets\ToolClasses\Parser.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />

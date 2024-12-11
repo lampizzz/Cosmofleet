@@ -6,7 +6,7 @@ public class AttackManager : MonoBehaviour
 
     private void Start()
     {
-        attackGrid.GenerateGrid(Cell.CellType.Attack);
+        attackGrid.GenerateGrid(GameClasses.CellType.Attack);
     }
 
     public bool SelectCellForAttack(int x, int y)
@@ -16,11 +16,11 @@ public class AttackManager : MonoBehaviour
         {
             var cellScript = cell.GetComponent<Cell>();
 
-            if (cellScript.GetState() == Cell.CellState.Default)
+            if (cellScript.GetState() == GameClasses.CellState.Default)
             {
                 // Simulate attack logic
                 bool hit = SimulateAttack(x, y);
-                cellScript.SetState(hit ? Cell.CellState.Hit : Cell.CellState.Missed);
+                cellScript.SetState(hit ? GameClasses.CellState.Hit : GameClasses.CellState.Missed);
                 return hit;
             }
         }

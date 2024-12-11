@@ -1,24 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using GameClasses;
 
 public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    public enum CellState
-    {
-        Default,   // Свободная клетка
-        Hovered,   // Предпросмотр корабля
-        Occupied,  // Клетка занята кораблем
-        Invalid,   // Недопустимое размещение
-        Hit,       // Попадание
-        Missed     // Промах
-    }
-
-    public Vector2Int Coordinates { get; private set; }
-
-    private Image cellImage;
-    private CellState currentState;
-
     [SerializeField] Color defaultColor;
     [SerializeField] Color hoverColor;
     [SerializeField] Color occupiedColor;
@@ -26,13 +12,11 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     [SerializeField] Color hitColor;
     [SerializeField] Color missedColor;
 
-    public enum CellType
-    {
-        Placement,
-        Attack
-    }
-
+    public Vector2Int Coordinates { get; private set; }
     public CellType Type { get; set; } // Тип клетки
+
+    private Image cellImage;
+    private CellState currentState;
 
     private ShipPlacementManager shipPlacementManager;
     private AttackManager attackManager;
