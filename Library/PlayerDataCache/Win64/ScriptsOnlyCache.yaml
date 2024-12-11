@@ -82,7 +82,6 @@ ScriptsOnlyBuild:
     - UnityEditor.AddressableAssets.Settings.GroupSchemas.ContentUpdateGroupSchema
     - UnityEditor.AddressableAssets.Settings.GroupSchemas.PlayerDataGroupSchema
     Unity.Localization.Editor.dll:
-    - UnityEditor.Localization.LocalizationProjectSettings
     - UnityEditor.Localization.StringTableCollection
     - UnityEditor.Localization.UI.LocalizationTablesWindow
     Unity.Localization.dll:
@@ -90,7 +89,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Localization.Locale
     - UnityEngine.Localization.LocalizationBehaviour
     - UnityEngine.Localization.Settings.LocalizationSettings
-    - UnityEngine.Localization.VariantsPropertyDriver
     Unity.ResourceManager.dll:
     - MonoBehaviourCallbackHooks
     Unity.Rider.Editor.dll:
@@ -265,17 +263,20 @@ ScriptsOnlyBuild:
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
   - assembly: Assembly-CSharp
+    fullTypeName: RoomList
+    methodName: RefreshRoomList
+  - assembly: Assembly-CSharp
     fullTypeName: LobbyMenuManager
     methodName: CreateRoom
-  - assembly: Assembly-CSharp
-    fullTypeName: ServerLobbyManager
-    methodName: LeaveLobby
   - assembly: Assembly-CSharp
     fullTypeName: LobbyMenuManager
     methodName: BackToLobby
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: CreateRoom
+  - assembly: Assembly-CSharp
+    fullTypeName: ServerLobbyManager
+    methodName: LeaveLobby
   - assembly: Assembly-CSharp
     fullTypeName: Room
     methodName: JoinRoom
@@ -288,9 +289,6 @@ ScriptsOnlyBuild:
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
-  - assembly: Assembly-CSharp
-    fullTypeName: RoomList
-    methodName: OnSearchInputChanged
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -306,15 +304,18 @@ ScriptsOnlyBuild:
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
-  - assembly: Assembly-CSharp
-    fullTypeName: GameMenuConroller
-    methodName: QuitGame
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: LeaveRoom
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
     methodName: NegativeAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: GameMenuConroller
+    methodName: QuitGame
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -348,31 +349,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1656}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 4864}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 4970}
+      Script: {instanceID: 5292}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5414}
     - Class: 114
-      Script: {instanceID: 8170}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 8346}
+      Script: {instanceID: 6634}
     - Class: 114
-      Script: {instanceID: 10248}
+      Script: {instanceID: 9004}
     - Class: 114
-      Script: {instanceID: 10756}
+      Script: {instanceID: 9084}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 9198}
     - Class: 114
-      Script: {instanceID: 70488}
+      Script: {instanceID: 9544}
     - Class: 114
-      Script: {instanceID: 91244}
+      Script: {instanceID: 11228}
     - Class: 114
-      Script: {instanceID: 227172}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 227192}
+      Script: {instanceID: 11952}
+    - Class: 114
+      Script: {instanceID: 12412}
+    - Class: 114
+      Script: {instanceID: 30952}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -411,47 +416,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 1656}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 4864}
+      Script: {instanceID: 5292}
     - Class: 114
-      Script: {instanceID: 4970}
+      Script: {instanceID: 5414}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 6054}
+      Script: {instanceID: 6614}
     - Class: 114
-      Script: {instanceID: 6456}
+      Script: {instanceID: 6634}
     - Class: 114
-      Script: {instanceID: 8170}
+      Script: {instanceID: 7080}
     - Class: 114
-      Script: {instanceID: 8346}
+      Script: {instanceID: 7506}
     - Class: 114
-      Script: {instanceID: 8746}
+      Script: {instanceID: 9004}
     - Class: 114
-      Script: {instanceID: 9254}
+      Script: {instanceID: 9198}
     - Class: 114
-      Script: {instanceID: 9456}
+      Script: {instanceID: 9654}
     - Class: 114
-      Script: {instanceID: 10068}
+      Script: {instanceID: 10244}
     - Class: 114
-      Script: {instanceID: 10248}
+      Script: {instanceID: 10468}
     - Class: 114
-      Script: {instanceID: 10756}
+      Script: {instanceID: 11168}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11174}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 12412}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12770}
+      Script: {instanceID: 12744}
     - Class: 114
-      Script: {instanceID: 98616}
+      Script: {instanceID: 13440}
     - Class: 114
-      Script: {instanceID: 98632}
+      Script: {instanceID: 14006}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -516,97 +521,97 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 1656}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 1728}
     - Class: 114
-      Script: {instanceID: 3586}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3590}
+      Script: {instanceID: 3828}
     - Class: 114
-      Script: {instanceID: 3600}
+      Script: {instanceID: 3832}
     - Class: 114
-      Script: {instanceID: 3812}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4628}
+      Script: {instanceID: 4086}
     - Class: 114
-      Script: {instanceID: 4832}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 4970}
+      Script: {instanceID: 5254}
     - Class: 114
-      Script: {instanceID: 5064}
+      Script: {instanceID: 5270}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5414}
     - Class: 114
-      Script: {instanceID: 5710}
+      Script: {instanceID: 5524}
     - Class: 114
-      Script: {instanceID: 6054}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 6262}
     - Class: 114
-      Script: {instanceID: 6632}
+      Script: {instanceID: 6634}
     - Class: 114
-      Script: {instanceID: 6694}
+      Script: {instanceID: 6788}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 7266}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 7336}
     - Class: 114
-      Script: {instanceID: 7316}
+      Script: {instanceID: 7662}
     - Class: 114
-      Script: {instanceID: 7384}
+      Script: {instanceID: 7706}
     - Class: 114
-      Script: {instanceID: 7500}
+      Script: {instanceID: 8036}
     - Class: 114
-      Script: {instanceID: 7820}
+      Script: {instanceID: 8112}
     - Class: 114
-      Script: {instanceID: 8170}
+      Script: {instanceID: 8240}
     - Class: 114
-      Script: {instanceID: 8176}
+      Script: {instanceID: 8302}
     - Class: 114
-      Script: {instanceID: 8346}
+      Script: {instanceID: 8602}
     - Class: 114
-      Script: {instanceID: 8516}
+      Script: {instanceID: 9004}
     - Class: 114
-      Script: {instanceID: 9254}
+      Script: {instanceID: 9012}
     - Class: 114
-      Script: {instanceID: 9288}
+      Script: {instanceID: 9198}
     - Class: 114
-      Script: {instanceID: 9344}
+      Script: {instanceID: 9394}
     - Class: 114
-      Script: {instanceID: 9652}
+      Script: {instanceID: 10244}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10202}
+      Script: {instanceID: 10346}
     - Class: 114
-      Script: {instanceID: 10248}
+      Script: {instanceID: 10696}
     - Class: 114
-      Script: {instanceID: 10480}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 10548}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 10756}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11078}
+      Script: {instanceID: 11638}
     - Class: 114
-      Script: {instanceID: 11148}
+      Script: {instanceID: 11720}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 11174}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 12392}
     - Class: 114
-      Script: {instanceID: 12370}
+      Script: {instanceID: 12412}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 29198}
+      Script: {instanceID: 13440}
     - Class: 114
-      Script: {instanceID: 39230}
+      Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 101800}
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -682,6 +687,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: d82734381b7039fe0296be76af1ffa78
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MoveTextureOffset
   - hash:
       serializedVersion: 2
       Hash: d75df0b83c74ab3d9088964ef8188507
@@ -1356,6 +1367,12 @@ ScriptsOnlyBuild:
     className: BlinkingText
   - hash:
       serializedVersion: 2
+      Hash: 9d84ad608025894aa39b77a165d3b61d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NetworkDebugger
+  - hash:
+      serializedVersion: 2
       Hash: 02b153d5fbad55f1b95aa76df70dc2e0
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.PunBasics
@@ -1584,6 +1601,12 @@ ScriptsOnlyBuild:
     className: OnClickDestroy
   - hash:
       serializedVersion: 2
+      Hash: 7bb2dee8014a5a7d879c6a23af80fa54
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Room
+  - hash:
+      serializedVersion: 2
       Hash: 4878e735441f4041539853759559c86f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1680,7 +1703,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: d09d47c7d48cc127815f96265532bcdc
+      Hash: 8b477951384d698bf19cb6988096fb83
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RoomList
@@ -1762,6 +1785,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnParticleCollisionMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 0d2e3592d30281c0b0e5357863dbe397
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConenctLobby
   - hash:
       serializedVersion: 2
       Hash: 22130d378b859a59f2cb973162c02f89
@@ -1986,6 +2015,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: f144786ba6939a8d8702a054db83a79c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BackgroundSync
+  - hash:
+      serializedVersion: 2
       Hash: 758509c4e798663315c50f654daeec13
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Asteroids
@@ -2136,6 +2171,12 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
+      Hash: da625640e00dd2faf1390d1dc33f58cb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameMenuConroller
+  - hash:
+      serializedVersion: 2
       Hash: 3b873ff514a54a1e675af235b1c824ab
     assemblyName: PhotonUnityNetworking
     namespaceName: Photon.Pun
@@ -2220,6 +2261,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 0f3042d2366604279a4e597384eb8bbd
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RoomPlayerMonitor
+  - hash:
+      serializedVersion: 2
       Hash: d7c8092511063e0dae8106bfc8ed63dd
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -2254,6 +2301,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine
     namespaceName: Cinemachine
     className: CinemachineSmoothPath
+  - hash:
+      serializedVersion: 2
+      Hash: 9907870747c8ed918394b823c45e5ca7
+    assemblyName: Unity.Services.Authentication.PlayerAccounts
+    namespaceName: Unity.Services.Authentication.PlayerAccounts
+    className: UnityPlayerAccountSettings
   - hash:
       serializedVersion: 2
       Hash: c6369b4cc3be620d6c9300e920bc3d52
@@ -2490,6 +2543,12 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerStayMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 489134339861cb196204a171a6c58c02
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraShake
+  - hash:
+      serializedVersion: 2
       Hash: feea6029e3148d3ef3644842f1bab51a
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.SlotRacer.Utils
@@ -2500,6 +2559,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Localization
     namespaceName: UnityEngine.Localization.Pseudo
     className: PseudoLocale
+  - hash:
+      serializedVersion: 2
+      Hash: 23f4f3b92fd895492076b04283f64b51
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TextTransparency
   - hash:
       serializedVersion: 2
       Hash: c27554f9feec0ec62923b4c200a63b9e
@@ -2970,6 +3035,12 @@ ScriptsOnlyBuild:
     className: PunTurnManager
   - hash:
       serializedVersion: 2
+      Hash: 5fba49871961c6c6921839174e7fb45b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LobbyMenuManager
+  - hash:
+      serializedVersion: 2
       Hash: a39722ab4bf593c3b08f191bb7c70792
     assemblyName: Assembly-CSharp
     namespaceName: Photon.Chat.UtilityScripts
@@ -3016,66 +3087,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 7bb2dee8014a5a7d879c6a23af80fa54
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Room
-  - hash:
-      serializedVersion: 2
-      Hash: f144786ba6939a8d8702a054db83a79c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: BackgroundSync
-  - hash:
-      serializedVersion: 2
-      Hash: d82734381b7039fe0296be76af1ffa78
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MoveTextureOffset
-  - hash:
-      serializedVersion: 2
-      Hash: 23f4f3b92fd895492076b04283f64b51
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TextTransparency
-  - hash:
-      serializedVersion: 2
-      Hash: 489134339861cb196204a171a6c58c02
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraShake
-  - hash:
-      serializedVersion: 2
-      Hash: da625640e00dd2faf1390d1dc33f58cb
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameMenuConroller
-  - hash:
-      serializedVersion: 2
-      Hash: 0d2e3592d30281c0b0e5357863dbe397
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ConenctLobby
-  - hash:
-      serializedVersion: 2
-      Hash: 5fba49871961c6c6921839174e7fb45b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: LobbyMenuManager
-  - hash:
-      serializedVersion: 2
-      Hash: 9d84ad608025894aa39b77a165d3b61d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: NetworkDebugger
-  - hash:
-      serializedVersion: 2
-      Hash: 0f3042d2366604279a4e597384eb8bbd
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: RoomPlayerMonitor
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

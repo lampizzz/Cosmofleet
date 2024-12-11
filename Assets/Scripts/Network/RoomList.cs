@@ -53,11 +53,14 @@ public class RoomList : MonoBehaviourPunCallbacks
     private void UpdateRoomDisplay(List<RoomInfo> roomList)
     {
         // Удаляем старые комнаты
-        for (int i = 0; i < AllRooms.Length; i++)
+        if (AllRooms != null)
         {
-            if (AllRooms[i] != null)
+            for (int i = 0; i < AllRooms.Length; i++)
             {
-                Destroy(AllRooms[i]);
+                if (AllRooms[i] != null)
+                {
+                    Destroy(AllRooms[i]);
+                }
             }
         }
 

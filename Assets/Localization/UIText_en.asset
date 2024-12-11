@@ -86,6 +86,26 @@ MonoBehaviour:
     m_Localized: Are you sure you want to quit?
     m_Metadata:
       m_Items: []
+  - m_Id: 804235034722304
+    m_Localized: Update
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863256131371008
+    m_Localized: Ship (L4)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863332367040512
+    m_Localized: Ship (L3)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863333990236160
+    m_Localized: Ship (L2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863335701512192
+    m_Localized: Ship (L1)
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
