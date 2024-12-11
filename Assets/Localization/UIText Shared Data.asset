@@ -67,6 +67,42 @@ MonoBehaviour:
     m_Key: Connect
     m_Metadata:
       m_Items: []
+  - m_Id: 529799077171200
+    m_Key: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 529845692665856
+    m_Key: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 529884280262656
+    m_Key: WaitOpponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 530280654573568
+    m_Key: SureQuit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 804235034722304
+    m_Key: Update
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863256131371008
+    m_Key: ShipL4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863332367040512
+    m_Key: ShipL3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863333990236160
+    m_Key: ShipL2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 863335701512192
+    m_Key: ShipL1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

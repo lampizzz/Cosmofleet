@@ -34,6 +34,14 @@ Library\Bee\artifacts\mvdfrm\Unity.ResourceManager.ref.dll_56EDCE417F1B8EC7.mvfr
 Library\Bee\artifacts\mvdfrm\Unity.Rider.Editor.ref.dll_9B5591808ABA37AF.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.ScriptableBuildPipeline.Editor.ref.dll_4B3FCA9E6B3358CE.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.ScriptableBuildPipeline.ref.dll_27C8026E25690113.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.Authentication.Editor.Shared.ref.dll_851AD2D833C89768.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.Authentication.PlayerAccounts.ref.dll_FE92F4FC03A12DAB.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.Authentication.ref.dll_AA487F5786203DE0.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.CloudSave.Editor.ref.dll_BD3C3B61A28B5A21.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.CloudSave.ref.dll_2EE70107D7244690.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Analytics.ref.dll_EDA1682A714EA6BF.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Environments.ref.dll_7E0AC2CDE81D9C6D.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Services.Core.ref.dll_131AC9C5EC6E6517.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.Editor.ref.dll_159E061D77A10B86.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.ref.dll_84A4293DBDD182DB.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Timeline.Editor.ref.dll_0D3D3C0B73557612.mvfrm
