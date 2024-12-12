@@ -75,6 +75,8 @@ public class ShipAnalytics : MonoBehaviour
 
         if (--player.shipCounts[selectedShipLength] == 0)
         {
+            shipCount[index].color = new Color(0.3843138f, 0.3921569f,0.4f, 1f);
+            
             // Делаем кнопку неактивной, если все корабли данного типа расставлены
             if (shipBtn != null && index >= 0 && index < shipBtn.Length)
             {
@@ -85,14 +87,6 @@ public class ShipAnalytics : MonoBehaviour
                 Debug.LogError($"Кнопка для корабля длиной {selectedShipLength} не найдена.");
             }
         }
-        else
-        {
-            // Если корабли этого типа ещё не расставлены, выводим информацию о оставшемся количестве
-            Debug.Log($"Корабль длиной {selectedShipLength} ещё доступен. Осталось: {player.shipCounts[selectedShipLength]}.");
-        }
-
-        // Выводим информацию о текущем состоянии игрока для отладки
-        Debug.Log($"Игрок: {player.Name}, Осталось кораблей: {player.ShipsLeft}, Оставшиеся корабли: {string.Join(", ", player.shipCounts.Values)}");
         
         if (--player.ShipsLeft == 0)
         {

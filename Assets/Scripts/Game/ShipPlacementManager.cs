@@ -141,10 +141,12 @@ public class ShipPlacementManager : MonoBehaviourPun
         if (PhotonNetwork.IsMasterClient)
         {
             gm.Player1.PlacementField.SetCellStateMatrix(matrix);
+            gm.player1Ready = true;
         }
         else
         {
             gm.Player2.PlacementField.SetCellStateMatrix(matrix);
+            gm.player2Ready = true;
         }
 
         // Проверяем наличие PhotonView на gm перед вызовом RPC

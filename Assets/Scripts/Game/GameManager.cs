@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviourPunCallbacks
 {
     public BattlePlayer Player1 { get; set; }
     public BattlePlayer Player2 { get; set; }
-    private bool player1Ready = false;
-    private bool player2Ready = false;
+    public bool player1Ready = false;
+    public bool player2Ready = false;
 
     private void Awake()
     {
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 Debug.LogError("Player 2 or PlacementField is null.");
             }
         }
-
+        
         CheckBothPlayersReady();
     }
     
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         Player1.IsTurn = true;
         Player2.IsTurn = false;
 
-        // Add logic for starting the game, e.g., enabling attack logic
+        
     }
 
     private CellState[] SerializeMatrix(CellState[,] matrix)

@@ -274,17 +274,17 @@ ScriptsOnlyBuild:
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
   - assembly: Assembly-CSharp
+    fullTypeName: LobbyMenuManager
+    methodName: CreateRoom
+  - assembly: Assembly-CSharp
+    fullTypeName: ServerRoomManager
+    methodName: CreateRoom
+  - assembly: Assembly-CSharp
     fullTypeName: ServerLobbyManager
     methodName: LeaveLobby
   - assembly: Assembly-CSharp
     fullTypeName: LobbyMenuManager
-    methodName: CreateRoom
-  - assembly: Assembly-CSharp
-    fullTypeName: LobbyMenuManager
     methodName: BackToLobby
-  - assembly: Assembly-CSharp
-    fullTypeName: ServerRoomManager
-    methodName: CreateRoom
   - assembly: Assembly-CSharp
     fullTypeName: Room
     methodName: JoinRoom
@@ -317,13 +317,13 @@ ScriptsOnlyBuild:
     methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
-    methodName: QuitGame
-  - assembly: Assembly-CSharp
-    fullTypeName: GameMenuConroller
     methodName: NegativeAnswer
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: LeaveRoom
+  - assembly: Assembly-CSharp
+    fullTypeName: GameMenuConroller
+    methodName: QuitGame
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -826,7 +826,7 @@ ScriptsOnlyBuild:
     className: CinemachineCollider
   - hash:
       serializedVersion: 2
-      Hash: e47d77dff9f7fd0f54480d10a98b411f
+      Hash: d5513b16c80b3f6600f822d404e8c2fe
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -2242,7 +2242,7 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
-      Hash: da625640e00dd2faf1390d1dc33f58cb
+      Hash: 0656f7a50f83b6bd12529d1de3283b39
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameMenuConroller
@@ -2332,7 +2332,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 0f3042d2366604279a4e597384eb8bbd
+      Hash: f32e116e75a1c5217f1360f360f4c6d7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RoomPlayerMonitor
