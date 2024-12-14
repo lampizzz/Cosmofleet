@@ -44,6 +44,14 @@ MonoBehaviour:
   - SyncFieldSetup
   - SetPlayerReady
   - StartGame
+  - ProcessAttackResult
+  - ValidateAttack
+  - ContinueTurn
+  - EndTurnAndSwitch
+  - SyncTurn
+  - SwitchTurns
+  - SyncTurnState
+  - SyncTurnEndTime
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

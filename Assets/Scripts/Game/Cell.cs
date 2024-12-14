@@ -6,11 +6,12 @@ using GameClasses;
 public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     [SerializeField] Color defaultColor;
-    [SerializeField] Color hoverColor;
+    [SerializeField] Color availableColor;
     [SerializeField] Color occupiedColor;
     [SerializeField] Color invalidColor;
     [SerializeField] Color hitColor;
     [SerializeField] Color missedColor;
+    [SerializeField] Color hoverColor;
 
     public Vector2Int Coordinates { get; private set; }
     public CellType Type { get; set; } // Тип клетки
@@ -45,8 +46,9 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     public void SetState(CellState state)
     {
         currentState = state;
-        UpdateColor();
+        UpdateColor(); // Обновление цвета клетки
     }
+
 
     public CellState GetState()
     {
@@ -60,8 +62,8 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
             case CellState.Default:
                 cellImage.color = defaultColor;
                 break;
-            case CellState.Hovered:
-                cellImage.color = hoverColor;
+            case CellState.Available:
+                cellImage.color = availableColor;
                 break;
             case CellState.Occupied:
                 cellImage.color = occupiedColor;
@@ -75,6 +77,9 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
             case CellState.Missed:
                 cellImage.color = missedColor;
                 break;
+            case CellState.Hover:
+                cellImage.color = hoverColor;
+                break;
         }
     }
 
@@ -84,6 +89,10 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         {
             shipPlacementManager?.HoverOverCell(Coordinates.x, Coordinates.y);
         }
+        else if (Type == CellType.Attack)
+        {
+            attackManager?.HoverOverCell(Coordinates.x, Coordinates.y);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -91,6 +100,10 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         if (Type == CellType.Placement)
         {
             shipPlacementManager?.ClearPreview();
+        }
+        else if (Type == CellType.Attack)
+        {
+            attackManager?.ClearPreview(Coordinates.x, Coordinates.y);
         }
     }
 
@@ -102,7 +115,18 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         }
         else if (Type == CellType.Attack)
         {
-            attackManager?.SelectCellForAttack(Coordinates.x, Coordinates.y);
+            if (currentState == CellState.Occupied || 
+                currentState == CellState.Hit || 
+                currentState == CellState.Missed)
+            {
+                Debug.Log("Cell cannot be selected.");
+                return;
+            }
+
+
+            attackManager?.SelectCellForAttack(Coordinates.x, Coordinates.y); // Вызываем SelectCellForAttack
         }
+        
     }
+
 }

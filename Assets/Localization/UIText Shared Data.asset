@@ -103,6 +103,14 @@ MonoBehaviour:
     m_Key: ShipL1
     m_Metadata:
       m_Items: []
+  - m_Id: 1942405529903104
+    m_Key: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1942587088740352
+    m_Key: MakeTurn
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

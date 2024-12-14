@@ -38,6 +38,11 @@ public class GridManager : MonoBehaviour
         return null;
     }
 
+    public void SetStateGridCell(int x, int y, CellState cellState)
+    {
+        gridCells[x, y].GetComponent<Cell>().SetState(cellState);
+    }
+
     public bool IsAreaAroundOccupied(int x, int y)
     {
         int[] dx = { -1, -1, -1, 0, 1, 1, 1, 0 };
@@ -72,8 +77,8 @@ public class GridManager : MonoBehaviour
                 if (cell != null)
                 {
                     var cellScript = cell.GetComponent<Cell>();
-                    // Для транспонирования инвертируем индексы x и y
-                    stateMatrix[y, x] = cellScript.GetState(); // Сохраняем состояние клетки в транспонированную матрицу
+
+                    stateMatrix[x, y] = cellScript.GetState(); // Сохраняем состояние клетки в транспонированную матрицу
                 }
             }
         }
@@ -82,7 +87,6 @@ public class GridManager : MonoBehaviour
 
         return stateMatrix;
     }
-
     
     // private void PrintField(CellState[,] matrix)
     // {

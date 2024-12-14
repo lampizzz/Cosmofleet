@@ -1,8 +1,10 @@
 using GameClasses;
+using UnityEngine;
+
 public class Field
 {
 
-    private CellState[,] grid; // Игровая сетка (10x10)
+    public CellState[,] grid; // Игровая сетка (10x10)
     public int size = 10; // Размер сетки
 
     public Field()
@@ -31,17 +33,21 @@ public class Field
     
     public void SetCellStateMatrix(CellState[,] newStates)
     {
-        int rows = newStates.GetLength(0);
-        int columns = newStates.GetLength(1);
-
-        // Перебор всех клеток в матрице состояний
-        for (int i = 0; i < rows; i++)
+        grid = newStates;
+    }
+    
+    private void PrintField(CellState[,] matrix)
+    {
+        int size = matrix.GetLength(0);
+        
+        for (int y = 0; y < size; y++)
         {
-            for (int j = 0; j < columns; j++)
+            string row = "";
+            for (int x = 0; x < size; x++)
             {
-                // Устанавливаем состояние клетки на поле
-                grid[i, j] = newStates[i, j];
+                row += $"{(int)matrix[y, x]} "; // Преобразуем CellState в целое число для упрощения вывода
             }
+            Debug.Log(row);
         }
     }
     

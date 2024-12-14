@@ -1,35 +1,101 @@
+using GameClasses;
+using Photon.Pun;
 using UnityEngine;
 
 public class AttackManager : MonoBehaviour
 {
     public GridManager attackGrid;
+    private Cell selectedCell;
+    
+    [SerializeField] GameManager gm;
 
     private void Start()
     {
         attackGrid.GenerateGrid(GameClasses.CellType.Attack);
     }
 
-    public bool SelectCellForAttack(int x, int y)
+    public void SelectCellForAttack(int x, int y)
     {
-        var cell = attackGrid.GetCell(x, y);
-        if (cell != null)
+        // Проверка хода
+        if ((PhotonNetwork.IsMasterClient && !gm.Player1.IsTurn) || 
+            (!PhotonNetwork.IsMasterClient && !gm.Player2.IsTurn))
         {
-            var cellScript = cell.GetComponent<Cell>();
+            Debug.Log("It's not your turn to attack.");
+            return;
+        }
 
-            if (cellScript.GetState() == GameClasses.CellState.Default)
+        // Сбрасываем состояние предыдущей выбранной клетки
+        if (selectedCell != null)
+        {
+            // Не сбрасываем состояние, если клетка поражена или пропущена
+            if (selectedCell.GetState() != CellState.Hit && 
+                selectedCell.GetState() != CellState.Missed)
             {
-                // Simulate attack logic
-                bool hit = SimulateAttack(x, y);
-                cellScript.SetState(hit ? GameClasses.CellState.Hit : GameClasses.CellState.Missed);
-                return hit;
+                selectedCell.SetState(CellState.Default);
             }
         }
-        return false; // Уже атаковано
+
+        // Получаем новую клетку
+        var cell = attackGrid.GetCell(x, y);
+        if (cell == null)
+        {
+            Debug.LogWarning("Cell is null or invalid."); // Проверяем наличие клетки
+            return;
+        }
+
+        if (cell.GetComponent<Cell>().GetState() != CellState.Hover)
+        {
+            Debug.Log("Invalid or already targeted cell selected.");
+            return;
+        }
+
+        // Устанавливаем новую выбранную клетку
+        selectedCell = cell.GetComponent<Cell>();
+        Debug.Log("Selected cell: " + selectedCell.Coordinates);
+        selectedCell.SetState(CellState.Occupied);
     }
 
-    private bool SimulateAttack(int x, int y)
+
+    public Cell GetSelectedCell()
     {
-        // Replace with your logic for checking if a ship is at this location.
-        return Random.value > 0.5f; // Example: Randomly simulate hit or miss
+        if (selectedCell == null)
+        {
+            Debug.LogWarning("No cell is currently selected.");
+            return null; // Возвращаем null, если ничего не выбрано
+        }
+
+        return selectedCell;
     }
+
+    public void HoverOverCell(int x, int y)
+    {
+        var cell = attackGrid.GetCell(x, y)?.GetComponent<Cell>();
+        if (cell == null) return;
+
+        // Проверяем, чтобы состояние клетки не менялось, если она уже занята, поражена или промахнута
+        if (cell.GetState() == CellState.Occupied || 
+            cell.GetState() == CellState.Hit || 
+            cell.GetState() == CellState.Missed)
+        {
+            return;
+        }
+
+        // Устанавливаем состояние Hover
+        cell.SetState(CellState.Hover);
+    }
+
+    
+    public void ClearPreview(int x, int y)
+    {
+        var cell = attackGrid.GetCell(x, y)?.GetComponent<Cell>();
+        if (cell == null) return;
+
+        // Проверяем, чтобы сброс состояния происходил только для клеток в состоянии Hover
+        if (cell.GetState() == CellState.Hover)
+        {
+            cell.SetState(CellState.Default);
+        }
+    }
+
+
 }

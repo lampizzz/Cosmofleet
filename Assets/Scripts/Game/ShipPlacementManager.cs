@@ -59,7 +59,7 @@ public class ShipPlacementManager : MonoBehaviourPun
                     !placementGrid.IsAreaAroundOccupied(targetX, targetY))
                 {
                     previewCells[i] = cell;
-                    cell.GetComponent<Cell>().SetState(GameClasses.CellState.Hovered);
+                    cell.GetComponent<Cell>().SetState(GameClasses.CellState.Available);
                 }
                 else
                 {
@@ -87,7 +87,7 @@ public class ShipPlacementManager : MonoBehaviourPun
         {
             foreach (var cell in previewCells)
             {
-                if (cell == null || cell.GetComponent<Cell>().GetState() != GameClasses.CellState.Hovered)
+                if (cell == null || cell.GetComponent<Cell>().GetState() != GameClasses.CellState.Available)
                 {
                     ClearPreview();
                     return;
@@ -118,7 +118,7 @@ public class ShipPlacementManager : MonoBehaviourPun
                 if (cell != null)
                 {
                     var cellScript = cell.GetComponent<Cell>();
-                    if (cellScript.GetState() == GameClasses.CellState.Hovered || cellScript.GetState() == GameClasses.CellState.Invalid)
+                    if (cellScript.GetState() == GameClasses.CellState.Available || cellScript.GetState() == GameClasses.CellState.Invalid)
                     {
                         cellScript.SetState(GameClasses.CellState.Default);
                     }

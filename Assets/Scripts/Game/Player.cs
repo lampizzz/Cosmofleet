@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using GameClasses;
 using UnityEngine;
 
 public class BattlePlayer 
@@ -37,8 +38,20 @@ public class BattlePlayer
         return shipCounts[4 - length];
     }
 
-    public bool HasShipsRemaining()
+    public bool HasShipsRemaining(Field defenderPlacementField, Field attackerAttackField)
     {
-        return ShipsLeft > 0;
+        for (int i = 0; i < defenderPlacementField.grid.GetLength(0); i++)
+        {
+            for (int j = 0; j < defenderPlacementField.grid.GetLength(1); j++)
+            {
+                // Проверяем, есть ли клетка с кораблём, которая ещё не подбита
+                if (defenderPlacementField.grid[i, j] == CellState.Occupied &&
+                    attackerAttackField.grid[i, j] != CellState.Hit)
+                {
+                    return true; // Корабли остались
+                }
+            }
+        }
+        return false; // Все корабли уничтожены
     }
 }
