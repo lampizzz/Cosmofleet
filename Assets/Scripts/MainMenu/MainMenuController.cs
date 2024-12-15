@@ -5,6 +5,7 @@ public class MainMenuController : MonoBehaviour
 {
     [SerializeField] GameObject mainMenuPanel;
     [SerializeField] GameObject settingsPanel;
+    [SerializeField] GameObject historyPanel;
 
     public void StartGame()
     {
@@ -20,6 +21,18 @@ public class MainMenuController : MonoBehaviour
     public void CancelSettings()
     {
         settingsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
+    }
+
+    public void HistoryMenu()
+    {
+        mainMenuPanel.SetActive(false);
+        historyPanel.SetActive(true);
+    }
+
+    public void BackFromHistory()
+    {
+        historyPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
     }
 

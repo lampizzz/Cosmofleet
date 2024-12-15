@@ -58,6 +58,11 @@ public class AttackManager : MonoBehaviour
 
         return selectedCell;
     }
+    
+    public void SetNullSelectedCell()
+    {
+        selectedCell = null;
+    }
 
     public void HoverOverCell(int x, int y)
     {

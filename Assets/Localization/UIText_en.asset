@@ -138,6 +138,18 @@ MonoBehaviour:
     m_Localized: 'Your score:'
     m_Metadata:
       m_Items: []
+  - m_Id: 2563175482736640
+    m_Localized: Game history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2591196944089088
+    m_Localized: Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2591260148056064
+    m_Localized: Defeat
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

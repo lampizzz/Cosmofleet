@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using GameClasses;
@@ -60,8 +61,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         UpdateScoreText(); // Отображаем начальные очки
         StartTurnTimer(); // Запуск таймера
     }
-
-    [PunRPC]
+    
     private void EndGame(int winnerIndex)
     {
         string winnerName = winnerIndex == 1 ? Player1.Name : Player2.Name;
@@ -83,7 +83,25 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             menuController.LoseGame(playerScore); // Вызываем LoseGame
         }
+
+        // Сохраняем результаты игры
+        SaveGameStats(isWinner);
     }
+
+    private void SaveGameStats(bool isWinner)
+    {
+        var gameStats = new GameStats
+        {
+            Score = isWinner ? Player1.Score : Player2.Score,
+            Time = DateTime.Now, // Используем текущее время
+            RoomName = PhotonNetwork.CurrentRoom.Name,
+            VictoryStatus = isWinner
+        };
+
+        SaverLoaderXML.AddGameSession(gameStats);
+        Debug.Log("Game session saved successfully.");
+    }
+
 
     [PunRPC]
     public void SetPlayerReady(int playerIndex, CellState[] serializedMatrix)
@@ -141,6 +159,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
         IsWaitingForRPC = true;
         pView.RPC("ValidateAttack", RpcTarget.All, coords.x, coords.y, Player1.IsTurn ? 1 : 2);
+        attackManager.SetNullSelectedCell();
     }
     
     [PunRPC]
@@ -183,7 +202,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             if (!defender.HasShipsRemaining(defender.PlacementField, attacker.AttackField))
             {
                 Debug.Log($"Player {attackerIndex} wins!");
-                pView.RPC("EndGame", RpcTarget.All, Player1.IsTurn ? 1 : 2);
+                EndGame(Player1.IsTurn ? 1 : 2);
                 return;
             }
 
@@ -216,7 +235,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             if (isAttacker)
                 pView.RPC("SwitchTurns", RpcTarget.All);
         }
-
+        
         IsWaitingForRPC = false;
     }
 
@@ -264,7 +283,6 @@ public class GameManager : MonoBehaviourPunCallbacks
             scoreText.text = $"{Player2.Score}";
         }
     }
-
 
     private void SetEndTurnButtonState(bool isInteractable)
     {

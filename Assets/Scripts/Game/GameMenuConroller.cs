@@ -26,7 +26,6 @@ public class GameMenuConroller : MonoBehaviour
         winnerPanel.SetActive(true);
         winnerScoreText.text = score.ToString();
     }
-
     
     public void LoseGame(int score)
     {

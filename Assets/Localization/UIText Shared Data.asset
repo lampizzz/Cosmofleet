@@ -135,6 +135,18 @@ MonoBehaviour:
     m_Key: YourScore
     m_Metadata:
       m_Items: []
+  - m_Id: 2563175482736640
+    m_Key: History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2591196944089088
+    m_Key: Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2591260148056064
+    m_Key: Defeat
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
