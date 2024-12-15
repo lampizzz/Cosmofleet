@@ -86,6 +86,8 @@ public class ShipAnalytics : MonoBehaviour
             {
                 Debug.LogError($"Кнопка для корабля длиной {selectedShipLength} не найдена.");
             }
+            
+            FindObjectOfType<ShipPlacementManager>().selectedShipLength--;
         }
         
         if (--player.ShipsLeft == 0)

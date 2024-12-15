@@ -10,7 +10,7 @@ public class ShipPlacementManager : MonoBehaviourPun
     [SerializeField] ShipAnalytics analytics;
     
     public GridManager placementGrid; // Грид для расстановки
-    public int selectedShipLength = 0; // Длина выбранного корабля
+    public int selectedShipLength = 4; // Длина выбранного корабля
     private bool isHorizontal = true; // Ориентация корабля
     private GameObject[] previewCells; // Ячейки для предпросмотра
     
@@ -104,7 +104,6 @@ public class ShipPlacementManager : MonoBehaviourPun
             
             analytics.DecrementShip(selectedShipLength);
             
-            selectedShipLength = 0;
             ClearPreview();
         }
     }
