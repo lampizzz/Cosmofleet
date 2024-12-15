@@ -90,6 +90,7 @@ ScriptsOnlyBuild:
     - UnityEditor.AddressableAssets.Settings.GroupSchemas.ContentUpdateGroupSchema
     - UnityEditor.AddressableAssets.Settings.GroupSchemas.PlayerDataGroupSchema
     Unity.Localization.Editor.dll:
+    - UnityEditor.Localization.LocalizationProjectSettings
     - UnityEditor.Localization.StringTableCollection
     - UnityEditor.Localization.UI.LocalizationTablesWindow
     Unity.Localization.dll:
@@ -97,6 +98,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Localization.Locale
     - UnityEngine.Localization.LocalizationBehaviour
     - UnityEngine.Localization.Settings.LocalizationSettings
+    - UnityEngine.Localization.VariantsPropertyDriver
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.RiderScriptEditorPersistedState
@@ -142,6 +144,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
+    Assembly-CSharp:
+    - BattlePlayer
     DOTween:
     - DG.Tweening.Core.DOTweenSettings/ModulesSetup
     - DG.Tweening.Core.DOTweenSettings/SafeModeOptions
@@ -229,10 +233,10 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
-    methodName: CancelSettings
+    methodName: SettingsMenu
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
-    methodName: SettingsMenu
+    methodName: CancelSettings
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -273,11 +277,11 @@ ScriptsOnlyBuild:
     fullTypeName: LobbyMenuManager
     methodName: CreateRoom
   - assembly: Assembly-CSharp
-    fullTypeName: LobbyMenuManager
-    methodName: BackToLobby
-  - assembly: Assembly-CSharp
     fullTypeName: ServerLobbyManager
     methodName: LeaveLobby
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbyMenuManager
+    methodName: BackToLobby
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: CreateRoom
@@ -312,14 +316,38 @@ ScriptsOnlyBuild:
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
   - assembly: Assembly-CSharp
+    fullTypeName: GameMenuConroller
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: LeaveRoom
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
-    methodName: QuitGame
-  - assembly: Assembly-CSharp
-    fullTypeName: GameMenuConroller
     methodName: NegativeAnswer
+  - assembly: Assembly-CSharp
+    fullTypeName: ServerRoomManager
+    methodName: LeaveRoom
+  - assembly: Assembly-CSharp
+    fullTypeName: ServerRoomManager
+    methodName: LeaveRoom
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -338,6 +366,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ShipPlacementManager
     methodName: SelectShip
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -359,6 +390,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ShipPlacementManager
     methodName: SelectShip
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -390,6 +424,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4820}
     - Class: 114
+      Script: {instanceID: 5302}
+    - Class: 114
       Script: {instanceID: 5340}
     - Class: 114
       Script: {instanceID: 5462}
@@ -401,6 +437,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6948}
     - Class: 114
       Script: {instanceID: 7220}
+    - Class: 114
+      Script: {instanceID: 7388}
     - Class: 114
       Script: {instanceID: 9058}
     - Class: 114
@@ -828,7 +866,7 @@ ScriptsOnlyBuild:
     className: CinemachineCollider
   - hash:
       serializedVersion: 2
-      Hash: 1993efa28e2e7167ef24be6ddbc0e928
+      Hash: bfa3417df7735b6de04d9b17d74532e6
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -1722,7 +1760,7 @@ ScriptsOnlyBuild:
     className: WebRpcImplementationExample
   - hash:
       serializedVersion: 2
-      Hash: 128492e2a9648a6a2d1ef93d0d521ce4
+      Hash: 3e665d120f90c1fe013d2a47cebcb9cb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ShipAnalytics
@@ -2244,7 +2282,7 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
-      Hash: 0656f7a50f83b6bd12529d1de3283b39
+      Hash: c14afa99658c31b54c1fd7a7b76b66c6
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameMenuConroller
@@ -2334,7 +2372,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: f32e116e75a1c5217f1360f360f4c6d7
+      Hash: 33278dbbda349899016339beea992871
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RoomPlayerMonitor
@@ -2352,7 +2390,7 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 0a801c3b61bf1a03ae3c7c64ebace12e
+      Hash: f89129f191582758379efcc2fd82536a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cell

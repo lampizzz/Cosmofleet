@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class RoomPlayerMonitor : MonoBehaviourPunCallbacks
 {
     [SerializeField] private TMP_Text roomStatusText; // Ссылка на текстовый объект
-    [SerializeField] GameObject placementPanel;
-    [SerializeField] GameObject attackingPanel;
+    [SerializeField] GameMenuConroller menuController;
     [SerializeField] TMP_Text[] shipCountTexts;
     [SerializeField] Button[] shipTypeBtns;
 
@@ -45,11 +44,7 @@ public class RoomPlayerMonitor : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
-            if (placementPanel != null && attackingPanel != null)
-            {
-                placementPanel.gameObject.SetActive(true);
-                attackingPanel.gameObject.SetActive(true);
-            }
+            menuController.EnableGamePanels();
         }
     }
     

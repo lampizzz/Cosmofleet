@@ -93,5 +93,5 @@ MonoBehaviour:
   occupiedColor: {r: 0.38164684, g: 0.3066038, b: 1, a: 1}
   invalidColor: {r: 1, g: 0.3915094, b: 0.3915094, a: 1}
   hitColor: {r: 0.4627451, g: 0.93333334, b: 0.50980395, a: 1}
-  missedColor: {r: 1, g: 0.39215687, b: 0.39215687, a: 1}
   hoverColor: {r: 0.69411767, g: 0.6948202, b: 0.6948202, a: 0.101960786}
+  missDotPrefab: {fileID: 6550973398135134623, guid: 74e3432aab837e34396e11596962a4c3, type: 3}

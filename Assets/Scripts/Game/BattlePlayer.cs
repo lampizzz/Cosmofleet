@@ -1,14 +1,17 @@
+using System;
 using System.Collections.Generic;
 using GameClasses;
-using UnityEngine;
 
-public class BattlePlayer 
+[Serializable]
+public class BattlePlayer
 {
     public string Name { get; private set; }
     public Field PlacementField { get; set; }
     public Field AttackField { get; set; }
     public bool IsTurn { get; set; }
+    public int Score { get; set; }
     public int ShipsLeft { get; set; }
+    public int HitStreak { get; set; } // Количество попаданий подряд
 
     public Dictionary<int, int> shipCounts;
 
@@ -26,8 +29,10 @@ public class BattlePlayer
             [1] = 4
         };
         IsTurn = false;
+        Score = 0;
+        HitStreak = 0; // Изначально нет попаданий
     }
-    
+
     public void RegisterHit()
     {
         ShipsLeft--;

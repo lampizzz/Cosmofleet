@@ -114,6 +114,30 @@ MonoBehaviour:
     m_Localized: Make turn
     m_Metadata:
       m_Items: []
+  - m_Id: 2301683984556032
+    m_Localized: 'Score:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2301782915604480
+    m_Localized: Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2312938464010240
+    m_Localized: Back to lobby
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2313288654839808
+    m_Localized: You win!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2313698765496320
+    m_Localized: You lose :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2313837722787840
+    m_Localized: 'Your score:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

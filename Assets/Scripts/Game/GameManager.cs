@@ -25,7 +25,11 @@ public class GameManager : MonoBehaviourPunCallbacks
     private Coroutine timerCoroutine; // Ссылка на корутину
     
     private PhotonView pView;
+    
+    [SerializeField] private GameMenuConroller menuController;
     [SerializeField] private AttackManager attackManager;
+    [SerializeField] private ShipPlacementManager shipPlacementManager;
+    [SerializeField] private TMP_Text scoreText;
     [SerializeField] private Button readyButton;
     [SerializeField] private Button endTurnButton;
 
@@ -47,22 +51,38 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void StartGame()
     {
         Debug.Log("Game has started!");
-        
+    
         Player1.IsTurn = true;
         Player2.IsTurn = false;
         UpdateLocalPlayerTurns(Player1.IsTurn, Player2.IsTurn);
-        
+    
         UpdateEndTurnButtonState();
+        UpdateScoreText(); // Отображаем начальные очки
         StartTurnTimer(); // Запуск таймера
     }
-    
-    private void EndGame(BattlePlayer winner)
-    {
-        Debug.Log($"Player {winner.Name} wins!");
 
-        StopTurnTimer(); // Остановить таймер
-        readyButton.gameObject.SetActive(true);
-        endTurnButton.gameObject.SetActive(false);
+    [PunRPC]
+    private void EndGame(int winnerIndex)
+    {
+        string winnerName = winnerIndex == 1 ? Player1.Name : Player2.Name;
+        Debug.Log($"Player {winnerName} wins!");
+
+        StopTurnTimer(); // Останавливаем таймер
+
+        // Определяем результат для текущего игрока
+        bool isWinner = (PhotonNetwork.IsMasterClient && winnerIndex == 1) || 
+                        (!PhotonNetwork.IsMasterClient && winnerIndex == 2);
+
+        int playerScore = isWinner ? Player1.Score : Player2.Score;
+
+        if (isWinner)
+        {
+            menuController.WinGame(playerScore); // Вызываем WinGame
+        }
+        else
+        {
+            menuController.LoseGame(playerScore); // Вызываем LoseGame
+        }
     }
 
     [PunRPC]
@@ -139,36 +159,68 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             Debug.Log($"Player {attackerIndex} hit at ({x}, {y}).");
 
+            // Обновляем поля атакующего
             if (isAttacker)
             {
                 attacker.AttackField.SetCellState(x, y, CellState.Hit);
                 attackManager.attackGrid.SetStateGridCell(x, y, CellState.Hit);
+                
+                // Обновление очков с учетом бонуса
+                attacker.HitStreak++;
+                int bonusMultiplier = attacker.HitStreak;
+                attacker.Score += 10 * bonusMultiplier; // 10 очков за попадание, умноженное на текущий бонус
+                UpdateScoreText();
             }
 
+            if (!isAttacker)
+            {
+                // Обновляем поле защитника (PlacementField)
+                defender.PlacementField.SetCellState(x, y, CellState.Hit);
+                shipPlacementManager.placementGrid.SetStateGridCell(x, y, CellState.Invalid);
+            }
+
+            // Проверяем оставшиеся корабли защитника
             if (!defender.HasShipsRemaining(defender.PlacementField, attacker.AttackField))
             {
                 Debug.Log($"Player {attackerIndex} wins!");
-                EndGame(attacker);
+                pView.RPC("EndGame", RpcTarget.All, Player1.IsTurn ? 1 : 2);
                 return;
             }
-            
+
+            // Игрок продолжает свой ход после попадания
             ContinueTurn();
         }
         else
         {
             Debug.Log($"Player {attackerIndex} missed at ({x}, {y}).");
+
+            // Обновляем поля атакующего
             if (isAttacker)
             {
                 attacker.AttackField.SetCellState(x, y, CellState.Missed);
                 attackManager.attackGrid.SetStateGridCell(x, y, CellState.Missed);
             }
 
+            if (!isAttacker)
+            {
+                // Обновляем поле защитника (PlacementField)
+                defender.PlacementField.SetCellState(x, y, CellState.Missed);
+                shipPlacementManager.placementGrid.SetStateGridCell(x, y, CellState.Missed);
+            }
+
+            // Сбрасываем серию попаданий
+            attacker.HitStreak = 0;
+            UpdateScoreText();
+
+            // Ход передается другому игроку
             if (isAttacker)
                 pView.RPC("SwitchTurns", RpcTarget.All);
         }
-        
+
         IsWaitingForRPC = false;
     }
+
+
 
     private void ContinueTurn()
     {
@@ -200,6 +252,19 @@ public class GameManager : MonoBehaviourPunCallbacks
             SetEndTurnButtonState(Player2.IsTurn);
         }
     }
+    
+    private void UpdateScoreText()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            scoreText.text = $"{Player1.Score}";
+        }
+        else
+        {
+            scoreText.text = $"{Player2.Score}";
+        }
+    }
+
 
     private void SetEndTurnButtonState(bool isInteractable)
     {
@@ -253,23 +318,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             pView.RPC("SwitchTurns", RpcTarget.All);
         }
-    }
-    
-    private CellState[] SerializeMatrix(CellState[,] matrix)
-    {
-        int rows = matrix.GetLength(0);
-        int cols = matrix.GetLength(1);
-        CellState[] serialized = new CellState[rows * cols];
-
-        for (int i = 0; i < rows; i++)
-        {
-            for (int j = 0; j < cols; j++)
-            {
-                serialized[i * cols + j] = matrix[i, j];
-            }
-        }
-
-        return serialized;
     }
 
     private CellState[,] DeserializeMatrix(CellState[] serializedMatrix, int rows, int cols)
@@ -326,20 +374,4 @@ public class GameManager : MonoBehaviourPunCallbacks
 
         Debug.Log(output);
     }
-
-    
-    private void PrintAllFields()
-    {
-        Debug.Log("===== Player 1 Fields =====");
-        PrintPlacementField(Player1);
-
-        PrintAttackField(Player1);
-
-        Debug.Log("===== Player 2 Fields =====");
-        PrintPlacementField(Player2);
-
-        PrintAttackField(Player2);
-    }
-
-    
 }

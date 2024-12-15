@@ -159,8 +159,6 @@ public class ShipPlacementManager : MonoBehaviourPun
             Debug.LogError("PhotonView отсутствует на GameManager! RPC не может быть вызван.");
         }
     }
-
-
     
     private CellState[] SerializeMatrix(CellState[,] matrix)
     {

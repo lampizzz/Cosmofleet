@@ -16,14 +16,6 @@ public class AttackManager : MonoBehaviour
 
     public void SelectCellForAttack(int x, int y)
     {
-        // Проверка хода
-        if ((PhotonNetwork.IsMasterClient && !gm.Player1.IsTurn) || 
-            (!PhotonNetwork.IsMasterClient && !gm.Player2.IsTurn))
-        {
-            Debug.Log("It's not your turn to attack.");
-            return;
-        }
-
         // Сбрасываем состояние предыдущей выбранной клетки
         if (selectedCell != null)
         {

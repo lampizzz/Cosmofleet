@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using GameClasses;
+using TMPro;
 
 public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -10,9 +11,11 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     [SerializeField] Color occupiedColor;
     [SerializeField] Color invalidColor;
     [SerializeField] Color hitColor;
-    [SerializeField] Color missedColor;
     [SerializeField] Color hoverColor;
-
+    
+    [SerializeField] private GameObject missDotPrefab; // Префаб для точки
+    private GameObject missDotInstance; // Инстанс точки
+    
     public Vector2Int Coordinates { get; private set; }
     public CellType Type { get; set; } // Тип клетки
 
@@ -61,27 +64,53 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         {
             case CellState.Default:
                 cellImage.color = defaultColor;
+                DestroyMissDot(); // Удаляем точку, если была
                 break;
             case CellState.Available:
                 cellImage.color = availableColor;
+                DestroyMissDot();
                 break;
             case CellState.Occupied:
                 cellImage.color = occupiedColor;
+                DestroyMissDot();
                 break;
             case CellState.Invalid:
                 cellImage.color = invalidColor;
+                DestroyMissDot();
                 break;
             case CellState.Hit:
                 cellImage.color = hitColor;
+                DestroyMissDot(); // Точка не нужна при попадании
                 break;
             case CellState.Missed:
-                cellImage.color = missedColor;
+                cellImage.color = defaultColor;
+                CreateMissDot(); 
                 break;
             case CellState.Hover:
                 cellImage.color = hoverColor;
                 break;
         }
     }
+    
+    private void CreateMissDot()
+    {
+        if (missDotInstance == null && missDotPrefab != null)
+        {
+            missDotInstance = Instantiate(missDotPrefab, transform);
+            missDotInstance.transform.localPosition = Vector3.zero; // Центрируем точку в клетке
+        }
+    }
+
+    private void DestroyMissDot()
+    {
+        if (missDotInstance != null)
+        {
+            Destroy(missDotInstance);
+            missDotInstance = null;
+        }
+    }
+
+
 
     public void OnPointerEnter(PointerEventData eventData)
     {
