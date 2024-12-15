@@ -235,16 +235,16 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
-    methodName: CancelSettings
+    methodName: HistoryMenu
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
-    methodName: SettingsMenu
+    methodName: CancelSettings
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
     methodName: BackFromHistory
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuController
-    methodName: HistoryMenu
+    methodName: SettingsMenu
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -295,16 +295,16 @@ ScriptsOnlyBuild:
     methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: LobbyMenuManager
-    methodName: BackToLobby
-  - assembly: Assembly-CSharp
-    fullTypeName: LobbyMenuManager
-    methodName: CreateRoom
-  - assembly: Assembly-CSharp
-    fullTypeName: ServerRoomManager
     methodName: CreateRoom
   - assembly: Assembly-CSharp
     fullTypeName: ServerLobbyManager
     methodName: LeaveLobby
+  - assembly: Assembly-CSharp
+    fullTypeName: ServerRoomManager
+    methodName: CreateRoom
+  - assembly: Assembly-CSharp
+    fullTypeName: LobbyMenuManager
+    methodName: BackToLobby
   - assembly: Assembly-CSharp
     fullTypeName: Room
     methodName: JoinRoom
@@ -340,13 +340,13 @@ ScriptsOnlyBuild:
     methodName: LeaveRoom
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
-    methodName: QuitGame
+    methodName: NegativeAnswer
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: LeaveRoom
   - assembly: Assembly-CSharp
     fullTypeName: GameMenuConroller
-    methodName: NegativeAnswer
+    methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: ServerRoomManager
     methodName: LeaveRoom
@@ -3260,6 +3260,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Session
+  - hash:
+      serializedVersion: 2
+      Hash: a5ec82919ae29b6cfd67f336c0245432
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LogCollector
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

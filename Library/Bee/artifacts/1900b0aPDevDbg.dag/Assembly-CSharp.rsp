@@ -372,6 +372,7 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/Controllers/AudioController.cs"
 "Assets/Scripts/Controllers/GameConroller.cs"
+"Assets/Scripts/Controllers/LogCollector.cs"
 "Assets/Scripts/Game/AttackManager.cs"
 "Assets/Scripts/Game/BattlePlayer.cs"
 "Assets/Scripts/Game/Cell.cs"

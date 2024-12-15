@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\MainMenu\SettingsController.cs" />
     <Compile Include="Assets\Scripts\Controllers\AudioController.cs" />
     <Compile Include="Assets\Scripts\Game\GridManager.cs" />
+    <Compile Include="Assets\Scripts\Controllers\LogCollector.cs" />
     <Compile Include="Assets\Scripts\Text\FloatingText.cs" />
     <Compile Include="Assets\Scripts\Text\BlinkText.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
