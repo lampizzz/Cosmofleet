@@ -147,6 +147,26 @@ MonoBehaviour:
     m_Key: Defeat
     m_Metadata:
       m_Items: []
+  - m_Id: 2662988769476608
+    m_Key: PlaceShips
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662992225583104
+    m_Key: ConfirmPlacement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662993504845824
+    m_Key: WatingOpponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662994897354752
+    m_Key: YourTurn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662996990312448
+    m_Key: OpponentTurn
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

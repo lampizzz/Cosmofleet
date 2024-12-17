@@ -9,18 +9,26 @@ using UnityEngine.Localization.Settings;
 
 public class SessionList : MonoBehaviour
 {
-    [SerializeField] private GameObject sessionPrefab; // Префаб для отображения сессии
-    [SerializeField] private TMP_InputField searchInputField; // Поле поиска
-    [SerializeField] private Transform contentParent; // Родительский объект для списка
-    [SerializeField] private LocalizedString localizedVictory; // Локализованная строка "Victory"
-    [SerializeField] private LocalizedString localizedDefeat;  // Локализованная строка "Defeat"
+    // Префаб для отображения сессии
+    [SerializeField] private GameObject sessionPrefab; 
+    // Поле для ввода строки поиска
+    [SerializeField] private TMP_InputField searchInputField; 
+    // Родительский объект для списка отображаемых сессий
+    [SerializeField] private Transform contentParent; 
+    // Локализованная строка для "Victory" (Победа)
+    [SerializeField] private LocalizedString localizedVictory; 
+    // Локализованная строка для "Defeat" (Поражение)
+    [SerializeField] private LocalizedString localizedDefeat;  
     
-    private GameStatsCollection statsCollection; // Коллекция данных о сессиях
-    private GameObject[] displayedSessions; // Отображаемые префабы
+    // Коллекция статистики сессий
+    private GameStatsCollection statsCollection; 
+    // Массив отображаемых префабов сессий
+    private GameObject[] displayedSessions; 
 
+    // Метод вызывается при старте сцены
     private void Start()
     {
-        // Используем Loader для получения данных
+        // Загружаем данные о сессиях
         statsCollection = SaverLoaderXML.LoadGameSessions();
 
         if (statsCollection == null || statsCollection.Sessions.Count == 0)
@@ -29,30 +37,32 @@ public class SessionList : MonoBehaviour
             return;
         }
 
-        // Подписка на событие изменения локали
+        // Подписываемся на событие изменения локали
         LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
 
         // Обновляем отображение всех сессий
         UpdateSessionDisplay(statsCollection.Sessions);
     }
 
+    // Метод вызывается при уничтожении объекта
     private void OnDestroy()
     {
-        // Отписываемся от события, чтобы избежать утечки памяти
+        // Отписываемся от события, чтобы избежать утечек памяти
         LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
     }
 
     /// <summary>
-    /// Срабатывает при смене локали
+    /// Срабатывает при изменении локали (языка)
     /// </summary>
     private void OnLocaleChanged(Locale newLocale)
     {
-        // Обновляем отображение всех сессий с учётом новой локали
+        // Обновляем отображение всех сессий в соответствии с новой локалью
         UpdateSessionDisplay(statsCollection.Sessions);
     }
 
     /// <summary>
-    /// Фильтрация списка сессий на основе строки поиска с использованием регулярных выражений.
+    /// Срабатывает при изменении текста в поле поиска
+    /// Фильтрует список сессий на основе введённой строки поиска с использованием регулярных выражений.
     /// </summary>
     public void OnSearchInputChanged()
     {
@@ -62,53 +72,55 @@ public class SessionList : MonoBehaviour
         string localizedVictoryText = localizedVictory.GetLocalizedString();
         string localizedDefeatText = localizedDefeat.GetLocalizedString();
 
+        // Если строка поиска пуста, показываем все сессии
         if (string.IsNullOrWhiteSpace(searchQuery))
         {
-            // Показываем все сессии, если строка поиска пуста
             UpdateSessionDisplay(statsCollection.Sessions);
         }
         else
         {
-            // Создаем регулярное выражение для поиска
+            // Создаем регулярное выражение для поиска по введённому запросу
             var regex = new Regex(searchQuery, RegexOptions.IgnoreCase);
 
-            // Фильтрация сессий с использованием регулярного выражения
+            // Фильтруем сессии с использованием регулярного выражения
             var filteredSessions = statsCollection.Sessions.Where(session =>
-                    regex.IsMatch(session.RoomName ?? "") ||
-                    regex.IsMatch(session.VictoryStatus ? localizedVictoryText : localizedDefeatText) || // Поиск по локализованному статусу
-                    regex.IsMatch(session.Score.ToString()) ||
-                    regex.IsMatch(session.Time.ToString("g")))
+                    regex.IsMatch(session.RoomName ?? "") ||  // Поиск по названию комнаты
+                    regex.IsMatch(session.VictoryStatus ? localizedVictoryText : localizedDefeatText) || // Поиск по локализованному статусу победы или поражения
+                    regex.IsMatch(session.Score.ToString()) ||  // Поиск по очкам
+                    regex.IsMatch(session.Time.ToString("g"))) // Поиск по времени
                 .ToList();
 
+            // Обновляем отображение сессий с результатами фильтрации
             UpdateSessionDisplay(filteredSessions);
         }
     }
 
-
-
     /// <summary>
-    /// Обновление списка отображаемых сессий.
+    /// Обновляет отображение сессий на экране.
+    /// Удаляет старые элементы и отображает новый список сессий.
     /// </summary>
     private void UpdateSessionDisplay(List<GameStats> sessionList)
     {
-        // Удаляем старые элементы
+        // Удаляем старые элементы, если они существуют
         if (displayedSessions != null)
         {
             foreach (var sessionObject in displayedSessions)
             {
                 if (sessionObject != null)
-                    Destroy(sessionObject);
+                    Destroy(sessionObject);  // Уничтожаем старые объекты
             }
         }
 
+        // Инициализируем массив для новых отображаемых сессий
         displayedSessions = new GameObject[sessionList.Count];
 
-        // Итерируем список с конца
+        // Итерируем список сессий с конца
         for (int i = sessionList.Count - 1, displayIndex = 0; i >= 0; i--, displayIndex++)
         {
             var session = sessionList[i];
-            if (session == null) continue; // Защита от null
+            if (session == null) continue; // Пропускаем пустые сессии
 
+            // Создаем новый объект сессии из префаба
             GameObject sessionObj = Instantiate(sessionPrefab, contentParent);
 
             var sessionComponent = sessionObj.GetComponent<Session>();
@@ -118,18 +130,19 @@ public class SessionList : MonoBehaviour
                 continue;
             }
 
+            // Заполняем текстовые поля для сессии
             sessionComponent.timeText.text = session.Time.ToString("g");
             sessionComponent.roomNameText.text = session.RoomName ?? "Unknown Room";
             sessionComponent.scoreText.text = session.Score.ToString();
 
-            // Установка локализованного текста
+            // Устанавливаем локализованный текст для победы или поражения
             if (session.VictoryStatus)
             {
                 localizedVictory.StringChanged += value =>
                 {
                     sessionComponent.victoryStatusText.text = $"<color=green>{value}</color>";
                 };
-                localizedVictory.RefreshString(); // Принудительное обновление при смене локали
+                localizedVictory.RefreshString(); // Принудительное обновление локализованной строки
             }
             else
             {
@@ -137,9 +150,10 @@ public class SessionList : MonoBehaviour
                 {
                     sessionComponent.victoryStatusText.text = $"<color=red>{value}</color>";
                 };
-                localizedDefeat.RefreshString(); // Принудительное обновление при смене локали
+                localizedDefeat.RefreshString(); // Принудительное обновление локализованной строки
             }
 
+            // Сохраняем отображаемый объект сессии
             displayedSessions[displayIndex] = sessionObj;
         }
     }

@@ -150,6 +150,26 @@ MonoBehaviour:
     m_Localized: Defeat
     m_Metadata:
       m_Items: []
+  - m_Id: 2662988769476608
+    m_Localized: Place your ships
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662992225583104
+    m_Localized: Confirm ship placement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662993504845824
+    m_Localized: Waiting for the opponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662994897354752
+    m_Localized: Your turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2662996990312448
+    m_Localized: The opponent's turn
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1,7 +1,9 @@
 using GameClasses;
 using UnityEngine;
 
-public class GridManager : MonoBehaviour
+namespace Game
+{
+    public class GridManager : MonoBehaviour
 {
     public GameObject cellPrefab; // Префаб ячейки (с Image)
     public int gridSize = 10; // Размер сетки
@@ -103,3 +105,5 @@ public class GridManager : MonoBehaviour
     //     }
     // }
 }
+}
+

@@ -41,11 +41,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="D:\Desktop\Cosmofleet\Assets\Packages\NSubstitute.Analyzers.CSharp.1.0.17\analyzers\dotnet\cs\NSubstitute.Analyzers.Shared.dll" />
+    <Analyzer Include="D:\Desktop\Cosmofleet\Assets\Packages\NSubstitute.Analyzers.CSharp.1.0.17\analyzers\dotnet\cs\NSubstitute.Analyzers.CSharp.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />
+    <None Include="Assets\NuGet\Editor\NuGetForUnity.PluginAPI.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -328,11 +331,20 @@
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.collab-proxy@2.6.0\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="ShipCountTextParser">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Plugins\ShipCountTextParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\Castle.Core.5.1.1\lib\netstandard2.1\Castle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.collab-proxy@2.6.0\Lib\Editor\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.EventLog">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\System.Diagnostics.EventLog.4.7.0\lib\netstandard2.0\System.Diagnostics.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>D:\Desktop\Cosmofleet\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
@@ -340,14 +352,26 @@
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\NSubstitute.5.3.0\lib\netstandard2.0\NSubstitute.dll</HintPath>
+    </Reference>
     <Reference Include="Photon3Unity3D">
       <HintPath>D:\Desktop\Cosmofleet\Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\System.Security.Principal.Windows.4.7.0\lib\netstandard2.0\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGetForUnity.PluginAPI">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\NuGet\Editor\NuGetForUnity.PluginAPI.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="NugetForUnity">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\NuGet\Editor\NugetForUnity.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -935,6 +959,10 @@
       <Project>{c14d8c2f-c1d8-6a6e-1bbe-b9157e802eab}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="GameScripts.csproj">
+      <Project>{1680067d-7711-7b36-8209-09d95ccec218}</Project>
+      <Name>GameScripts</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
       <Project>{4d625a1e-878c-8605-a8f7-5f012272291c}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
@@ -950,6 +978,10 @@
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{a0c8ac7a-7a28-7a5c-bb6e-e390646cddb0}</Project>
       <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameClasses.csproj">
+      <Project>{14b5e6b1-85e2-7622-21df-29944715fcc9}</Project>
+      <Name>GameClasses</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{3ff384f5-8021-ac29-4e00-2c64a30f7726}</Project>

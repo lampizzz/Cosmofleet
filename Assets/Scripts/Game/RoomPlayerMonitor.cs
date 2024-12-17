@@ -4,68 +4,60 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RoomPlayerMonitor : MonoBehaviourPunCallbacks
+namespace Game
 {
-    [SerializeField] private TMP_Text roomStatusText; // Ссылка на текстовый объект
-    [SerializeField] GameMenuConroller menuController;
-    [SerializeField] TMP_Text[] shipCountTexts;
-    [SerializeField] Button[] shipTypeBtns;
-
-    // Вызывается, когда игрок входит в комнату
-    public override void OnPlayerEnteredRoom(Player newPlayer)
+    public class RoomPlayerMonitor : MonoBehaviourPunCallbacks
     {
-        DisableWaitText();
-        ActivatePanels();
-        MakeWhiteCountText();
-        ActivateShipButtons();
-    }
-
-    // Вызывается при старте, если уже есть два игрока
-    private void Start()
-    {
-        DisableWaitText();
-        ActivatePanels();
-        MakeWhiteCountText();
-        ActivateShipButtons();
-    }
-
-    private void DisableWaitText()
-    {
-        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        [SerializeField] private TMP_Text roomStatusText; // Ссылка на текстовый объект
+        [SerializeField] GameMenuConroller menuController;
+        [SerializeField] TMP_Text[] shipCountTexts;
+        [SerializeField] Button[] shipTypeBtns;
+    
+        // Вызывается, когда игрок входит в комнату
+        public override void OnPlayerEnteredRoom(Player newPlayer)
         {
-            if (roomStatusText != null)
+            FindObjectOfType<ShipAnalytics>().UpdateStatusText();
+            ActivatePanels();
+            MakeWhiteCountText();
+            ActivateShipButtons();
+        }
+    
+        // Вызывается при старте, если уже есть два игрока
+        private void Start()
+        {
+            FindObjectOfType<ShipAnalytics>().UpdateStatusText();
+            ActivatePanels();
+            MakeWhiteCountText();
+            ActivateShipButtons();
+        }
+    
+        private void ActivatePanels()
+        {
+            if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                roomStatusText.gameObject.SetActive(false);
+                menuController.EnableGamePanels();
             }
         }
-    }
-
-    private void ActivatePanels()
-    {
-        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        
+        private void ActivateShipButtons()
         {
-            menuController.EnableGamePanels();
-        }
-    }
-    
-    private void ActivateShipButtons()
-    {
-        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
-        {
-            foreach (var btn in shipTypeBtns)
+            if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                btn.interactable = true;
+                foreach (var btn in shipTypeBtns)
+                {
+                    btn.interactable = true;
+                }
             }
         }
-    }
-    
-    private void MakeWhiteCountText()
-    {
-        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        
+        private void MakeWhiteCountText()
         {
-            foreach (var text in shipCountTexts)
+            if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                text.color = Color.white;
+                foreach (var text in shipCountTexts)
+                {
+                    text.color = Color.white;
+                }
             }
         }
     }

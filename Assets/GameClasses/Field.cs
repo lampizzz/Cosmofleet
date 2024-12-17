@@ -1,62 +1,65 @@
-using GameClasses;
 using UnityEngine;
 
-public class Field
+namespace GameClasses
 {
-
-    public CellState[,] grid; // Игровая сетка (10x10)
-    public int size = 10; // Размер сетки
-
-    public Field()
+    public class Field
     {
-        grid = new CellState[size, size];
-
-        // Инициализация поля состояниями Default
-        for (int i = 0; i < size; i++)
+    
+        public CellState[,] grid; // Игровая сетка (10x10)
+        public int size = 10; // Размер сетки
+    
+        public Field()
         {
-            for (int j = 0; j < size; j++)
+            grid = new CellState[size, size];
+    
+            // Инициализация поля состояниями Default
+            for (int i = 0; i < size; i++)
             {
-                grid[i, j] = CellState.Default;
+                for (int j = 0; j < size; j++)
+                {
+                    grid[i, j] = CellState.Default;
+                }
             }
         }
-    }
-
-    public CellState GetCellState(int x, int y)
-    {
-        return grid[x, y];
-    }
-
-    public void SetCellState(int x, int y, CellState state)
-    {
-        grid[x, y] = state;
-    }
     
-    public void SetCellStateMatrix(CellState[,] newStates)
-    {
-        grid = newStates;
-    }
+        public CellState GetCellState(int x, int y)
+        {
+            return grid[x, y];
+        }
     
-    private void PrintField(CellState[,] matrix)
-    {
-        int size = matrix.GetLength(0);
+        public void SetCellState(int x, int y, CellState state)
+        {
+            grid[x, y] = state;
+        }
         
-        for (int y = 0; y < size; y++)
+        public void SetCellStateMatrix(CellState[,] newStates)
         {
-            string row = "";
-            for (int x = 0; x < size; x++)
+            grid = newStates;
+        }
+        
+        private void PrintField(CellState[,] matrix)
+        {
+            int size = matrix.GetLength(0);
+            
+            for (int y = 0; y < size; y++)
             {
-                row += $"{(int)matrix[y, x]} "; // Преобразуем CellState в целое число для упрощения вывода
+                string row = "";
+                for (int x = 0; x < size; x++)
+                {
+                    row += $"{(int)matrix[y, x]} "; // Преобразуем CellState в целое число для упрощения вывода
+                }
+                Debug.Log(row);
             }
-            Debug.Log(row);
         }
-    }
-    
-    public bool CheckVictory()
-    {
-        foreach (var cell in grid)
+        
+        public bool CheckVictory()
         {
-            if (cell == CellState.Occupied) return false; // Если есть незатопленный корабль
+            foreach (var cell in grid)
+            {
+                if (cell == CellState.Occupied) return false; // Если есть незатопленный корабль
+            }
+            return true; // Все корабли потоплены
         }
-        return true; // Все корабли потоплены
     }
 }
+

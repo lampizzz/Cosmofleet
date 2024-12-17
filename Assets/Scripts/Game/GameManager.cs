@@ -7,7 +7,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviourPunCallbacks
+namespace Game
+{
+    public class GameManager : MonoBehaviourPunCallbacks
 {
     public BattlePlayer Player1 { get; set; }
     public BattlePlayer Player2 { get; set; }
@@ -64,6 +66,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     
     private void EndGame(int winnerIndex)
     {
+        FindObjectOfType<ShipAnalytics>().SetEmptyStatusString();
+        
         string winnerName = winnerIndex == 1 ? Player1.Name : Player2.Name;
         Debug.Log($"Player {winnerName} wins!");
 
@@ -74,25 +78,25 @@ public class GameManager : MonoBehaviourPunCallbacks
                         (!PhotonNetwork.IsMasterClient && winnerIndex == 2);
 
         int playerScore = isWinner ? Player1.Score : Player2.Score;
+        
+        // Сохраняем результаты игры
+        SaveGameStats(isWinner);
 
         if (isWinner)
         {
-            menuController.WinGame(playerScore); // Вызываем WinGame
+            menuController.WinGame(int.Parse(scoreText.text)); // Вызываем WinGame
         }
         else
         {
-            menuController.LoseGame(playerScore); // Вызываем LoseGame
+            menuController.LoseGame(int.Parse(scoreText.text)); // Вызываем LoseGame
         }
-
-        // Сохраняем результаты игры
-        SaveGameStats(isWinner);
     }
 
     private void SaveGameStats(bool isWinner)
     {
         var gameStats = new GameStats
         {
-            Score = isWinner ? Player1.Score : Player2.Score,
+            Score = int.Parse(scoreText.text),
             Time = DateTime.Now, // Используем текущее время
             RoomName = PhotonNetwork.CurrentRoom.Name,
             VictoryStatus = isWinner
@@ -123,6 +127,9 @@ public class GameManager : MonoBehaviourPunCallbacks
             PrintPlacementField(Player2);
         }
         
+        // Уведомляем ShipAnalytics об изменении статуса текста
+        FindObjectOfType<ShipAnalytics>().UpdateStatusText();
+        
         CheckBothPlayersReady();
     }
     
@@ -134,8 +141,11 @@ public class GameManager : MonoBehaviourPunCallbacks
             readyButton.gameObject.SetActive(false);
             endTurnButton.gameObject.SetActive(true);
             StartGame();
+
+            FindObjectOfType<ShipAnalytics>().UpdateStatusText(); // Убираем текст "Разместите корабли"
         }
     }
+
 
     private void OnEndTurnButtonClick()
     {
@@ -187,7 +197,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 // Обновление очков с учетом бонуса
                 attacker.HitStreak++;
                 int bonusMultiplier = attacker.HitStreak;
-                attacker.Score += 10 * bonusMultiplier; // 10 очков за попадание, умноженное на текущий бонус
+                attacker.SetScore(attacker.Score + 10 * bonusMultiplier); // 10 очков за попадание, умноженное на текущий бонус
                 UpdateScoreText();
             }
 
@@ -202,6 +212,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             if (!defender.HasShipsRemaining(defender.PlacementField, attacker.AttackField))
             {
                 Debug.Log($"Player {attackerIndex} wins!");
+                IsWaitingForRPC = false;
                 EndGame(Player1.IsTurn ? 1 : 2);
                 return;
             }
@@ -238,9 +249,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         
         IsWaitingForRPC = false;
     }
-
-
-
+    
     private void ContinueTurn()
     {
         StartTurnTimer(); // Сброс таймера для текущего игрока
@@ -258,7 +267,10 @@ public class GameManager : MonoBehaviourPunCallbacks
 
         UpdateEndTurnButtonState();
         StartTurnTimer();
+
+        FindObjectOfType<ShipAnalytics>().UpdateStatusText(); // Обновляем текст статуса
     }
+
 
     private void UpdateEndTurnButtonState()
     {
@@ -393,3 +405,5 @@ public class GameManager : MonoBehaviourPunCallbacks
         Debug.Log(output);
     }
 }
+}
+

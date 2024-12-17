@@ -41,30 +41,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="D:\Desktop\Cosmofleet\Assets\Packages\NSubstitute.Analyzers.CSharp.1.0.17\analyzers\dotnet\cs\NSubstitute.Analyzers.Shared.dll" />
+    <Analyzer Include="D:\Desktop\Cosmofleet\Assets\Packages\NSubstitute.Analyzers.CSharp.1.0.17\analyzers\dotnet\cs\NSubstitute.Analyzers.CSharp.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Game\GameMenuConroller.cs" />
     <Compile Include="Assets\Scripts\Network\ConenctLobby.cs" />
     <Compile Include="Assets\Scripts\MainMenu\Session.cs" />
     <Compile Include="Assets\Scripts\Lobby\LobbyMenuManager.cs" />
-    <Compile Include="Assets\GameClasses\CellStateEnum.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Scripts\Tools\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Network\ServerLobbyManager.cs" />
-    <Compile Include="Assets\Scripts\Game\AttackManager.cs" />
-    <Compile Include="Assets\Scripts\Game\RoomPlayerMonitor.cs" />
     <Compile Include="Assets\Scripts\Network\ServerRoomManager.cs" />
-    <Compile Include="Assets\GameClasses\XML\GameStatsCollection.cs" />
-    <Compile Include="Assets\GameClasses\CellTypeEnum.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
     <Compile Include="Assets\Scripts\Text\TransparencyText.cs" />
-    <Compile Include="Assets\Scripts\Game\BattlePlayer.cs" />
     <Compile Include="Assets\Scripts\Network\NetworkDebugger.cs" />
     <Compile Include="Assets\Scripts\Tools\BackgroundSync.cs" />
     <Compile Include="Assets\Scripts\Network\ServerController.cs" />
-    <Compile Include="Assets\Scripts\Game\GameManager.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameConroller.cs" />
     <Compile Include="Assets\Scripts\Network\RoomList.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
@@ -74,57 +68,59 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Scripts\Text\RGBText.cs" />
     <Compile Include="Assets\Scripts\Tools\MoveTextureOffset.cs" />
-    <Compile Include="Assets\GameClasses\XML\SaverLoaderXML.cs" />
     <Compile Include="Assets\Scripts\Tools\LanguageSwitcher.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
-    <Compile Include="Assets\Scripts\Game\ShipAnalytics.cs" />
-    <Compile Include="Assets\GameClasses\XML\GameStats.cs" />
     <Compile Include="Assets\Scripts\Network\PhotonSetup.cs" />
-    <Compile Include="Assets\GameClasses\Field.cs" />
-    <Compile Include="Assets\ToolClasses\Parser.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
-    <Compile Include="Assets\Scripts\Game\ShipPlacementManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SessionList.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SettingsController.cs" />
     <Compile Include="Assets\Scripts\Controllers\AudioController.cs" />
-    <Compile Include="Assets\Scripts\Game\GridManager.cs" />
     <Compile Include="Assets\Scripts\Controllers\LogCollector.cs" />
     <Compile Include="Assets\Scripts\Text\FloatingText.cs" />
     <Compile Include="Assets\Scripts\Text\BlinkText.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
-    <Compile Include="Assets\Scripts\Game\Cell.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+    <None Include="Assets\AddressableAssetsData\link.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Packages\System.Diagnostics.EventLog.4.7.0\useSharedDesignerContext.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Packages\System.Diagnostics.EventLog.4.7.0\version.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Packages\Castle.Core.5.1.1\ASL - Apache Software Foundation License.txt" />
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.deps.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
     <None Include="Assets\Photon\PhotonChat\Demos\DemoChat\Files\eurof_tt.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Packages\Castle.Core.5.1.1\lib\netstandard2.1\Castle.Core.xml" />
+    <None Include="Assets\Packages\System.Diagnostics.EventLog.4.7.0\lib\netstandard2.0\System.Diagnostics.EventLog.xml" />
+    <None Include="Assets\Packages\System.Security.Principal.Windows.4.7.0\version.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Packages\System.Security.Principal.Windows.4.7.0\useSharedDesignerContext.txt" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Packages\Castle.Core.5.1.1\readme.txt" />
+    <None Include="Assets\Packages\System.Security.Principal.Windows.4.7.0\lib\netstandard2.0\System.Security.Principal.Windows.xml" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
@@ -382,14 +378,29 @@
     <Reference Include="websocket-sharp">
       <HintPath>D:\Desktop\Cosmofleet\Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
     </Reference>
+    <Reference Include="ShipCountTextParser">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Plugins\ShipCountTextParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\Castle.Core.5.1.1\lib\netstandard2.1\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.EventLog">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\System.Diagnostics.EventLog.4.7.0\lib\netstandard2.0\System.Diagnostics.EventLog.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>D:\Desktop\Cosmofleet\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\NSubstitute.5.3.0\lib\netstandard2.0\NSubstitute.dll</HintPath>
+    </Reference>
     <Reference Include="Photon3Unity3D">
       <HintPath>D:\Desktop\Cosmofleet\Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>D:\Desktop\Cosmofleet\Assets\Packages\System.Security.Principal.Windows.4.7.0\lib\netstandard2.0\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:\Desktop\Cosmofleet\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -958,6 +969,10 @@
       <Project>{e7c0669d-db35-e4b6-5263-a3d1a1bc02e3}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="GameScripts.csproj">
+      <Project>{1680067d-7711-7b36-8209-09d95ccec218}</Project>
+      <Name>GameScripts</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
       <Project>{4d625a1e-878c-8605-a8f7-5f012272291c}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
@@ -973,6 +988,10 @@
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{a0c8ac7a-7a28-7a5c-bb6e-e390646cddb0}</Project>
       <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameClasses.csproj">
+      <Project>{14b5e6b1-85e2-7622-21df-29944715fcc9}</Project>
+      <Name>GameClasses</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{3ff384f5-8021-ac29-4e00-2c64a30f7726}</Project>

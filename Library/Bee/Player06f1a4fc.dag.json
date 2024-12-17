@@ -213,117 +213,7 @@
         205,
         206,
         207,
-        208,
-        209,
-        210,
-        211,
-        212,
-        213,
-        214,
-        215,
-        216,
-        217,
-        218,
-        219,
-        220,
-        221,
-        222,
-        223,
-        224,
-        225,
-        226,
-        227,
-        228,
-        229,
-        230,
-        231,
-        232,
-        233,
-        234,
-        235,
-        236,
-        237,
-        238,
-        239,
-        240,
-        241,
-        242,
-        243,
-        244,
-        245,
-        246,
-        247,
-        248,
-        249,
-        250,
-        251,
-        252,
-        253,
-        254,
-        255,
-        256,
-        257,
-        258,
-        259,
-        260,
-        261,
-        262,
-        263,
-        264,
-        265,
-        266,
-        267,
-        268,
-        269,
-        270,
-        271,
-        272,
-        273,
-        274,
-        275,
-        276,
-        277,
-        278,
-        279,
-        280,
-        281,
-        282,
-        283,
-        284,
-        285,
-        286,
-        287,
-        288,
-        289,
-        290,
-        291,
-        292,
-        293,
-        294,
-        295,
-        296,
-        297,
-        298,
-        299,
-        300,
-        301,
-        302,
-        303,
-        304,
-        305,
-        306,
-        307,
-        308,
-        309,
-        310,
-        311,
-        312,
-        313,
-        314,
-        315,
-        316,
-        317,
-        318
+        208
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -537,7 +427,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 19890,
+      "PayloadLength": 20698,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -640,6 +530,7 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp-firstpass.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
+        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/GameScripts.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VectorGraphics.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.ResourceManager.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.Internal.dll",
@@ -652,6 +543,7 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Scheduler.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Configuration.dll",
+        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/GameClasses.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
@@ -685,12 +577,18 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Addressables.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
         "D:/Desktop/Cosmofleet/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll",
+        "D:/Desktop/Cosmofleet/Assets/Plugins/ShipCountTextParser.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/Castle.Core.5.1.1/lib/netstandard2.1/Castle.Core.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/System.Diagnostics.EventLog.4.7.0/lib/netstandard2.0/System.Diagnostics.EventLog.dll",
         "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/NSubstitute.5.3.0/lib/netstandard2.0/NSubstitute.dll",
         "D:/Desktop/Cosmofleet/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/System.Security.Principal.Windows.4.7.0/lib/netstandard2.0/System.Security.Principal.Windows.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Threading.Tasks.Extensions.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ComponentModel.Composition.dll",
@@ -1724,6 +1622,18 @@
       "DebugActionIndex": 99
     },
     {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/GameScripts.dll",
+      "DisplayName": "Copying GameScripts.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/GameScripts.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/GameScripts.dll"
+      ],
+      "DebugActionIndex": 100
+    },
+    {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VectorGraphics.dll",
       "DisplayName": "Copying Unity.VectorGraphics.dll",
       "ActionType": "CopyFiles",
@@ -1733,7 +1643,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VectorGraphics.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ResourceManager.dll",
@@ -1745,7 +1655,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ResourceManager.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.Internal.dll",
@@ -1757,7 +1667,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.Internal.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ScriptableBuildPipeline.dll",
@@ -1769,7 +1679,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ScriptableBuildPipeline.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.dll",
@@ -1781,7 +1691,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.013.dll",
@@ -1793,7 +1703,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.013.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -1805,7 +1715,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Flow.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonChat.dll",
@@ -1817,7 +1727,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonChat.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Networking.dll",
@@ -1829,7 +1739,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Networking.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Scheduler.dll",
@@ -1841,7 +1751,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Scheduler.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.dll",
@@ -1853,7 +1763,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Configuration.dll",
@@ -1865,7 +1775,19 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Configuration.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 112
+    },
+    {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/GameClasses.dll",
+      "DisplayName": "Copying GameClasses.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/GameClasses.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/GameClasses.dll"
+      ],
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.dll",
@@ -1877,7 +1799,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Collections.dll",
@@ -1889,7 +1811,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Collections.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.SpriteShape.Runtime.dll",
@@ -1901,7 +1823,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.SpriteShape.Runtime.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.PixelPerfect.dll",
@@ -1913,7 +1835,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.PixelPerfect.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Demos.dll",
@@ -1925,7 +1847,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Demos.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Utilities.dll",
@@ -1937,7 +1859,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Utilities.dll"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.TextMeshPro.dll",
@@ -1949,7 +1871,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Analytics.dll",
@@ -1961,7 +1883,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Analytics.dll"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Burst.dll",
@@ -1973,7 +1895,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Burst.dll"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Internal.dll",
@@ -1985,7 +1907,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Internal.dll"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Device.dll",
@@ -1997,7 +1919,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Device.dll"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Localization.dll",
@@ -2009,7 +1931,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Localization.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Threading.dll",
@@ -2021,7 +1943,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Threading.dll"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -2033,7 +1955,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Animation.Runtime.dll",
@@ -2045,7 +1967,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Animation.Runtime.dll"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Tilemap.Extras.dll",
@@ -2057,7 +1979,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Tilemap.Extras.dll"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UI.dll",
@@ -2069,7 +1991,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UI.dll"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Telemetry.dll",
@@ -2081,7 +2003,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Telemetry.dll"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.001.dll",
@@ -2093,7 +2015,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.001.dll"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonRealtime.dll",
@@ -2105,7 +2027,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonRealtime.dll"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Common.Runtime.dll",
@@ -2117,7 +2039,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Common.Runtime.dll"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Timeline.dll",
@@ -2129,7 +2051,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Timeline.dll"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.003.dll",
@@ -2141,7 +2063,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.003.dll"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.dll",
@@ -2153,7 +2075,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.dll"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.PlayerAccounts.dll",
@@ -2165,7 +2087,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.PlayerAccounts.dll"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Mathematics.dll",
@@ -2177,7 +2099,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Mathematics.dll"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Registration.dll",
@@ -2189,7 +2111,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Registration.dll"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.State.dll",
@@ -2201,7 +2123,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.State.dll"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Cinemachine.dll",
@@ -2213,7 +2135,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Cinemachine.dll"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.CloudSave.dll",
@@ -2225,7 +2147,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.CloudSave.dll"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Addressables.dll",
@@ -2237,7 +2159,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Addressables.dll"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
@@ -2249,7 +2171,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/websocket-sharp.dll",
@@ -2261,7 +2183,43 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/websocket-sharp.dll"
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 146
+    },
+    {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/ShipCountTextParser.dll",
+      "DisplayName": "Copying ShipCountTextParser.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Assets/Plugins/ShipCountTextParser.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/ShipCountTextParser.dll"
+      ],
+      "DebugActionIndex": 147
+    },
+    {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Castle.Core.dll",
+      "DisplayName": "Copying Castle.Core.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Assets/Packages/Castle.Core.5.1.1/lib/netstandard2.1/Castle.Core.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Castle.Core.dll"
+      ],
+      "DebugActionIndex": 148
+    },
+    {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Diagnostics.EventLog.dll",
+      "DisplayName": "Copying System.Diagnostics.EventLog.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Assets/Packages/System.Diagnostics.EventLog.4.7.0/lib/netstandard2.0/System.Diagnostics.EventLog.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Diagnostics.EventLog.dll"
+      ],
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/DOTween.dll",
@@ -2273,7 +2231,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/DOTween.dll"
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -2285,7 +2243,19 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 151
+    },
+    {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/NSubstitute.dll",
+      "DisplayName": "Copying NSubstitute.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Assets/Packages/NSubstitute.5.3.0/lib/netstandard2.0/NSubstitute.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/NSubstitute.dll"
+      ],
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Photon3Unity3D.dll",
@@ -2297,7 +2267,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Photon3Unity3D.dll"
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Burst.Unsafe.dll",
@@ -2309,7 +2279,19 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Burst.Unsafe.dll"
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 154
+    },
+    {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Security.Principal.Windows.dll",
+      "DisplayName": "Copying System.Security.Principal.Windows.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Desktop/Cosmofleet/Assets/Packages/System.Security.Principal.Windows.4.7.0/lib/netstandard2.0/System.Security.Principal.Windows.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Security.Principal.Windows.dll"
+      ],
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Newtonsoft.Json.dll",
@@ -2321,7 +2303,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Newtonsoft.Json.dll"
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Runtime.dll",
@@ -2333,7 +2315,19 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Runtime.dll"
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 157
+    },
+    {
+      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Threading.Tasks.Extensions.dll",
+      "DisplayName": "Copying System.Threading.Tasks.Extensions.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Threading.Tasks.Extensions.dll"
+      ],
+      "Outputs": [
+        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Threading.Tasks.Extensions.dll"
+      ],
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/netstandard.dll",
@@ -2345,7 +2339,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Mono.Security.dll",
@@ -2357,7 +2351,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.ComponentModel.Composition.dll",
@@ -2369,7 +2363,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Configuration.dll",
@@ -2381,7 +2375,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Core.dll",
@@ -2393,7 +2387,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -2405,7 +2399,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Data.dll",
@@ -2417,7 +2411,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Drawing.dll",
@@ -2429,7 +2423,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.EnterpriseServices.dll",
@@ -2441,7 +2435,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -2453,7 +2447,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.IO.Compression.dll",
@@ -2465,7 +2459,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Net.Http.dll",
@@ -2477,7 +2471,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Numerics.dll",
@@ -2489,7 +2483,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Runtime.Serialization.dll",
@@ -2501,7 +2495,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Security.dll",
@@ -2513,7 +2507,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.ServiceModel.Internals.dll",
@@ -2525,7 +2519,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Transactions.dll",
@@ -2537,7 +2531,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Xml.Linq.dll",
@@ -2549,7 +2543,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Xml.dll",
@@ -2561,7 +2555,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 177
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.dll",
@@ -2573,7 +2567,7 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/mscorlib.dll",
@@ -2585,1406 +2579,14 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 171
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AIModule.pdb",
-      "DisplayName": "Copying UnityEngine.AIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AIModule.pdb"
-      ],
-      "DebugActionIndex": 172
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ARModule.pdb",
-      "DisplayName": "Copying UnityEngine.ARModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ARModule.pdb"
-      ],
-      "DebugActionIndex": 173
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AccessibilityModule.pdb",
-      "DisplayName": "Copying UnityEngine.AccessibilityModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AccessibilityModule.pdb"
-      ],
-      "DebugActionIndex": 174
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AndroidJNIModule.pdb",
-      "DisplayName": "Copying UnityEngine.AndroidJNIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AndroidJNIModule.pdb"
-      ],
-      "DebugActionIndex": 175
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AnimationModule.pdb",
-      "DisplayName": "Copying UnityEngine.AnimationModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AnimationModule.pdb"
-      ],
-      "DebugActionIndex": 176
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AssetBundleModule.pdb",
-      "DisplayName": "Copying UnityEngine.AssetBundleModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AssetBundleModule.pdb"
-      ],
-      "DebugActionIndex": 177
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AudioModule.pdb",
-      "DisplayName": "Copying UnityEngine.AudioModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.AudioModule.pdb"
-      ],
-      "DebugActionIndex": 178
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ClothModule.pdb",
-      "DisplayName": "Copying UnityEngine.ClothModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ClothModule.pdb"
-      ],
       "DebugActionIndex": 179
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ClusterInputModule.pdb",
-      "DisplayName": "Copying UnityEngine.ClusterInputModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ClusterInputModule.pdb"
-      ],
-      "DebugActionIndex": 180
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ClusterRendererModule.pdb",
-      "DisplayName": "Copying UnityEngine.ClusterRendererModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ClusterRendererModule.pdb"
-      ],
-      "DebugActionIndex": 181
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ContentLoadModule.pdb",
-      "DisplayName": "Copying UnityEngine.ContentLoadModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ContentLoadModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ContentLoadModule.pdb"
-      ],
-      "DebugActionIndex": 182
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.CoreModule.pdb",
-      "DisplayName": "Copying UnityEngine.CoreModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.CoreModule.pdb"
-      ],
-      "DebugActionIndex": 183
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.CrashReportingModule.pdb",
-      "DisplayName": "Copying UnityEngine.CrashReportingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.CrashReportingModule.pdb"
-      ],
-      "DebugActionIndex": 184
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.DSPGraphModule.pdb",
-      "DisplayName": "Copying UnityEngine.DSPGraphModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.DSPGraphModule.pdb"
-      ],
-      "DebugActionIndex": 185
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.DirectorModule.pdb",
-      "DisplayName": "Copying UnityEngine.DirectorModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.DirectorModule.pdb"
-      ],
-      "DebugActionIndex": 186
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.GIModule.pdb",
-      "DisplayName": "Copying UnityEngine.GIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GIModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.GIModule.pdb"
-      ],
-      "DebugActionIndex": 187
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.GameCenterModule.pdb",
-      "DisplayName": "Copying UnityEngine.GameCenterModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.GameCenterModule.pdb"
-      ],
-      "DebugActionIndex": 188
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.GridModule.pdb",
-      "DisplayName": "Copying UnityEngine.GridModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.GridModule.pdb"
-      ],
-      "DebugActionIndex": 189
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.HotReloadModule.pdb",
-      "DisplayName": "Copying UnityEngine.HotReloadModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.HotReloadModule.pdb"
-      ],
-      "DebugActionIndex": 190
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.IMGUIModule.pdb",
-      "DisplayName": "Copying UnityEngine.IMGUIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.IMGUIModule.pdb"
-      ],
-      "DebugActionIndex": 191
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ImageConversionModule.pdb",
-      "DisplayName": "Copying UnityEngine.ImageConversionModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ImageConversionModule.pdb"
-      ],
-      "DebugActionIndex": 192
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.InputLegacyModule.pdb",
-      "DisplayName": "Copying UnityEngine.InputLegacyModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.InputLegacyModule.pdb"
-      ],
-      "DebugActionIndex": 193
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.InputModule.pdb",
-      "DisplayName": "Copying UnityEngine.InputModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.InputModule.pdb"
-      ],
-      "DebugActionIndex": 194
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.JSONSerializeModule.pdb",
-      "DisplayName": "Copying UnityEngine.JSONSerializeModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.JSONSerializeModule.pdb"
-      ],
-      "DebugActionIndex": 195
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.LocalizationModule.pdb",
-      "DisplayName": "Copying UnityEngine.LocalizationModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.LocalizationModule.pdb"
-      ],
-      "DebugActionIndex": 196
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.NVIDIAModule.pdb",
-      "DisplayName": "Copying UnityEngine.NVIDIAModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.NVIDIAModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.NVIDIAModule.pdb"
-      ],
-      "DebugActionIndex": 197
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ParticleSystemModule.pdb",
-      "DisplayName": "Copying UnityEngine.ParticleSystemModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ParticleSystemModule.pdb"
-      ],
-      "DebugActionIndex": 198
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.PerformanceReportingModule.pdb",
-      "DisplayName": "Copying UnityEngine.PerformanceReportingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.PerformanceReportingModule.pdb"
-      ],
-      "DebugActionIndex": 199
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.Physics2DModule.pdb",
-      "DisplayName": "Copying UnityEngine.Physics2DModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.Physics2DModule.pdb"
-      ],
-      "DebugActionIndex": 200
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.PhysicsModule.pdb",
-      "DisplayName": "Copying UnityEngine.PhysicsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.PhysicsModule.pdb"
-      ],
-      "DebugActionIndex": 201
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ProfilerModule.pdb",
-      "DisplayName": "Copying UnityEngine.ProfilerModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ProfilerModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ProfilerModule.pdb"
-      ],
-      "DebugActionIndex": 202
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.PropertiesModule.pdb",
-      "DisplayName": "Copying UnityEngine.PropertiesModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PropertiesModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.PropertiesModule.pdb"
-      ],
-      "DebugActionIndex": 203
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb",
-      "DisplayName": "Copying UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
-      ],
-      "DebugActionIndex": 204
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ScreenCaptureModule.pdb",
-      "DisplayName": "Copying UnityEngine.ScreenCaptureModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.ScreenCaptureModule.pdb"
-      ],
-      "DebugActionIndex": 205
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SharedInternalsModule.pdb",
-      "DisplayName": "Copying UnityEngine.SharedInternalsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SharedInternalsModule.pdb"
-      ],
-      "DebugActionIndex": 206
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SpriteMaskModule.pdb",
-      "DisplayName": "Copying UnityEngine.SpriteMaskModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SpriteMaskModule.pdb"
-      ],
-      "DebugActionIndex": 207
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SpriteShapeModule.pdb",
-      "DisplayName": "Copying UnityEngine.SpriteShapeModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SpriteShapeModule.pdb"
-      ],
-      "DebugActionIndex": 208
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.StreamingModule.pdb",
-      "DisplayName": "Copying UnityEngine.StreamingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.StreamingModule.pdb"
-      ],
-      "DebugActionIndex": 209
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SubstanceModule.pdb",
-      "DisplayName": "Copying UnityEngine.SubstanceModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SubstanceModule.pdb"
-      ],
-      "DebugActionIndex": 210
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SubsystemsModule.pdb",
-      "DisplayName": "Copying UnityEngine.SubsystemsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.SubsystemsModule.pdb"
-      ],
-      "DebugActionIndex": 211
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TLSModule.pdb",
-      "DisplayName": "Copying UnityEngine.TLSModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TLSModule.pdb"
-      ],
-      "DebugActionIndex": 212
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TerrainModule.pdb",
-      "DisplayName": "Copying UnityEngine.TerrainModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TerrainModule.pdb"
-      ],
-      "DebugActionIndex": 213
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb",
-      "DisplayName": "Copying UnityEngine.TerrainPhysicsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb"
-      ],
-      "DebugActionIndex": 214
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
-      "DisplayName": "Copying UnityEngine.TextCoreFontEngineModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
-      ],
-      "DebugActionIndex": 215
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
-      "DisplayName": "Copying UnityEngine.TextCoreTextEngineModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
-      ],
-      "DebugActionIndex": 216
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TextRenderingModule.pdb",
-      "DisplayName": "Copying UnityEngine.TextRenderingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TextRenderingModule.pdb"
-      ],
-      "DebugActionIndex": 217
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TilemapModule.pdb",
-      "DisplayName": "Copying UnityEngine.TilemapModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.TilemapModule.pdb"
-      ],
-      "DebugActionIndex": 218
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UIElementsModule.pdb",
-      "DisplayName": "Copying UnityEngine.UIElementsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UIElementsModule.pdb"
-      ],
-      "DebugActionIndex": 219
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UIModule.pdb",
-      "DisplayName": "Copying UnityEngine.UIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UIModule.pdb"
-      ],
-      "DebugActionIndex": 220
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UmbraModule.pdb",
-      "DisplayName": "Copying UnityEngine.UmbraModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UmbraModule.pdb"
-      ],
-      "DebugActionIndex": 221
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityAnalyticsCommonModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
-      ],
-      "DebugActionIndex": 222
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityAnalyticsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb"
-      ],
-      "DebugActionIndex": 223
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityConnectModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityConnectModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityConnectModule.pdb"
-      ],
-      "DebugActionIndex": 224
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityCurlModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityCurlModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityCurlModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityCurlModule.pdb"
-      ],
-      "DebugActionIndex": 225
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityTestProtocolModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb"
-      ],
-      "DebugActionIndex": 226
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityWebRequestAssetBundleModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
-      ],
-      "DebugActionIndex": 227
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityWebRequestAudioModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
-      ],
-      "DebugActionIndex": 228
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityWebRequestModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestModule.pdb"
-      ],
-      "DebugActionIndex": 229
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityWebRequestTextureModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
-      ],
-      "DebugActionIndex": 230
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb",
-      "DisplayName": "Copying UnityEngine.UnityWebRequestWWWModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
-      ],
-      "DebugActionIndex": 231
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VFXModule.pdb",
-      "DisplayName": "Copying UnityEngine.VFXModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VFXModule.pdb"
-      ],
-      "DebugActionIndex": 232
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VRModule.pdb",
-      "DisplayName": "Copying UnityEngine.VRModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VRModule.pdb"
-      ],
-      "DebugActionIndex": 233
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VehiclesModule.pdb",
-      "DisplayName": "Copying UnityEngine.VehiclesModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VehiclesModule.pdb"
-      ],
-      "DebugActionIndex": 234
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VideoModule.pdb",
-      "DisplayName": "Copying UnityEngine.VideoModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VideoModule.pdb"
-      ],
-      "DebugActionIndex": 235
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VirtualTexturingModule.pdb",
-      "DisplayName": "Copying UnityEngine.VirtualTexturingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VirtualTexturingModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.VirtualTexturingModule.pdb"
-      ],
-      "DebugActionIndex": 236
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.WindModule.pdb",
-      "DisplayName": "Copying UnityEngine.WindModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.WindModule.pdb"
-      ],
-      "DebugActionIndex": 237
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.XRModule.pdb",
-      "DisplayName": "Copying UnityEngine.XRModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.XRModule.pdb"
-      ],
-      "DebugActionIndex": 238
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.pdb",
-      "DisplayName": "Copying UnityEngine.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.pdb"
-      ],
-      "DebugActionIndex": 239
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Assembly-CSharp-firstpass.pdb",
-      "DisplayName": "Copying Assembly-CSharp-firstpass.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp-firstpass.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Assembly-CSharp-firstpass.pdb"
-      ],
-      "DebugActionIndex": 240
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Assembly-CSharp.pdb",
-      "DisplayName": "Copying Assembly-CSharp.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Assembly-CSharp.pdb"
-      ],
-      "DebugActionIndex": 241
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.IK.Runtime.pdb",
-      "DisplayName": "Copying Unity.2D.IK.Runtime.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.IK.Runtime.pdb"
-      ],
-      "DebugActionIndex": 242
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VectorGraphics.pdb",
-      "DisplayName": "Copying Unity.VectorGraphics.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VectorGraphics.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VectorGraphics.pdb"
-      ],
-      "DebugActionIndex": 243
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ResourceManager.pdb",
-      "DisplayName": "Copying Unity.ResourceManager.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.ResourceManager.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ResourceManager.pdb"
-      ],
-      "DebugActionIndex": 244
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.Internal.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Environments.Internal.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.Internal.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
-      ],
-      "DebugActionIndex": 245
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ScriptableBuildPipeline.pdb",
-      "DisplayName": "Copying Unity.ScriptableBuildPipeline.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.ScriptableBuildPipeline.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.ScriptableBuildPipeline.pdb"
-      ],
-      "DebugActionIndex": 246
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.pdb",
-      "DisplayName": "Copying Unity.Services.Core.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.pdb"
-      ],
-      "DebugActionIndex": 247
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.013.pdb",
-      "DisplayName": "Copying Unity.InternalAPIEngineBridge.013.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.013.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.013.pdb"
-      ],
-      "DebugActionIndex": 248
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Flow.pdb",
-      "DisplayName": "Copying Unity.VisualScripting.Flow.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Flow.pdb"
-      ],
-      "DebugActionIndex": 249
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonChat.pdb",
-      "DisplayName": "Copying PhotonChat.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonChat.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonChat.pdb"
-      ],
-      "DebugActionIndex": 250
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Networking.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Networking.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Networking.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Networking.pdb"
-      ],
-      "DebugActionIndex": 251
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Scheduler.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Scheduler.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Scheduler.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Scheduler.pdb"
-      ],
-      "DebugActionIndex": 252
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Environments.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Environments.pdb"
-      ],
-      "DebugActionIndex": 253
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Configuration.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Configuration.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Configuration.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Configuration.pdb"
-      ],
-      "DebugActionIndex": 254
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.pdb",
-      "DisplayName": "Copying PhotonUnityNetworking.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.pdb"
-      ],
-      "DebugActionIndex": 255
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Collections.pdb",
-      "DisplayName": "Copying Unity.Collections.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Collections.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Collections.pdb"
-      ],
-      "DebugActionIndex": 256
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb",
-      "DisplayName": "Copying Unity.2D.SpriteShape.Runtime.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.SpriteShape.Runtime.pdb"
-      ],
-      "DebugActionIndex": 257
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.PixelPerfect.pdb",
-      "DisplayName": "Copying Unity.2D.PixelPerfect.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.PixelPerfect.pdb"
-      ],
-      "DebugActionIndex": 258
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Demos.pdb",
-      "DisplayName": "Copying PhotonUnityNetworking.Demos.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Demos.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Demos.pdb"
-      ],
-      "DebugActionIndex": 259
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Utilities.pdb",
-      "DisplayName": "Copying PhotonUnityNetworking.Utilities.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Utilities.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonUnityNetworking.Utilities.pdb"
-      ],
-      "DebugActionIndex": 260
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.TextMeshPro.pdb",
-      "DisplayName": "Copying Unity.TextMeshPro.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.TextMeshPro.pdb"
-      ],
-      "DebugActionIndex": 261
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Analytics.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Analytics.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Analytics.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Analytics.pdb"
-      ],
-      "DebugActionIndex": 262
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Burst.pdb",
-      "DisplayName": "Copying Unity.Burst.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Burst.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Burst.pdb"
-      ],
-      "DebugActionIndex": 263
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Internal.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Internal.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Internal.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Internal.pdb"
-      ],
-      "DebugActionIndex": 264
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Device.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Device.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Device.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Device.pdb"
-      ],
-      "DebugActionIndex": 265
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Localization.pdb",
-      "DisplayName": "Copying Unity.Localization.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Localization.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Localization.pdb"
-      ],
-      "DebugActionIndex": 266
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Threading.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Threading.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Threading.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Threading.pdb"
-      ],
-      "DebugActionIndex": 267
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Core.pdb",
-      "DisplayName": "Copying Unity.VisualScripting.Core.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.Core.pdb"
-      ],
-      "DebugActionIndex": 268
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Animation.Runtime.pdb",
-      "DisplayName": "Copying Unity.2D.Animation.Runtime.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Animation.Runtime.pdb"
-      ],
-      "DebugActionIndex": 269
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Tilemap.Extras.pdb",
-      "DisplayName": "Copying Unity.2D.Tilemap.Extras.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Tilemap.Extras.pdb"
-      ],
-      "DebugActionIndex": 270
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UI.pdb",
-      "DisplayName": "Copying UnityEngine.UI.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/UnityEngine.UI.pdb"
-      ],
-      "DebugActionIndex": 271
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Telemetry.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Telemetry.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Telemetry.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Telemetry.pdb"
-      ],
-      "DebugActionIndex": 272
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb",
-      "DisplayName": "Copying Unity.InternalAPIEngineBridge.001.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.001.pdb"
-      ],
-      "DebugActionIndex": 273
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonRealtime.pdb",
-      "DisplayName": "Copying PhotonRealtime.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonRealtime.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/PhotonRealtime.pdb"
-      ],
-      "DebugActionIndex": 274
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Common.Runtime.pdb",
-      "DisplayName": "Copying Unity.2D.Common.Runtime.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.2D.Common.Runtime.pdb"
-      ],
-      "DebugActionIndex": 275
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Timeline.pdb",
-      "DisplayName": "Copying Unity.Timeline.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Timeline.pdb"
-      ],
-      "DebugActionIndex": 276
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.003.pdb",
-      "DisplayName": "Copying Unity.InternalAPIEngineBridge.003.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.003.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.InternalAPIEngineBridge.003.pdb"
-      ],
-      "DebugActionIndex": 277
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.pdb",
-      "DisplayName": "Copying Unity.Services.Authentication.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Authentication.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.pdb"
-      ],
-      "DebugActionIndex": 278
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.PlayerAccounts.pdb",
-      "DisplayName": "Copying Unity.Services.Authentication.PlayerAccounts.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Authentication.PlayerAccounts.pdb"
-      ],
-      "DebugActionIndex": 279
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Mathematics.pdb",
-      "DisplayName": "Copying Unity.Mathematics.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Mathematics.pdb"
-      ],
-      "DebugActionIndex": 280
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Registration.pdb",
-      "DisplayName": "Copying Unity.Services.Core.Registration.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Registration.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.Core.Registration.pdb"
-      ],
-      "DebugActionIndex": 281
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.State.pdb",
-      "DisplayName": "Copying Unity.VisualScripting.State.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.VisualScripting.State.pdb"
-      ],
-      "DebugActionIndex": 282
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Cinemachine.pdb",
-      "DisplayName": "Copying Cinemachine.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Cinemachine.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Cinemachine.pdb"
-      ],
-      "DebugActionIndex": 283
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.CloudSave.pdb",
-      "DisplayName": "Copying Unity.Services.CloudSave.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.CloudSave.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Services.CloudSave.pdb"
-      ],
-      "DebugActionIndex": 284
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Addressables.pdb",
-      "DisplayName": "Copying Unity.Addressables.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Addressables.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Unity.Addressables.pdb"
-      ],
-      "DebugActionIndex": 285
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Photon3Unity3D.pdb",
-      "DisplayName": "Copying Photon3Unity3D.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Photon3Unity3D.pdb"
-      ],
-      "DebugActionIndex": 286
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Newtonsoft.Json.pdb",
-      "DisplayName": "Copying Newtonsoft.Json.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Managed/Newtonsoft.Json.pdb"
-      ],
-      "DebugActionIndex": 287
     },
     {
       "Annotation": "GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker",
       "DisplayName": "Running Burst Compiler",
       "ActionType": "RunRPCCommand",
-      "PayloadOffset": 20096,
-      "PayloadLength": 18613,
+      "PayloadOffset": 20904,
+      "PayloadLength": 19421,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Da",
       "Action": "GenerateNativePluginsForAssemblies",
       "Inputs": [
@@ -4059,6 +2661,7 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp-firstpass.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
+        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/GameScripts.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VectorGraphics.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.ResourceManager.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.Internal.dll",
@@ -4071,6 +2674,7 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Scheduler.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Configuration.dll",
+        "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/GameClasses.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
@@ -4104,12 +2708,18 @@
         "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Addressables.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
         "D:/Desktop/Cosmofleet/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll",
+        "D:/Desktop/Cosmofleet/Assets/Plugins/ShipCountTextParser.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/Castle.Core.5.1.1/lib/netstandard2.1/Castle.Core.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/System.Diagnostics.EventLog.4.7.0/lib/netstandard2.0/System.Diagnostics.EventLog.dll",
         "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/NSubstitute.5.3.0/lib/netstandard2.0/NSubstitute.dll",
         "D:/Desktop/Cosmofleet/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
+        "D:/Desktop/Cosmofleet/Assets/Packages/System.Security.Principal.Windows.4.7.0/lib/netstandard2.0/System.Security.Principal.Windows.dll",
         "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Threading.Tasks.Extensions.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ComponentModel.Composition.dll",
@@ -4165,7 +2775,7 @@
           "Recurse": 1
         }
       ],
-      "DebugActionIndex": 288
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Plugins/x86_64/lib_burst_generated.dll",
@@ -4178,37 +2788,22 @@
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Plugins/x86_64/lib_burst_generated.dll"
       ],
       "ToBuildDependencies": [
-        288
+        180
       ],
-      "DebugActionIndex": 289
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Plugins/x86_64/lib_burst_generated.pdb",
-      "DisplayName": "Copying lib_burst_generated.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/x86_64/lib_burst_generated.pdb"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Plugins/x86_64/lib_burst_generated.pdb"
-      ],
-      "ToBuildDependencies": [
-        288
-      ],
-      "DebugActionIndex": 290
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 38798,
+      "PayloadOffset": 40414,
       "PayloadLength": 25,
       "PayloadDebugContentSnippet": "DefaultCompany\nCosmofleet",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 291
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/app.info",
@@ -4221,21 +2816,21 @@
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/app.info"
       ],
       "ToBuildDependencies": [
-        291
+        182
       ],
-      "DebugActionIndex": 292
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Resources/unity default resources",
       "DisplayName": "Copying unity default resources",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources/unity default resources"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources/unity default resources"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 293
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/Cosmofleet.exe",
@@ -4247,283 +2842,271 @@
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/Cosmofleet.exe"
       ],
-      "DebugActionIndex": 294
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
       "DisplayName": "Copying mono-2.0-bdwgc.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 295
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
       "DisplayName": "Copying MonoPosixHelper.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 296
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
       "DisplayName": "Copying Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 297
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
       "DisplayName": "Copying DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 298
+      "DebugActionIndex": 189
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/machine.config",
       "DisplayName": "Copying machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/machine.config"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 299
+      "DebugActionIndex": 190
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/settings.map",
       "DisplayName": "Copying settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/settings.map"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 300
+      "DebugActionIndex": 191
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/web.config",
       "DisplayName": "Copying web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/web.config"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 301
+      "DebugActionIndex": 192
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
       "DisplayName": "Copying Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 302
+      "DebugActionIndex": 193
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
       "DisplayName": "Copying DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 303
+      "DebugActionIndex": 194
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/machine.config",
       "DisplayName": "Copying machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/machine.config"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 304
+      "DebugActionIndex": 195
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/settings.map",
       "DisplayName": "Copying settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/settings.map"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 305
+      "DebugActionIndex": 196
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/web.config",
       "DisplayName": "Copying web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/web.config"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 306
+      "DebugActionIndex": 197
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
       "DisplayName": "Copying Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 307
+      "DebugActionIndex": 198
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
       "DisplayName": "Copying DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 308
+      "DebugActionIndex": 199
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/machine.config",
       "DisplayName": "Copying machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/machine.config"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 309
+      "DebugActionIndex": 200
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/settings.map",
       "DisplayName": "Copying settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/settings.map"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 310
+      "DebugActionIndex": 201
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/web.config",
       "DisplayName": "Copying web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/web.config"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 311
+      "DebugActionIndex": 202
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/browscap.ini",
       "DisplayName": "Copying browscap.ini",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/browscap.ini"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 312
+      "DebugActionIndex": 203
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/config",
       "DisplayName": "Copying config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/config"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/config"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 313
+      "DebugActionIndex": 204
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml",
       "DisplayName": "Copying config.xml",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/mconfig/config.xml"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 314
+      "DebugActionIndex": 205
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/UnityCrashHandler64.exe",
       "DisplayName": "Copying UnityCrashHandler64.exe",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/UnityCrashHandler64.exe"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/UnityCrashHandler64.exe"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 315
+      "DebugActionIndex": 206
     },
     {
       "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/UnityPlayer.dll",
       "DisplayName": "Copying UnityPlayer.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/UnityPlayer.dll"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/UnityPlayer.dll"
       ],
       "Outputs": [
         "D:/Desktop/Cosmofleetr/Build/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 316
-    },
-    {
-      "Annotation": "CopyFiles D:/Desktop/Cosmofleetr/Build/WinPixEventRuntime.dll",
-      "DisplayName": "Copying WinPixEventRuntime.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/WinPixEventRuntime.dll"
-      ],
-      "Outputs": [
-        "D:/Desktop/Cosmofleetr/Build/WinPixEventRuntime.dll"
-      ],
-      "DebugActionIndex": 317
+      "DebugActionIndex": 207
     },
     {
       "Annotation": "Player",
@@ -4708,9 +3291,7 @@
         177,
         178,
         179,
-        180,
         181,
-        182,
         183,
         184,
         185,
@@ -4735,118 +3316,10 @@
         204,
         205,
         206,
-        207,
-        208,
-        209,
-        210,
-        211,
-        212,
-        213,
-        214,
-        215,
-        216,
-        217,
-        218,
-        219,
-        220,
-        221,
-        222,
-        223,
-        224,
-        225,
-        226,
-        227,
-        228,
-        229,
-        230,
-        231,
-        232,
-        233,
-        234,
-        235,
-        236,
-        237,
-        238,
-        239,
-        240,
-        241,
-        242,
-        243,
-        244,
-        245,
-        246,
-        247,
-        248,
-        249,
-        250,
-        251,
-        252,
-        253,
-        254,
-        255,
-        256,
-        257,
-        258,
-        259,
-        260,
-        261,
-        262,
-        263,
-        264,
-        265,
-        266,
-        267,
-        268,
-        269,
-        270,
-        271,
-        272,
-        273,
-        274,
-        275,
-        276,
-        277,
-        278,
-        279,
-        280,
-        281,
-        282,
-        283,
-        284,
-        285,
-        286,
-        287,
-        289,
-        290,
-        292,
-        293,
-        294,
-        295,
-        296,
-        297,
-        298,
-        299,
-        300,
-        301,
-        302,
-        303,
-        304,
-        305,
-        306,
-        307,
-        308,
-        309,
-        310,
-        311,
-        312,
-        313,
-        314,
-        315,
-        316,
-        317
+        207
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 318
+      "DebugActionIndex": 208
     }
   ],
   "FileSignatures": [
@@ -4967,442 +3440,13 @@
   ],
   "StatSignatures": [
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/mscorlib.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ComponentModel.Composition.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Configuration.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Core.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Data.DataSetExtensions.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Data.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Drawing.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.EnterpriseServices.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.IO.Compression.FileSystem.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.IO.Compression.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Net.Http.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Numerics.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Runtime.Serialization.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Security.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ServiceModel.Internals.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Transactions.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Xml.Linq.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.Xml.pdb"
-    },
-    {
       "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.pdb"
+      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ContentLoadModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GIModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.NVIDIAModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ProfilerModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PropertiesModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityCurlModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VirtualTexturingModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.pdb"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono"
-    },
-    {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Assets/Plugins/Demigiant/DOTween/DOTween.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp-firstpass.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Cinemachine.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonChat.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonRealtime.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Demos.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/PhotonUnityNetworking.Utilities.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Addressables.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Burst.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Collections.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.003.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.013.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Localization.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.ResourceManager.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.ScriptableBuildPipeline.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Authentication.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Authentication.PlayerAccounts.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.CloudSave.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Analytics.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Configuration.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Device.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.Internal.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Environments.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Internal.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Networking.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Registration.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Scheduler.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Telemetry.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Threading.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VectorGraphics.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.pdb"
-    },
-    {
-      "File": "D:/Desktop/Cosmofleet/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.pdb"
+      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources"
     },
     {
       "File": "D:/Desktop/Cosmofleetr/Build/Cosmofleet.sln"
@@ -5426,11 +3470,11 @@
       "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport"
     },
     {
-      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono",
+      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono",
       "Recurse": 1
     },
     {
-      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources",
+      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources",
       "Recurse": 1
     },
     {
@@ -5480,7 +3524,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 318
+          "Player": 208
         }
 ,  "DefaultNodes": [
     0

@@ -124,10 +124,17 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
+-r:"Assets/NuGet/Editor/NugetForUnity.dll"
+-r:"Assets/NuGet/Editor/NuGetForUnity.PluginAPI.dll"
+-r:"Assets/Packages/Castle.Core.5.1.1/lib/netstandard2.1/Castle.Core.dll"
+-r:"Assets/Packages/NSubstitute.5.3.0/lib/netstandard2.0/NSubstitute.dll"
+-r:"Assets/Packages/System.Diagnostics.EventLog.4.7.0/lib/netstandard2.0/System.Diagnostics.EventLog.dll"
+-r:"Assets/Packages/System.Security.Principal.Windows.4.7.0/lib/netstandard2.0/System.Security.Principal.Windows.dll"
 -r:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
 -r:"Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
 -r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
 -r:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
+-r:"Assets/Plugins/ShipCountTextParser.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -356,6 +363,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/Packages/NSubstitute.Analyzers.CSharp.1.0.17/analyzers/dotnet/cs/NSubstitute.Analyzers.CSharp.dll"
+-analyzer:"Assets/Packages/NSubstitute.Analyzers.CSharp.1.0.17/analyzers/dotnet/cs/NSubstitute.Analyzers.Shared.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/Editor/AssemblyInfo.cs"

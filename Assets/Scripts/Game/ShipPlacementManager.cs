@@ -4,17 +4,19 @@ using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShipPlacementManager : MonoBehaviourPun
+namespace Game
 {
-    [SerializeField] Button readyButton;
-    [SerializeField] ShipAnalytics analytics;
+    public class ShipPlacementManager : MonoBehaviourPun
+{
+    [SerializeField] public Button readyButton;
+    [SerializeField] public ShipAnalytics analytics;
     
     public GridManager placementGrid; // Грид для расстановки
     public int selectedShipLength = 4; // Длина выбранного корабля
-    private bool isHorizontal = true; // Ориентация корабля
-    private GameObject[] previewCells; // Ячейки для предпросмотра
+    public bool isHorizontal = true; // Ориентация корабля
+    public GameObject[] previewCells; // Ячейки для предпросмотра
     
-    [SerializeField] GameManager gm;
+    [SerializeField] public GameManager gm;
 
     private void Start()
     {
@@ -176,3 +178,5 @@ public class ShipPlacementManager : MonoBehaviourPun
         return serialized;
     }
 }
+}
+

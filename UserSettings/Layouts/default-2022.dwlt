@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 455
-    y: 51
-    width: 1107
-    height: 981
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Build Settings
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1107
-    height: 981
+    width: 1920
+    height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1107
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
-    width: 1107
+    y: 977
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1107
-    height: 931
+    width: 1920
+    height: 947
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 39
+  controlID: 108
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -140,12 +140,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 693
-    height: 931
+    width: 1521
+    height: 947
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 22
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -166,12 +166,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 693
-    height: 700
+    width: 1521
+    height: 620
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 41
+  controlID: 23
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -183,25 +183,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: BuildPlayerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 528
-    height: 700
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+    width: 1176
+    height: 620
+  m_MinSize: {x: 641, y: 601}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 15}
-  - {fileID: 16}
   - {fileID: 17}
+  - {fileID: 19}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 2
+  - {fileID: 15}
+  - {fileID: 14}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,15 +218,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 528
+    x: 1176
     y: 0
-    width: 165
-    height: 700
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+    width: 345
+    height: 620
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &10
@@ -246,13 +247,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 700
-    width: 693
-    height: 231
+    y: 620
+    width: 1521
+    height: 327
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 89
+  controlID: 85
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -264,24 +265,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 507
-    height: 231
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 1139
+    height: 327
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,15 +298,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 507
+    x: 1139
     y: 0
-    width: 186
-    height: 231
+    width: 382
+    height: 327
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 23}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &13
@@ -323,18 +324,3078 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 693
+    x: 1521
     y: 0
-    width: 414
-    height: 931
+    width: 399
+    height: 947
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 23}
+  m_ActualView: {fileID: 24}
   m_Panes:
-  - {fileID: 23}
+  - {fileID: 24}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 1175
+    height: 599
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_Spl:
+    ID: 479
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 397
+    - 132
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 529
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 14}
+    m_NewResultList:
+    - id: 1010
+      uniqueId: '[Cosmofleet][suite]'
+      name: Cosmofleet
+      fullName: Cosmofleet
+      resultStatus: 1
+      duration: 0.1485591
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1014
+      uniqueId: '[Tests.dll][suite]'
+      name: Tests.dll
+      fullName: D:/Desktop/Cosmofleet/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 1
+      duration: 0.0441246
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Cosmofleet][suite]'
+    - id: 1016
+      uniqueId: Tests.dll/[Game][suite]
+      name: Game
+      fullName: Game
+      resultStatus: 1
+      duration: 0.0260107
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1014
+      parentUniqueId: '[Tests.dll][suite]'
+    - id: 1017
+      uniqueId: Tests.dll/Game/[Tests][suite]
+      name: Tests
+      fullName: Game.Tests
+      resultStatus: 1
+      duration: 0.0239165
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: Tests.dll/[Game][suite]
+    - id: 1007
+      uniqueId: Tests.dll/Game/Tests/[Tests][Game.Tests.AttackManagerTests][suite]
+      name: AttackManagerTests
+      fullName: Game.Tests.AttackManagerTests
+      resultStatus: 1
+      duration: 0.021475
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: Tests.dll/Game/[Tests][suite]
+    - id: 1012
+      uniqueId: Tests.dll/Game/Tests/AttackManagerTests/[Tests][Game.Tests.AttackManagerTests.HoverOverCell_ShouldNotSetHoverIfCellIsOccupied]
+      name: HoverOverCell_ShouldNotSetHoverIfCellIsOccupied
+      fullName: Game.Tests.AttackManagerTests.HoverOverCell_ShouldNotSetHoverIfCellIsOccupied
+      resultStatus: 1
+      duration: 0.0110767
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Game/Tests/[Tests][Game.Tests.AttackManagerTests][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Game/Tests/AttackManagerTests/[Tests][Game.Tests.AttackManagerTests.SelectCellForAttack_ShouldNotSelectCell_WhenCellIsHitOrMissed]
+      name: SelectCellForAttack_ShouldNotSelectCell_WhenCellIsHitOrMissed
+      fullName: Game.Tests.AttackManagerTests.SelectCellForAttack_ShouldNotSelectCell_WhenCellIsHitOrMissed
+      resultStatus: 1
+      duration: 0.000263
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Game/Tests/[Tests][Game.Tests.AttackManagerTests][suite]
+    - id: 1010
+      uniqueId: Tests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.0129582
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: '[Tests.dll][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.ShipPlacementManagerTests][suite]
+      name: ShipPlacementManagerTests
+      fullName: Tests.ShipPlacementManagerTests
+      resultStatus: 1
+      duration: 0.0091338
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1010
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/ShipPlacementManagerTests/[Tests][Tests.ShipPlacementManagerTests.HoverOverCell_ShouldUpdatePreviewCells]
+      name: HoverOverCell_ShouldUpdatePreviewCells
+      fullName: Tests.ShipPlacementManagerTests.HoverOverCell_ShouldUpdatePreviewCells
+      resultStatus: 1
+      duration: 0.0043855
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ShipPlacementManagerTests][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/ShipPlacementManagerTests/[Tests][Tests.ShipPlacementManagerTests.OnReadyButtonClick_ShouldDisableButton]
+      name: OnReadyButtonClick_ShouldDisableButton
+      fullName: Tests.ShipPlacementManagerTests.OnReadyButtonClick_ShouldDisableButton
+      resultStatus: 1
+      duration: 0.0004753
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ShipPlacementManagerTests][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/ShipPlacementManagerTests/[Tests][Tests.ShipPlacementManagerTests.RotateShip_ShouldToggleOrientation]
+      name: RotateShip_ShouldToggleOrientation
+      fullName: Tests.ShipPlacementManagerTests.RotateShip_ShouldToggleOrientation
+      resultStatus: 1
+      duration: 0.0004972
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ShipPlacementManagerTests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/ShipPlacementManagerTests/[Tests][Tests.ShipPlacementManagerTests.SelectShip_ShouldSetSelectedShipLength]
+      name: SelectShip_ShouldSetSelectedShipLength
+      fullName: Tests.ShipPlacementManagerTests.SelectShip_ShouldSetSelectedShipLength
+      resultStatus: 1
+      duration: 0.0001461
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ShipPlacementManagerTests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/ShipPlacementManagerTests/[Tests][Tests.ShipPlacementManagerTests.SelectShip_WhenSameLengthSelected_ShouldDeselectShip]
+      name: SelectShip_WhenSameLengthSelected_ShouldDeselectShip
+      fullName: Tests.ShipPlacementManagerTests.SelectShip_WhenSameLengthSelected_ShouldDeselectShip
+      resultStatus: 1
+      duration: 0.0001201
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ShipPlacementManagerTests][suite]
+    m_ResultText: "HoverOverCell_ShouldSetCellAsHover (0,000s)\n---\nCell should
+      be marked as Hover after hovering.\r\n  Expected: Hover\r\n  But was:  Default\n---\nat
+      Game.Tests.AttackManagerTests.HoverOverCell_ShouldSetCellAsHover () [0x0001a]
+      in D:\\Desktop\\Cosmofleet\\Assets\\Plugins\\Tests\\AttackTests.cs:67"
+    m_ResultStacktrace: 'at Game.Tests.AttackManagerTests.HoverOverCell_ShouldSetCellAsHover
+      () [0x0001a] in D:\Desktop\Cosmofleet\Assets\Plugins\Tests\AttackTests.cs:67
+
+'
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 72df9f5c
+      m_LastClickedID: 1553981298
+      m_ExpandedIDs: 016b27820f17ed99455929aed881bfcae557abf78359db41b63a6168ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 1
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 14}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Cosmofleet][suite]'
+      name: Cosmofleet
+      fullName: Cosmofleet
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1003
+      uniqueId: '[Unity.Addressables.Editor.Tests.DocExampleCode.dll][suite]'
+      name: Unity.Addressables.Editor.Tests.DocExampleCode.dll
+      fullName: D:/Desktop/Cosmofleet/Library/ScriptAssemblies/Unity.Addressables.Editor.Tests.DocExampleCode.dll
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Cosmofleet][suite]'
+    - id: 1004
+      uniqueId: Unity.Addressables.Editor.Tests.DocExampleCode.dll/[AddressableAssets][suite]
+      name: AddressableAssets
+      fullName: AddressableAssets
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[Unity.Addressables.Editor.Tests.DocExampleCode.dll][suite]'
+    - id: 1005
+      uniqueId: Unity.Addressables.Editor.Tests.DocExampleCode.dll/AddressableAssets/[Unity.Addressables.Editor.Tests.DocExampleCode][AddressableAssets.DocExampleCode][suite]
+      name: DocExampleCode
+      fullName: AddressableAssets.DocExampleCode
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: Unity.Addressables.Editor.Tests.DocExampleCode.dll/[AddressableAssets][suite]
+    - id: 1001
+      uniqueId: Unity.Addressables.Editor.Tests.DocExampleCode.dll/AddressableAssets/DocExampleCode/[Unity.Addressables.Editor.Tests.DocExampleCode][AddressableAssets.DocExampleCode.TestStub][suite]
+      name: TestStub
+      fullName: AddressableAssets.DocExampleCode.TestStub
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: Unity.Addressables.Editor.Tests.DocExampleCode.dll/AddressableAssets/[Unity.Addressables.Editor.Tests.DocExampleCode][AddressableAssets.DocExampleCode][suite]
+    - id: 1002
+      uniqueId: Unity.Addressables.Editor.Tests.DocExampleCode.dll/AddressableAssets/DocExampleCode/TestStub/[Unity.Addressables.Editor.Tests.DocExampleCode][AddressableAssets.DocExampleCode.TestStub.RequiredTest]
+      name: RequiredTest
+      fullName: AddressableAssets.DocExampleCode.TestStub.RequiredTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Unity.Addressables.Editor.Tests.DocExampleCode.dll/AddressableAssets/DocExampleCode/[Unity.Addressables.Editor.Tests.DocExampleCode][AddressableAssets.DocExampleCode.TestStub][suite]
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: a1d10e00
+      m_LastClickedID: 971169
+      m_ExpandedIDs: 016b27825b10c292a1d10e008dbd900b294c9549ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 38775846, guid: 8dc1be91775c4bb469f6b74cef450eaa, type: 3}
+  m_Name: NuGetForUnity
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: NuGet For Unity
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 1175
+    height: 599
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  defaultIcon: {fileID: 2800000, guid: eec19781926cd2248b7c9abfde8db555, type: 3}
+  hasRefreshed: 1
+  numberToSkip: 0
+  serializableAvailablePackages:
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 5.3.0
+      <IsManuallyInstalled>k__BackingField: 1
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/nsubstitute/5.3.0/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 5.3.0
+      - <FullVersion>k__BackingField: 5.1.0
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 4.4.0
+      - <FullVersion>k__BackingField: 4.3.0
+      - <FullVersion>k__BackingField: 4.2.2
+      - <FullVersion>k__BackingField: 4.2.1
+      - <FullVersion>k__BackingField: 4.2.0
+      - <FullVersion>k__BackingField: 4.1.0
+      - <FullVersion>k__BackingField: 4.0.0
+      - <FullVersion>k__BackingField: 3.1.0
+      - <FullVersion>k__BackingField: 3.0.1
+      - <FullVersion>k__BackingField: 2.0.3
+      - <FullVersion>k__BackingField: 1.10.0
+      - <FullVersion>k__BackingField: 1.9.2
+      - <FullVersion>k__BackingField: 1.9.1
+      - <FullVersion>k__BackingField: 1.8.2
+      - <FullVersion>k__BackingField: 1.8.1
+      - <FullVersion>k__BackingField: 1.8.0
+      - <FullVersion>k__BackingField: 1.7.2
+      - <FullVersion>k__BackingField: 1.7.1
+      - <FullVersion>k__BackingField: 1.7.0
+      - <FullVersion>k__BackingField: 1.6.1
+      - <FullVersion>k__BackingField: 1.6.0
+      - <FullVersion>k__BackingField: 1.5.0
+      - <FullVersion>k__BackingField: 1.4.3
+      - <FullVersion>k__BackingField: 1.4.2
+      - <FullVersion>k__BackingField: 1.4.1
+      - <FullVersion>k__BackingField: 1.4.0
+      - <FullVersion>k__BackingField: 1.3.0
+      - <FullVersion>k__BackingField: 1.2.1
+      - <FullVersion>k__BackingField: 1.2.0
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Anthony Egerton,David Tchepak,Alexandr Nikitin,Oleksandr Povar
+      <Description>k__BackingField: NSubstitute is a friendly substitute for .NET
+        mocking libraries. It has a simple, succinct syntax to help developers write
+        clearer tests. NSubstitute is designed for Arrange-Act-Assert (AAA) testing
+        and with Test Driven Development (TDD) in mind.
+      <TotalDownloads>k__BackingField: 147894115
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NSubstitute/5.3.0/license
+      <ProjectUrl>k__BackingField: https://nsubstitute.github.io/
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstitute.Analyzers.CSharp
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 1.0.17
+      <IsManuallyInstalled>k__BackingField: 1
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/nsubstitute.analyzers.csharp/1.0.17/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 1.0.17
+      - <FullVersion>k__BackingField: 1.0.16
+      - <FullVersion>k__BackingField: 1.0.15
+      - <FullVersion>k__BackingField: 1.0.14
+      - <FullVersion>k__BackingField: 1.0.13
+      - <FullVersion>k__BackingField: 1.0.12
+      - <FullVersion>k__BackingField: 1.0.11
+      - <FullVersion>k__BackingField: 1.0.10
+      - <FullVersion>k__BackingField: 1.0.9
+      - <FullVersion>k__BackingField: 1.0.8
+      - <FullVersion>k__BackingField: 1.0.7
+      - <FullVersion>k__BackingField: 1.0.6
+      - <FullVersion>k__BackingField: 1.0.5
+      - <FullVersion>k__BackingField: 1.0.4
+      - <FullVersion>k__BackingField: 1.0.3
+      - <FullVersion>k__BackingField: 1.0.2
+      - <FullVersion>k__BackingField: 1.0.1
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Tomasz Podolak, NSubstitute.Analyzers contributors
+      <Description>k__BackingField: Provides diagnostic analyzers to warn about incorrect
+        usage of NSubstitute in C#.
+      <TotalDownloads>k__BackingField: 14642430
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NSubstitute.Analyzers.CSharp/1.0.17/license
+      <ProjectUrl>k__BackingField: https://github.com/nsubstitute/NSubstitute.Analyzers
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstitute.Analyzers.CSharp
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: AutoFixture.AutoNSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 4.18.1
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/autofixture.autonsubstitute/4.18.1/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 4.18.1
+      - <FullVersion>k__BackingField: 4.18.0
+      - <FullVersion>k__BackingField: 4.17.0
+      - <FullVersion>k__BackingField: 4.16.0
+      - <FullVersion>k__BackingField: 4.15.0
+      - <FullVersion>k__BackingField: 4.14.0
+      - <FullVersion>k__BackingField: 4.13.0
+      - <FullVersion>k__BackingField: 4.12.0
+      - <FullVersion>k__BackingField: 4.11.0
+      - <FullVersion>k__BackingField: 4.10.0
+      - <FullVersion>k__BackingField: 4.9.0
+      - <FullVersion>k__BackingField: 4.8.0
+      - <FullVersion>k__BackingField: 4.7.0
+      - <FullVersion>k__BackingField: 4.6.0
+      - <FullVersion>k__BackingField: 4.5.1
+      - <FullVersion>k__BackingField: 4.5.0
+      - <FullVersion>k__BackingField: 4.4.0
+      - <FullVersion>k__BackingField: 4.3.0
+      - <FullVersion>k__BackingField: 4.2.1
+      - <FullVersion>k__BackingField: 4.2.0
+      - <FullVersion>k__BackingField: 4.1.0
+      - <FullVersion>k__BackingField: 4.0.1
+      - <FullVersion>k__BackingField: 4.0.0
+      - <FullVersion>k__BackingField: 3.51.0
+      - <FullVersion>k__BackingField: 3.50.7
+      - <FullVersion>k__BackingField: 3.50.6
+      - <FullVersion>k__BackingField: 3.50.5
+      - <FullVersion>k__BackingField: 3.50.4
+      - <FullVersion>k__BackingField: 3.50.3
+      - <FullVersion>k__BackingField: 3.50.2
+      - <FullVersion>k__BackingField: 3.50.1
+      - <FullVersion>k__BackingField: 3.50.0
+      - <FullVersion>k__BackingField: 3.49.1
+      - <FullVersion>k__BackingField: 3.49.0
+      - <FullVersion>k__BackingField: 3.48.0
+      - <FullVersion>k__BackingField: 3.47.8
+      - <FullVersion>k__BackingField: 3.47.7
+      - <FullVersion>k__BackingField: 3.47.6
+      - <FullVersion>k__BackingField: 3.47.5
+      - <FullVersion>k__BackingField: 3.47.4
+      - <FullVersion>k__BackingField: 3.47.3
+      - <FullVersion>k__BackingField: 3.47.2
+      - <FullVersion>k__BackingField: 3.47.1
+      - <FullVersion>k__BackingField: 3.47.0
+      - <FullVersion>k__BackingField: 3.46.0
+      - <FullVersion>k__BackingField: 3.45.3
+      - <FullVersion>k__BackingField: 3.45.2
+      - <FullVersion>k__BackingField: 3.45.1
+      - <FullVersion>k__BackingField: 3.45.0
+      - <FullVersion>k__BackingField: 3.44.1
+      - <FullVersion>k__BackingField: 3.44.0
+      - <FullVersion>k__BackingField: 3.43.4
+      - <FullVersion>k__BackingField: 3.43.3
+      - <FullVersion>k__BackingField: 3.43.2
+      - <FullVersion>k__BackingField: 3.43.1
+      - <FullVersion>k__BackingField: 3.43.0
+      - <FullVersion>k__BackingField: 3.42.0
+      - <FullVersion>k__BackingField: 3.41.1
+      - <FullVersion>k__BackingField: 3.41.0
+      - <FullVersion>k__BackingField: 3.40.0
+      - <FullVersion>k__BackingField: 3.39.0
+      - <FullVersion>k__BackingField: 3.38.1
+      - <FullVersion>k__BackingField: 3.38.0
+      - <FullVersion>k__BackingField: 3.37.3
+      - <FullVersion>k__BackingField: 3.37.2
+      - <FullVersion>k__BackingField: 3.37.1
+      - <FullVersion>k__BackingField: 3.37.0
+      - <FullVersion>k__BackingField: 3.36.12
+      - <FullVersion>k__BackingField: 3.36.11
+      - <FullVersion>k__BackingField: 3.36.9
+      - <FullVersion>k__BackingField: 3.36.8
+      - <FullVersion>k__BackingField: 3.36.6
+      - <FullVersion>k__BackingField: 3.36.1
+      - <FullVersion>k__BackingField: 3.36.0
+      - <FullVersion>k__BackingField: 3.35.1
+      - <FullVersion>k__BackingField: 3.34.2
+      - <FullVersion>k__BackingField: 3.34.1
+      - <FullVersion>k__BackingField: 3.34.0
+      - <FullVersion>k__BackingField: 3.33.0
+      - <FullVersion>k__BackingField: 3.32.2
+      - <FullVersion>k__BackingField: 3.32.0
+      - <FullVersion>k__BackingField: 3.31.1
+      - <FullVersion>k__BackingField: 3.31.0
+      - <FullVersion>k__BackingField: 3.30.8
+      - <FullVersion>k__BackingField: 3.30.7
+      - <FullVersion>k__BackingField: 3.30.6
+      - <FullVersion>k__BackingField: 3.30.4
+      - <FullVersion>k__BackingField: 3.30.3
+      - <FullVersion>k__BackingField: 3.30.2
+      - <FullVersion>k__BackingField: 3.30.1
+      - <FullVersion>k__BackingField: 3.30.0
+      - <FullVersion>k__BackingField: 3.29.0
+      - <FullVersion>k__BackingField: 3.27.0
+      - <FullVersion>k__BackingField: 3.25.0
+      - <FullVersion>k__BackingField: 3.24.6
+      - <FullVersion>k__BackingField: 3.24.5
+      - <FullVersion>k__BackingField: 3.24.4
+      - <FullVersion>k__BackingField: 3.24.3
+      - <FullVersion>k__BackingField: 3.24.2
+      - <FullVersion>k__BackingField: 3.24.1
+      - <FullVersion>k__BackingField: 3.24.0
+      - <FullVersion>k__BackingField: 3.23.2
+      - <FullVersion>k__BackingField: 3.23.1
+      - <FullVersion>k__BackingField: 3.23.0
+      - <FullVersion>k__BackingField: 3.22.0
+      - <FullVersion>k__BackingField: 3.21.1
+      - <FullVersion>k__BackingField: 3.21.0
+      - <FullVersion>k__BackingField: 3.20.4
+      - <FullVersion>k__BackingField: 3.20.2
+      - <FullVersion>k__BackingField: 3.20.1
+      - <FullVersion>k__BackingField: 3.20.0
+      - <FullVersion>k__BackingField: 3.19.2
+      - <FullVersion>k__BackingField: 3.19.1
+      - <FullVersion>k__BackingField: 3.19.0
+      - <FullVersion>k__BackingField: 3.18.10
+      - <FullVersion>k__BackingField: 3.18.9
+      - <FullVersion>k__BackingField: 3.18.8
+      - <FullVersion>k__BackingField: 3.18.7
+      - <FullVersion>k__BackingField: 3.18.6
+      - <FullVersion>k__BackingField: 3.18.5
+      - <FullVersion>k__BackingField: 3.18.4
+      - <FullVersion>k__BackingField: 3.18.3
+      - <FullVersion>k__BackingField: 3.18.2
+      - <FullVersion>k__BackingField: 3.18.1
+      - <FullVersion>k__BackingField: 3.18.0
+      - <FullVersion>k__BackingField: 3.17.0
+      - <FullVersion>k__BackingField: 3.16.10
+      - <FullVersion>k__BackingField: 3.16.9
+      - <FullVersion>k__BackingField: 3.16.8
+      - <FullVersion>k__BackingField: 3.16.7
+      - <FullVersion>k__BackingField: 3.16.6
+      - <FullVersion>k__BackingField: 3.16.5
+      - <FullVersion>k__BackingField: 3.16.4
+      - <FullVersion>k__BackingField: 3.16.3
+      - <FullVersion>k__BackingField: 3.16.2
+      - <FullVersion>k__BackingField: 3.16.1
+      - <FullVersion>k__BackingField: 3.16.0
+      - <FullVersion>k__BackingField: 3.15.1
+      - <FullVersion>k__BackingField: 3.15.0
+      - <FullVersion>k__BackingField: 3.14.0
+      - <FullVersion>k__BackingField: 3.13.0
+      - <FullVersion>k__BackingField: 3.12.1
+      - <FullVersion>k__BackingField: 3.12.0
+      - <FullVersion>k__BackingField: 3.11.0
+      - <FullVersion>k__BackingField: 3.10.1
+      - <FullVersion>k__BackingField: 3.10.0
+      - <FullVersion>k__BackingField: 3.9.1
+      - <FullVersion>k__BackingField: 3.9.0
+      - <FullVersion>k__BackingField: 3.8.1
+      - <FullVersion>k__BackingField: 3.8.0
+      - <FullVersion>k__BackingField: 3.7.0
+      - <FullVersion>k__BackingField: 3.6.8
+      - <FullVersion>k__BackingField: 3.6.7
+      - <FullVersion>k__BackingField: 3.6.6
+      - <FullVersion>k__BackingField: 3.6.5
+      - <FullVersion>k__BackingField: 3.6.3
+      - <FullVersion>k__BackingField: 3.6.2
+      - <FullVersion>k__BackingField: 3.6.1
+      - <FullVersion>k__BackingField: 3.6.0
+      - <FullVersion>k__BackingField: 3.5.1
+      - <FullVersion>k__BackingField: 3.5.0
+      - <FullVersion>k__BackingField: 3.4.1
+      - <FullVersion>k__BackingField: 3.4.0
+      - <FullVersion>k__BackingField: 3.3.0
+      - <FullVersion>k__BackingField: 3.2.1
+      - <FullVersion>k__BackingField: 3.2.0
+      - <FullVersion>k__BackingField: 3.1.0
+      - <FullVersion>k__BackingField: 3.0.9
+      - <FullVersion>k__BackingField: 3.0.8
+      - <FullVersion>k__BackingField: 3.0.7
+      - <FullVersion>k__BackingField: 3.0.6
+      - <FullVersion>k__BackingField: 3.0.5
+      - <FullVersion>k__BackingField: 3.0.3
+      - <FullVersion>k__BackingField: 3.0.2
+      - <FullVersion>k__BackingField: 3.0.1
+      - <FullVersion>k__BackingField: 2.16.2
+      - <FullVersion>k__BackingField: 2.16.1
+      - <FullVersion>k__BackingField: 2.16.0
+      <Authors>k__BackingField:
+      - Daniel Hilgarth, Alex Povar, AutoFixture
+      <Description>k__BackingField: This extension turns AutoFixture into an Auto-Mocking
+        Container. The mock instances are created by NSubstitute. To use it, add
+        the AutoNSubstituteCustomization to your Fixture instance.
+      <TotalDownloads>k__BackingField: 15444380
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/AutoFixture.AutoNSubstitute/4.18.1/license
+      <ProjectUrl>k__BackingField: https://github.com/AutoFixture/AutoFixture
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: AutoFixture with Auto Mocking using NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: MockQueryable.NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 7.0.3
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/mockqueryable.nsubstitute/7.0.3/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 7.0.3
+      - <FullVersion>k__BackingField: 7.0.2
+      - <FullVersion>k__BackingField: 7.0.1
+      - <FullVersion>k__BackingField: 7.0.0
+      - <FullVersion>k__BackingField: 6.0.1
+      - <FullVersion>k__BackingField: 6.0.0
+      - <FullVersion>k__BackingField: 5.0.2
+      - <FullVersion>k__BackingField: 5.0.1
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 3.1.3
+      - <FullVersion>k__BackingField: 3.1.2
+      - <FullVersion>k__BackingField: 3.1.1
+      - <FullVersion>k__BackingField: 3.0.2
+      - <FullVersion>k__BackingField: 3.0.1
+      - <FullVersion>k__BackingField: 3.0.0
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.4
+      - <FullVersion>k__BackingField: 1.0.3
+      - <FullVersion>k__BackingField: 1.0.2
+      <Authors>k__BackingField:
+      - Roman Titov
+      <Description>k__BackingField: "Extension for mocking Entity Framework Core
+        operations such ToListAsync, FirstOrDefaultAsync etc.\n\t\t  When writing
+        tests for your application it is often desirable to avoid hitting the database.
+        The extension allows you to achieve this by creating a context \u2013 with
+        behavior defined by your tests \u2013 that makes use of in-memory data."
+      <TotalDownloads>k__BackingField: 3099233
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/MockQueryable.NSubstitute/7.0.3/license
+      <ProjectUrl>k__BackingField: https://github.com/romantitov/MockQueryable
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: MockQueryable.NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstituteAutoMocker
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 1.1.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.0.2
+      - <FullVersion>k__BackingField: 1.0.0.1
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - K McManus
+      <Description>k__BackingField: AutoMocker for use with NSubstitute
+      <TotalDownloads>k__BackingField: 619534
+      <LicenseUrl>k__BackingField: http://github.com/kevin-mcmanus/NSubstituteAutoMocker/blob/master/LICENCE.md
+      <ProjectUrl>k__BackingField: http://github.com/kevin-mcmanus/NSubstituteAutoMocker
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstituteAutoMocker
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: EntityFrameworkTesting.NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 1.3.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 1.3.0
+      - <FullVersion>k__BackingField: 1.2.3
+      - <FullVersion>k__BackingField: 1.2.2
+      - <FullVersion>k__BackingField: 1.2.1
+      - <FullVersion>k__BackingField: 1.2.0
+      - <FullVersion>k__BackingField: 1.1.5
+      - <FullVersion>k__BackingField: 1.1.4
+      - <FullVersion>k__BackingField: 1.1.2
+      - <FullVersion>k__BackingField: 1.1.1
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.24
+      - <FullVersion>k__BackingField: 1.0.22
+      - <FullVersion>k__BackingField: 1.0.7
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Justin Yoo
+      <Description>k__BackingField: Testing helpers for using NSubstitute with EntityFramework.
+      <TotalDownloads>k__BackingField: 744918
+      <LicenseUrl>k__BackingField: https://github.com/scott-xu/EntityFramework.Testing/blob/master/LICENSE
+      <ProjectUrl>k__BackingField: https://github.com/scott-xu/EntityFramework.Testing
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: EntityFrameworkTesting.NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: AutofacContrib.NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 7.0.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 7.0.0
+      - <FullVersion>k__BackingField: 6.2.3
+      - <FullVersion>k__BackingField: 6.2.2
+      - <FullVersion>k__BackingField: 6.2.0
+      - <FullVersion>k__BackingField: 6.1.0
+      - <FullVersion>k__BackingField: 6.0.0
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 4.0.1
+      - <FullVersion>k__BackingField: 4.0.0
+      - <FullVersion>k__BackingField: 3.3.7
+      - <FullVersion>k__BackingField: 3.3.6
+      - <FullVersion>k__BackingField: 3.3.5
+      - <FullVersion>k__BackingField: 3.3.3
+      - <FullVersion>k__BackingField: 3.3.2
+      - <FullVersion>k__BackingField: 3.2.0
+      - <FullVersion>k__BackingField: 3.1.3
+      - <FullVersion>k__BackingField: 3.1.2
+      - <FullVersion>k__BackingField: 3.1.1
+      - <FullVersion>k__BackingField: 3.1.0
+      - <FullVersion>k__BackingField: 3.0.2
+      - <FullVersion>k__BackingField: 3.0.0
+      - <FullVersion>k__BackingField: 2.5.2.830
+      - <FullVersion>k__BackingField: 2.4.3.700
+      <Authors>k__BackingField:
+      - AutofacContrib.NSubstitute
+      <Description>k__BackingField: Package Description
+      <TotalDownloads>k__BackingField: 1286970
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: AutofacContrib.NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: EntityFrameworkCore.Testing.NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 9.0.1
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 9.0.1
+      - <FullVersion>k__BackingField: 9.0.0
+      - <FullVersion>k__BackingField: 8.1.1
+      - <FullVersion>k__BackingField: 8.1.0
+      - <FullVersion>k__BackingField: 8.0.0
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 4.0.2
+      - <FullVersion>k__BackingField: 4.0.1
+      - <FullVersion>k__BackingField: 4.0.0
+      - <FullVersion>k__BackingField: 3.0.5
+      - <FullVersion>k__BackingField: 3.0.4
+      - <FullVersion>k__BackingField: 3.0.3
+      - <FullVersion>k__BackingField: 3.0.2
+      - <FullVersion>k__BackingField: 3.0.1
+      - <FullVersion>k__BackingField: 3.0.0
+      - <FullVersion>k__BackingField: 2.4.5
+      - <FullVersion>k__BackingField: 2.4.4
+      - <FullVersion>k__BackingField: 2.4.3
+      - <FullVersion>k__BackingField: 2.4.2
+      - <FullVersion>k__BackingField: 2.4.1
+      - <FullVersion>k__BackingField: 2.4.0
+      - <FullVersion>k__BackingField: 2.3.2
+      - <FullVersion>k__BackingField: 2.3.1
+      - <FullVersion>k__BackingField: 2.3.0
+      - <FullVersion>k__BackingField: 2.2.2
+      - <FullVersion>k__BackingField: 2.2.1
+      - <FullVersion>k__BackingField: 2.2.0
+      - <FullVersion>k__BackingField: 2.1.0
+      - <FullVersion>k__BackingField: 2.0.4
+      - <FullVersion>k__BackingField: 2.0.3
+      - <FullVersion>k__BackingField: 1.3.5
+      - <FullVersion>k__BackingField: 1.3.4
+      - <FullVersion>k__BackingField: 1.3.3
+      - <FullVersion>k__BackingField: 1.3.2
+      - <FullVersion>k__BackingField: 1.3.1
+      - <FullVersion>k__BackingField: 1.3.0
+      - <FullVersion>k__BackingField: 1.2.1
+      - <FullVersion>k__BackingField: 1.2.0
+      - <FullVersion>k__BackingField: 1.1.2
+      - <FullVersion>k__BackingField: 1.1.1
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.7
+      - <FullVersion>k__BackingField: 1.0.6
+      - <FullVersion>k__BackingField: 1.0.5
+      - <FullVersion>k__BackingField: 1.0.4
+      - <FullVersion>k__BackingField: 1.0.3
+      - <FullVersion>k__BackingField: 1.0.2
+      <Authors>k__BackingField:
+      - rgvlee
+      <Description>k__BackingField: 'Adds relational support to the Microsoft EntityFrameworkCore
+        in-memory database provider by mocking relational operations.
+
+
+        EntityFrameworkCore.Testing
+        v1.x = EntityFrameworkCore 2 (2.1.0+)
+
+        EntityFrameworkCore.Testing
+        v2.x = EntityFrameworkCore 3
+
+        EntityFrameworkCore.Testing v3.x =
+        EntityFrameworkCore 5
+
+        EntityFrameworkCore.Testing v4.x = EntityFrameworkCore
+        6
+
+        EntityFrameworkCore.Testing v5.x = EntityFrameworkCore 7
+
+        EntityFrameworkCore.Testing
+        v8.x = EntityFrameworkCore 8
+
+        EntityFrameworkCore.Testing v9.x =
+        EntityFrameworkCore 9'
+      <TotalDownloads>k__BackingField: 585484
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/EntityFrameworkCore.Testing.NSubstitute/9.0.1/license
+      <ProjectUrl>k__BackingField: https://github.com/rgvlee/EntityFrameworkCore.Testing
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: EntityFrameworkCore.Testing.NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstituteEquivalency
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 2.0.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 2.0.0
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Modern Ronin
+      <Description>k__BackingField: Equivalency based argument matcher for NSubstitute
+      <TotalDownloads>k__BackingField: 172086
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NSubstituteEquivalency/2.0.0/license
+      <ProjectUrl>k__BackingField: https://github.com/ModernRonin/NSubstitute.Equivalency
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstitute.Equivalency
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstituteAutoMocker.Standard
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 1.0.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Gokulnath
+      <Description>k__BackingField: AutoMocker for use with NSubstitute
+      <TotalDownloads>k__BackingField: 178691
+      <LicenseUrl>k__BackingField: https://github.com/gokulm/NSubstituteAutoMocker/blob/master/LICENCE.md
+      <ProjectUrl>k__BackingField: https://github.com/gokulm/NSubstituteAutoMocker
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstituteAutoMocker.Standard
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: AutoBogus.NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 2.13.1
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/autobogus.nsubstitute/2.13.1/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 2.13.1
+      - <FullVersion>k__BackingField: 2.13.0
+      - <FullVersion>k__BackingField: 2.12.0
+      - <FullVersion>k__BackingField: 2.11.0
+      - <FullVersion>k__BackingField: 2.10.0
+      - <FullVersion>k__BackingField: 2.9.0
+      - <FullVersion>k__BackingField: 2.8.2
+      - <FullVersion>k__BackingField: 2.8.1
+      - <FullVersion>k__BackingField: 2.8.0
+      - <FullVersion>k__BackingField: 2.7.4
+      - <FullVersion>k__BackingField: 2.7.3
+      - <FullVersion>k__BackingField: 2.7.2
+      - <FullVersion>k__BackingField: 2.7.1
+      - <FullVersion>k__BackingField: 2.7.0
+      - <FullVersion>k__BackingField: 2.6.0
+      - <FullVersion>k__BackingField: 2.5.0
+      - <FullVersion>k__BackingField: 2.4.1
+      - <FullVersion>k__BackingField: 2.4.0
+      - <FullVersion>k__BackingField: 2.3.0
+      - <FullVersion>k__BackingField: 2.2.1
+      - <FullVersion>k__BackingField: 2.2.0
+      - <FullVersion>k__BackingField: 2.1.2
+      - <FullVersion>k__BackingField: 2.1.1
+      - <FullVersion>k__BackingField: 2.1.0
+      - <FullVersion>k__BackingField: 2.0.0
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Nick Dodd
+      <Description>k__BackingField: A C# library complementing the Bogus generator
+        by adding auto creation and population capabilities. This package includes
+        mocking options using NSubtitute.
+      <TotalDownloads>k__BackingField: 744221
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/AutoBogus.NSubstitute/2.13.1/license
+      <ProjectUrl>k__BackingField: https://github.com/nickdodd79/AutoBogus
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: AutoBogus.NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: Sitecore.FakeDb.NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 2.0.1
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 2.0.1
+      - <FullVersion>k__BackingField: 2.0.0
+      - <FullVersion>k__BackingField: 1.7.4
+      - <FullVersion>k__BackingField: 1.7.3
+      - <FullVersion>k__BackingField: 1.7.2
+      - <FullVersion>k__BackingField: 1.7.1
+      - <FullVersion>k__BackingField: 1.7.0
+      - <FullVersion>k__BackingField: 1.6.1
+      - <FullVersion>k__BackingField: 1.6.0
+      - <FullVersion>k__BackingField: 1.5.0
+      - <FullVersion>k__BackingField: 1.4.1
+      - <FullVersion>k__BackingField: 1.4.0
+      - <FullVersion>k__BackingField: 1.3.5
+      - <FullVersion>k__BackingField: 1.3.4
+      - <FullVersion>k__BackingField: 1.3.3
+      - <FullVersion>k__BackingField: 1.3.2
+      - <FullVersion>k__BackingField: 1.3.1
+      - <FullVersion>k__BackingField: 1.3.0
+      - <FullVersion>k__BackingField: 1.2.2
+      - <FullVersion>k__BackingField: 1.2.1
+      - <FullVersion>k__BackingField: 1.2.0
+      - <FullVersion>k__BackingField: 1.1.4
+      - <FullVersion>k__BackingField: 1.1.3
+      - <FullVersion>k__BackingField: 1.1.2
+      - <FullVersion>k__BackingField: 1.1.1
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.2
+      - <FullVersion>k__BackingField: 1.0.1
+      - <FullVersion>k__BackingField: 1.0.0
+      - <FullVersion>k__BackingField: 0.38.0
+      - <FullVersion>k__BackingField: 0.37.0
+      - <FullVersion>k__BackingField: 0.36.2
+      - <FullVersion>k__BackingField: 0.36.1
+      - <FullVersion>k__BackingField: 0.36.0
+      - <FullVersion>k__BackingField: 0.35.0
+      - <FullVersion>k__BackingField: 0.34.0
+      - <FullVersion>k__BackingField: 0.33.0
+      - <FullVersion>k__BackingField: 0.32.0
+      - <FullVersion>k__BackingField: 0.31.6
+      - <FullVersion>k__BackingField: 0.31.5
+      - <FullVersion>k__BackingField: 0.31.4
+      - <FullVersion>k__BackingField: 0.31.3
+      - <FullVersion>k__BackingField: 0.31.2
+      - <FullVersion>k__BackingField: 0.31.1
+      - <FullVersion>k__BackingField: 0.31.0
+      - <FullVersion>k__BackingField: 0.30.0
+      - <FullVersion>k__BackingField: 0.29.3
+      - <FullVersion>k__BackingField: 0.29.2
+      - <FullVersion>k__BackingField: 0.29.1
+      - <FullVersion>k__BackingField: 0.29.0
+      - <FullVersion>k__BackingField: 0.28.1
+      - <FullVersion>k__BackingField: 0.28.0
+      - <FullVersion>k__BackingField: 0.27.2
+      - <FullVersion>k__BackingField: 0.27.1
+      - <FullVersion>k__BackingField: 0.27.0
+      - <FullVersion>k__BackingField: 0.26.2
+      - <FullVersion>k__BackingField: 0.26.1
+      - <FullVersion>k__BackingField: 0.26.0
+      - <FullVersion>k__BackingField: 0.25.3
+      - <FullVersion>k__BackingField: 0.25.2
+      - <FullVersion>k__BackingField: 0.25.1
+      - <FullVersion>k__BackingField: 0.25.0
+      - <FullVersion>k__BackingField: 0.24.0
+      - <FullVersion>k__BackingField: 0.21.0
+      - <FullVersion>k__BackingField: 0.20.0
+      - <FullVersion>k__BackingField: 0.19.0
+      - <FullVersion>k__BackingField: 0.18.1
+      - <FullVersion>k__BackingField: 0.18.0
+      - <FullVersion>k__BackingField: 0.17.0
+      - <FullVersion>k__BackingField: 0.16.1
+      - <FullVersion>k__BackingField: 0.16.0
+      - <FullVersion>k__BackingField: 0.15.0
+      - <FullVersion>k__BackingField: 0.14.0
+      - <FullVersion>k__BackingField: 0.13.0
+      - <FullVersion>k__BackingField: 0.12.0
+      - <FullVersion>k__BackingField: 0.11.1
+      - <FullVersion>k__BackingField: 0.11.0
+      - <FullVersion>k__BackingField: 0.10.4
+      - <FullVersion>k__BackingField: 0.10.3
+      - <FullVersion>k__BackingField: 0.10.2
+      - <FullVersion>k__BackingField: 0.10.1
+      - <FullVersion>k__BackingField: 0.10.0
+      <Authors>k__BackingField:
+      - Sergey Shushlyapin
+      <Description>k__BackingField: Unit testing framework for Sitecore.
+      <TotalDownloads>k__BackingField: 711664
+      <LicenseUrl>k__BackingField: https://github.com/sergeyshushlyapin/Sitecore.FakeDb/blob/master/LICENSE
+      <ProjectUrl>k__BackingField: https://github.com/sergeyshushlyapin/Sitecore.FakeDb
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: Sitecore.FakeDb.NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstitute.Verify.That
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 3.0.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 3.0.0
+      - <FullVersion>k__BackingField: 2.0.0
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Ben Arnold
+      <Description>k__BackingField: Glue to allow NSubstitute to use Fluent Assertions
+        when verifying received calls.
+      <TotalDownloads>k__BackingField: 84775
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NSubstitute.Verify.That/3.0.0/license
+      <ProjectUrl>k__BackingField: https://github.com/benagain/nsubstitute.verify.that
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstitute.Verify.That
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: Sitecore.NSubstituteUtils
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 2.0.2
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: 
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 2.0.2
+      - <FullVersion>k__BackingField: 2.0.1
+      - <FullVersion>k__BackingField: 2.0.0
+      - <FullVersion>k__BackingField: 1.0.4
+      - <FullVersion>k__BackingField: 1.0.3
+      <Authors>k__BackingField:
+      - Sergey Marchenko
+      <Description>k__BackingField: Helper classes to test Sitecote API using NSubstitute.
+      <TotalDownloads>k__BackingField: 212977
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: Sitecore.NSubstituteUtils
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: Ninject.MockingKernel.NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 3.3.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/ninject.mockingkernel.nsubstitute/3.3.0/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 3.3.0
+      - <FullVersion>k__BackingField: 3.2.2
+      - <FullVersion>k__BackingField: 3.2.1
+      - <FullVersion>k__BackingField: 3.2.0
+      - <FullVersion>k__BackingField: 3.0.0.5
+      - <FullVersion>k__BackingField: 2.2.0.6
+      <Authors>k__BackingField:
+      - Ninject Project Contributors
+      <Description>k__BackingField: Automock implementation for NSubstitute using
+        Ninject to create the objects under test.
+      <TotalDownloads>k__BackingField: 210441
+      <LicenseUrl>k__BackingField: https://github.com/ninject/Ninject.MockingKernel/raw/master/LICENSE.txt
+      <ProjectUrl>k__BackingField: http://www.ninject.org/
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: Ninject.MockingKernel.NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NUnit
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 4.3.0
+      <IsManuallyInstalled>k__BackingField: 1
+      dependencies:
+      - <TargetFramework>k__BackingField: .NETFramework4.6.2
+      - <TargetFramework>k__BackingField: net6.0
+      - <TargetFramework>k__BackingField: net8.0
+      dependenciesFetched: 1
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/nunit/4.3.0/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 4.3.0
+      - <FullVersion>k__BackingField: 4.2.2
+      - <FullVersion>k__BackingField: 4.2.1
+      - <FullVersion>k__BackingField: 4.1.0
+      - <FullVersion>k__BackingField: 4.0.1
+      - <FullVersion>k__BackingField: 3.14.0
+      - <FullVersion>k__BackingField: 3.13.3
+      - <FullVersion>k__BackingField: 3.13.2
+      - <FullVersion>k__BackingField: 3.13.1
+      - <FullVersion>k__BackingField: 3.13.0
+      - <FullVersion>k__BackingField: 3.12.0
+      - <FullVersion>k__BackingField: 3.11.0
+      - <FullVersion>k__BackingField: 3.10.1
+      - <FullVersion>k__BackingField: 3.10.0
+      - <FullVersion>k__BackingField: 3.9.0
+      - <FullVersion>k__BackingField: 3.8.1
+      - <FullVersion>k__BackingField: 3.8.0
+      - <FullVersion>k__BackingField: 3.7.1
+      - <FullVersion>k__BackingField: 3.7.0
+      - <FullVersion>k__BackingField: 3.6.1
+      - <FullVersion>k__BackingField: 3.6.0
+      - <FullVersion>k__BackingField: 3.5.0
+      - <FullVersion>k__BackingField: 3.4.1
+      - <FullVersion>k__BackingField: 3.4.0
+      - <FullVersion>k__BackingField: 3.2.1
+      - <FullVersion>k__BackingField: 3.2.0
+      - <FullVersion>k__BackingField: 3.0.1
+      - <FullVersion>k__BackingField: 3.0.0
+      - <FullVersion>k__BackingField: 2.7.1
+      - <FullVersion>k__BackingField: 2.7.0
+      - <FullVersion>k__BackingField: 2.6.7
+      - <FullVersion>k__BackingField: 2.6.6
+      - <FullVersion>k__BackingField: 2.6.5
+      - <FullVersion>k__BackingField: 2.6.4
+      - <FullVersion>k__BackingField: 2.6.3
+      - <FullVersion>k__BackingField: 2.6.2
+      - <FullVersion>k__BackingField: 2.6.1
+      - <FullVersion>k__BackingField: 2.6.0.12054
+      - <FullVersion>k__BackingField: 2.5.10.11092
+      - <FullVersion>k__BackingField: 2.5.9.10348
+      - <FullVersion>k__BackingField: 2.5.7.10213
+      <Authors>k__BackingField:
+      - Charlie Poole, Rob Prouse
+      <Description>k__BackingField: "NUnit is a unit-testing framework for all .NET
+        languages.\n            It can run on macOS, Linux and Windows operating
+        systems.\n            NUnit can be used for a wide range of testing, from
+        unit testing with TDD to full-fledged system and integration testing.\n           
+        It is a non-opinionated, broad and deep framework with multiple different
+        ways to assert that your code behaves as expected. Many aspects of NUnit
+        can be extended to suit your specific purposes.\n\n            The latest
+        version, version 4, is an upgrade from the groundbreaking NUnit 3 framework.
+        It is a modernized version, aimed at taking advantage of the latest .NET
+        features and C# language constructs.\n\n            If you are upgrading
+        from NUnit 3, be aware of the breaking changes (https://docs.nunit.org/articles/nunit/release-notes/breaking-changes.html#nunit-40).
+        Please see the NUnit 4 Migration Guide (https://docs.nunit.org/articles/nunit/release-notes/Nunit4.0-MigrationGuide.html)
+        and take care to prepare your NUnit 3 code before you do the upgrade.\n\n           
+        Supported platforms:\n            - .NET Framework 4.6.2+\n            -
+        .NET 6.0+\n            - .NET 8.0+"
+      <TotalDownloads>k__BackingField: 413176102
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NUnit/4.3.0/license
+      <ProjectUrl>k__BackingField: https://nunit.org/
+      <Summary>k__BackingField: NUnit is a unit-testing framework for all .NET languages
+        with a strong TDD focus.
+      <Title>k__BackingField: NUnit
+      <DownloadUrl>k__BackingField: 
+  serializableToInstallPackages:
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NUnit
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 4.3.0
+      <IsManuallyInstalled>k__BackingField: 1
+      dependencies:
+      - <TargetFramework>k__BackingField: .NETFramework4.6.2
+      - <TargetFramework>k__BackingField: net6.0
+      - <TargetFramework>k__BackingField: net8.0
+      dependenciesFetched: 1
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/nunit/4.3.0/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 4.3.0
+      - <FullVersion>k__BackingField: 4.2.2
+      - <FullVersion>k__BackingField: 4.2.1
+      - <FullVersion>k__BackingField: 4.1.0
+      - <FullVersion>k__BackingField: 4.0.1
+      - <FullVersion>k__BackingField: 3.14.0
+      - <FullVersion>k__BackingField: 3.13.3
+      - <FullVersion>k__BackingField: 3.13.2
+      - <FullVersion>k__BackingField: 3.13.1
+      - <FullVersion>k__BackingField: 3.13.0
+      - <FullVersion>k__BackingField: 3.12.0
+      - <FullVersion>k__BackingField: 3.11.0
+      - <FullVersion>k__BackingField: 3.10.1
+      - <FullVersion>k__BackingField: 3.10.0
+      - <FullVersion>k__BackingField: 3.9.0
+      - <FullVersion>k__BackingField: 3.8.1
+      - <FullVersion>k__BackingField: 3.8.0
+      - <FullVersion>k__BackingField: 3.7.1
+      - <FullVersion>k__BackingField: 3.7.0
+      - <FullVersion>k__BackingField: 3.6.1
+      - <FullVersion>k__BackingField: 3.6.0
+      - <FullVersion>k__BackingField: 3.5.0
+      - <FullVersion>k__BackingField: 3.4.1
+      - <FullVersion>k__BackingField: 3.4.0
+      - <FullVersion>k__BackingField: 3.2.1
+      - <FullVersion>k__BackingField: 3.2.0
+      - <FullVersion>k__BackingField: 3.0.1
+      - <FullVersion>k__BackingField: 3.0.0
+      - <FullVersion>k__BackingField: 2.7.1
+      - <FullVersion>k__BackingField: 2.7.0
+      - <FullVersion>k__BackingField: 2.6.7
+      - <FullVersion>k__BackingField: 2.6.6
+      - <FullVersion>k__BackingField: 2.6.5
+      - <FullVersion>k__BackingField: 2.6.4
+      - <FullVersion>k__BackingField: 2.6.3
+      - <FullVersion>k__BackingField: 2.6.2
+      - <FullVersion>k__BackingField: 2.6.1
+      - <FullVersion>k__BackingField: 2.6.0.12054
+      - <FullVersion>k__BackingField: 2.5.10.11092
+      - <FullVersion>k__BackingField: 2.5.9.10348
+      - <FullVersion>k__BackingField: 2.5.7.10213
+      <Authors>k__BackingField:
+      - Charlie Poole, Rob Prouse
+      <Description>k__BackingField: "NUnit is a unit-testing framework for all .NET
+        languages.\n            It can run on macOS, Linux and Windows operating
+        systems.\n            NUnit can be used for a wide range of testing, from
+        unit testing with TDD to full-fledged system and integration testing.\n           
+        It is a non-opinionated, broad and deep framework with multiple different
+        ways to assert that your code behaves as expected. Many aspects of NUnit
+        can be extended to suit your specific purposes.\n\n            The latest
+        version, version 4, is an upgrade from the groundbreaking NUnit 3 framework.
+        It is a modernized version, aimed at taking advantage of the latest .NET
+        features and C# language constructs.\n\n            If you are upgrading
+        from NUnit 3, be aware of the breaking changes (https://docs.nunit.org/articles/nunit/release-notes/breaking-changes.html#nunit-40).
+        Please see the NUnit 4 Migration Guide (https://docs.nunit.org/articles/nunit/release-notes/Nunit4.0-MigrationGuide.html)
+        and take care to prepare your NUnit 3 code before you do the upgrade.\n\n           
+        Supported platforms:\n            - .NET Framework 4.6.2+\n            -
+        .NET 6.0+\n            - .NET 8.0+"
+      <TotalDownloads>k__BackingField: 413176102
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NUnit/4.3.0/license
+      <ProjectUrl>k__BackingField: https://nunit.org/
+      <Summary>k__BackingField: NUnit is a unit-testing framework for all .NET languages
+        with a strong TDD focus.
+      <Title>k__BackingField: NUnit
+      <DownloadUrl>k__BackingField: 
+  serializableUpdatePackages:
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: Castle.Core
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 5.1.1
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/castle.core/5.1.1/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 5.1.1
+      - <FullVersion>k__BackingField: 5.1.0
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 4.4.1
+      - <FullVersion>k__BackingField: 4.4.0
+      - <FullVersion>k__BackingField: 4.3.1
+      - <FullVersion>k__BackingField: 4.3.0
+      - <FullVersion>k__BackingField: 4.2.1
+      - <FullVersion>k__BackingField: 4.2.0
+      - <FullVersion>k__BackingField: 4.1.1
+      - <FullVersion>k__BackingField: 4.1.0
+      - <FullVersion>k__BackingField: 4.0.0
+      - <FullVersion>k__BackingField: 3.3.3
+      - <FullVersion>k__BackingField: 3.3.2
+      - <FullVersion>k__BackingField: 3.3.1
+      - <FullVersion>k__BackingField: 3.3.0
+      - <FullVersion>k__BackingField: 3.2.2
+      - <FullVersion>k__BackingField: 3.2.1
+      - <FullVersion>k__BackingField: 3.2.0
+      - <FullVersion>k__BackingField: 3.1.0
+      - <FullVersion>k__BackingField: 3.0.0.4001
+      - <FullVersion>k__BackingField: 3.0.0.3001
+      - <FullVersion>k__BackingField: 3.0.0.2001
+      - <FullVersion>k__BackingField: 2.5.2
+      - <FullVersion>k__BackingField: 2.5.1
+      - <FullVersion>k__BackingField: 1.2.0
+      - <FullVersion>k__BackingField: 1.1.0
+      <Authors>k__BackingField:
+      - Castle Project Contributors
+      <Description>k__BackingField: Castle Core, including DynamicProxy, Logging
+        Abstractions and DictionaryAdapter
+      <TotalDownloads>k__BackingField: 1006412520
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/Castle.Core/5.1.1/license
+      <ProjectUrl>k__BackingField: http://www.castleproject.org/
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: Castle.Core
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstitute
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 5.3.0
+      <IsManuallyInstalled>k__BackingField: 1
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/nsubstitute/5.3.0/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 5.3.0
+      - <FullVersion>k__BackingField: 5.1.0
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 4.4.0
+      - <FullVersion>k__BackingField: 4.3.0
+      - <FullVersion>k__BackingField: 4.2.2
+      - <FullVersion>k__BackingField: 4.2.1
+      - <FullVersion>k__BackingField: 4.2.0
+      - <FullVersion>k__BackingField: 4.1.0
+      - <FullVersion>k__BackingField: 4.0.0
+      - <FullVersion>k__BackingField: 3.1.0
+      - <FullVersion>k__BackingField: 3.0.1
+      - <FullVersion>k__BackingField: 2.0.3
+      - <FullVersion>k__BackingField: 1.10.0
+      - <FullVersion>k__BackingField: 1.9.2
+      - <FullVersion>k__BackingField: 1.9.1
+      - <FullVersion>k__BackingField: 1.8.2
+      - <FullVersion>k__BackingField: 1.8.1
+      - <FullVersion>k__BackingField: 1.8.0
+      - <FullVersion>k__BackingField: 1.7.2
+      - <FullVersion>k__BackingField: 1.7.1
+      - <FullVersion>k__BackingField: 1.7.0
+      - <FullVersion>k__BackingField: 1.6.1
+      - <FullVersion>k__BackingField: 1.6.0
+      - <FullVersion>k__BackingField: 1.5.0
+      - <FullVersion>k__BackingField: 1.4.3
+      - <FullVersion>k__BackingField: 1.4.2
+      - <FullVersion>k__BackingField: 1.4.1
+      - <FullVersion>k__BackingField: 1.4.0
+      - <FullVersion>k__BackingField: 1.3.0
+      - <FullVersion>k__BackingField: 1.2.1
+      - <FullVersion>k__BackingField: 1.2.0
+      - <FullVersion>k__BackingField: 1.1.0
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Anthony Egerton,David Tchepak,Alexandr Nikitin,Oleksandr Povar
+      <Description>k__BackingField: NSubstitute is a friendly substitute for .NET
+        mocking libraries. It has a simple, succinct syntax to help developers write
+        clearer tests. NSubstitute is designed for Arrange-Act-Assert (AAA) testing
+        and with Test Driven Development (TDD) in mind.
+      <TotalDownloads>k__BackingField: 147894115
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NSubstitute/5.3.0/license
+      <ProjectUrl>k__BackingField: https://nsubstitute.github.io/
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstitute
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: NSubstitute.Analyzers.CSharp
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 1.0.17
+      <IsManuallyInstalled>k__BackingField: 1
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/nsubstitute.analyzers.csharp/1.0.17/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 1.0.17
+      - <FullVersion>k__BackingField: 1.0.16
+      - <FullVersion>k__BackingField: 1.0.15
+      - <FullVersion>k__BackingField: 1.0.14
+      - <FullVersion>k__BackingField: 1.0.13
+      - <FullVersion>k__BackingField: 1.0.12
+      - <FullVersion>k__BackingField: 1.0.11
+      - <FullVersion>k__BackingField: 1.0.10
+      - <FullVersion>k__BackingField: 1.0.9
+      - <FullVersion>k__BackingField: 1.0.8
+      - <FullVersion>k__BackingField: 1.0.7
+      - <FullVersion>k__BackingField: 1.0.6
+      - <FullVersion>k__BackingField: 1.0.5
+      - <FullVersion>k__BackingField: 1.0.4
+      - <FullVersion>k__BackingField: 1.0.3
+      - <FullVersion>k__BackingField: 1.0.2
+      - <FullVersion>k__BackingField: 1.0.1
+      - <FullVersion>k__BackingField: 1.0.0
+      <Authors>k__BackingField:
+      - Tomasz Podolak, NSubstitute.Analyzers contributors
+      <Description>k__BackingField: Provides diagnostic analyzers to warn about incorrect
+        usage of NSubstitute in C#.
+      <TotalDownloads>k__BackingField: 14642430
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/NSubstitute.Analyzers.CSharp/1.0.17/license
+      <ProjectUrl>k__BackingField: https://github.com/nsubstitute/NSubstitute.Analyzers
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: NSubstitute.Analyzers.CSharp
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: System.Diagnostics.EventLog
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 9.0.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/9.0.0/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 9.0.0
+      - <FullVersion>k__BackingField: 8.0.1
+      - <FullVersion>k__BackingField: 8.0.0
+      - <FullVersion>k__BackingField: 7.0.0
+      - <FullVersion>k__BackingField: 6.0.0
+      - <FullVersion>k__BackingField: 5.0.1
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 4.7.0
+      - <FullVersion>k__BackingField: 4.6.0
+      - <FullVersion>k__BackingField: 4.5.0
+      <Authors>k__BackingField:
+      - Microsoft
+      <Description>k__BackingField: 'Provides the System.Diagnostics.EventLog class,
+        which allows the applications to use the Windows event log service.
+
+
+        Commonly
+        Used Types:
+
+        System.Diagnostics.EventLog'
+      <TotalDownloads>k__BackingField: 888803904
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/System.Diagnostics.EventLog/9.0.0/license
+      <ProjectUrl>k__BackingField: https://dot.net/
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: System.Diagnostics.EventLog
+      <DownloadUrl>k__BackingField: 
+  - packageLocal:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSource:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageType: 2
+    packageV2:
+      <Id>k__BackingField: 
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 
+      <IsManuallyInstalled>k__BackingField: 0
+      icon: {fileID: 0}
+      <DownloadUrl>k__BackingField: 
+      <IconUrl>k__BackingField: 
+      <RepositoryBranch>k__BackingField: 
+      <Dependencies>k__BackingField: []
+      <Authors>k__BackingField: []
+      <Description>k__BackingField: 
+      <TotalDownloads>k__BackingField: 0
+      <LicenseUrl>k__BackingField: 
+      <ProjectUrl>k__BackingField: 
+      <ReleaseNotes>k__BackingField: 
+      <RepositoryCommit>k__BackingField: 
+      <RepositoryType>k__BackingField: 0
+      <RepositoryUrl>k__BackingField: 
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: 
+      packageSourceV2:
+        <Name>k__BackingField: 
+        <SavedPath>k__BackingField: 
+        <SavedProtocolVersion>k__BackingField: 
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 0
+      versions: []
+    packageV3:
+      <Id>k__BackingField: System.Security.Principal.Windows
+      <PackageVersion>k__BackingField:
+        <FullVersion>k__BackingField: 5.0.0
+      <IsManuallyInstalled>k__BackingField: 0
+      dependencies: []
+      dependenciesFetched: 0
+      icon: {fileID: 0}
+      iconUrl: https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/5.0.0/icon
+      packageSource:
+        <Name>k__BackingField: nuget.org
+        <SavedPath>k__BackingField: https://api.nuget.org/v3/index.json
+        <SavedProtocolVersion>k__BackingField: 
+        <UpdateSearchBatchSize>k__BackingField: 20
+        <UserName>k__BackingField: 
+        <SavedPassword>k__BackingField: 
+        <IsEnabled>k__BackingField: 1
+      <Versions>k__BackingField:
+      - <FullVersion>k__BackingField: 5.0.0
+      - <FullVersion>k__BackingField: 4.7.0
+      - <FullVersion>k__BackingField: 4.6.0
+      - <FullVersion>k__BackingField: 4.5.1
+      - <FullVersion>k__BackingField: 4.5.0
+      - <FullVersion>k__BackingField: 4.4.1
+      - <FullVersion>k__BackingField: 4.4.0
+      - <FullVersion>k__BackingField: 4.3.0
+      - <FullVersion>k__BackingField: 4.0.0
+      <Authors>k__BackingField:
+      - Microsoft
+      <Description>k__BackingField: "Provides classes for retrieving the current
+        Windows user and for interacting with Windows users and groups.\n\nCommonly
+        Used Types:\nSystem.Security.Principal.WindowsIdentity\nSystem.Security.Principal.SecurityIdentifier\nSystem.Security.Principal.NTAccount\nSystem.Security.Principal.WindowsPrincipal\nSystem.Security.Principal.IdentityReference\nSystem.Security.Principal.IdentityNotMappedException\nSystem.Security.Principal.WindowsBuiltInRole\nSystem.Security.Principal.WellKnownSidType\n
+        \nWhen using NuGet 3.x this package requires at least version 3.4."
+      <TotalDownloads>k__BackingField: 3243735114
+      <LicenseUrl>k__BackingField: https://www.nuget.org/packages/System.Security.Principal.Windows/5.0.0/license
+      <ProjectUrl>k__BackingField: https://github.com/dotnet/runtime
+      <Summary>k__BackingField: 
+      <Title>k__BackingField: System.Security.Principal.Windows
+      <DownloadUrl>k__BackingField: 
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,10 +3415,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 983
-    y: 81
-    width: 163
-    height: 679
+    x: 1176
+    y: 73
+    width: 343
+    height: 599
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -373,7 +3434,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -171, y: -26}
-      snapOffsetDelta: {x: 8, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -399,7 +3460,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -326, y: 0}
-      snapOffsetDelta: {x: 163, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 1
       id: unity-scene-view-toolbar
       index: 0
@@ -467,7 +3528,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Light Settings
-      index: 2
+      index: 1
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -662,7 +3723,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
-      index: 1
+      index: 2
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -675,7 +3736,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Path
-      index: 9
+      index: 10
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -688,7 +3749,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/TrailRenderer
-      index: 10
+      index: 9
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -703,9 +3764,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1729.977, y: 512.65, z: -0.41186}
+    m_Target: {x: 960, y: 540, z: 0}
     speed: 2
-    m_Value: {x: 1729.977, y: 512.65, z: -0.41186}
+    m_Value: {x: 960, y: 540, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -755,9 +3816,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 291.68338
+    m_Target: 1101.4536
     speed: 2
-    m_Value: 291.68338
+    m_Value: 1101.4536
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -782,7 +3843,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -802,10 +3863,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 455
-    y: 81
-    width: 527
-    height: 679
+    x: 0
+    y: 73
+    width: 1175
+    height: 599
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -849,7 +3910,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -858,29 +3919,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 527
-      height: 658
-    m_Scale: {x: 0.27447918, y: 0.27447918}
-    m_Translation: {x: 263.49997, y: 329}
+      width: 1175
+      height: 578
+    m_Scale: {x: 0.53518516, y: 0.53518516}
+    m_Translation: {x: 587.5, y: 289}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -959.9998
-      y: -1198.6337
-      width: 1919.9999
-      height: 2397.2673
+      x: -1097.751
+      y: -540
+      width: 2195.502
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.27447918
-  m_LastWindowPixelSize: {x: 527, y: 679}
+  m_defaultScale: 0.53518516
+  m_LastWindowPixelSize: {x: 1175, y: 599}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &16
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -902,8 +3963,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 1205
-    height: 659
+    width: 1175
+    height: 546
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -914,41 +3975,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &17
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03b8c364c5fbffe4c949a4ceb342fb8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 900, y: 600}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Localization Tables
-    m_Image: {fileID: 2800000, guid: 0218b7b4bcdd48e49b9b41dd0068b868, type: 3}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 73
-    width: 1205
-    height: 659
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -968,10 +3995,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
-    width: 1009
-    height: 589
+    x: 0
+    y: 73
+    width: 1175
+    height: 599
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1004,7 +4031,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1025,9 +4052,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 785
-    width: 665
-    height: 214
+    y: 693
+    width: 1138
+    height: 306
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1049,7 +4076,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/Controllers
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1057,16 +4084,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/Controllers
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Desktop\Cosmofleet
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 94}
-    m_SelectedIDs: 907a0000
-    m_LastClickedID: 31376
-    m_ExpandedIDs: 00000000d2760000d4760000d6760000d8760000da760000dc760000967a000000ca9a3b
+    scrollPos: {x: 0, y: 162}
+    m_SelectedIDs: 74780000
+    m_LastClickedID: 30836
+    m_ExpandedIDs: 00000000fa7700002a780000ac820000b882000090830000928300009883000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1094,7 +4121,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2760000d4760000d6760000d8760000da760000dc760000
+    m_ExpandedIDs: 00000000fa770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1150,7 +4177,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 200
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1170,10 +4197,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 455
-    y: 781
-    width: 506
-    height: 210
+    x: 0
+    y: 693
+    width: 1138
+    height: 306
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1184,7 +4211,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1366,7 +4393,7 @@ MonoBehaviour:
   m_ShowReferencedBuses: 1
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
---- !u!114 &22
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1386,10 +4413,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 962
-    y: 781
-    width: 184
-    height: 210
+    x: 1139
+    y: 693
+    width: 380
+    height: 306
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1405,7 +4432,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c00bfdff1c0cfdff1410fdff6210fdffd210fdffb831fdff2052fdff7c52fdff7456fdffc256fdff3257fdff0ccbfdff68cbfdff6acffdffc6cffdff40d0fdffa0d4fdff38d8fdffc2ebfdff1eecfdff16f0fdff64f0fdffd4f0fdffacfffdff7418feffd018feffc81cfeff161dfeff861dfeff9e62feff6a74feffc674feffbe78feff0c79feff7c79feff5089feffbe4dffff1a4effff1c52ffff7852fffff252ffff2058fffff658ffff8e5affff145bffff226effff466fffff786fffff86b4ffffe2b4ffffccb8ffff1ab9ffff8ab9ffff86e1ffffe2e1ffffd6e5ffff32e6fffface6ffffc8e7ffff5cf6fffff8faffff387b0000667b00000ac9000038c9000014cf0000569f010022b10100
+      m_ExpandedIDs: 5678ffffb078ffffcc7cffff127dffffa87dffff8c84ffffd884ffff7e87ffffd088ffff1c89ffff2a8cffffac8dfffff68dffffe890ffff2c92ffff7892ffff3a95ffff5e97ffffaa97ffffcc9affff129cffff5e9cffff6a9efffffa9effff469ffffff8a1ffff12a4ffff5ea4ffff94a7ffff08a9ffff54a9ffff8aacffff0caeffff56aeffffd8aeffff66afffffb0afffff32b0ffffd0b0ffff18b1ffffbcb1ffff32b3ffff7eb3ffff5eb6ffff2ebaffff7abaffffe2bcffff34bfffff80bfffff20c2ffffa0e7ffffece7fffffae9ffff5aeeffffa6eeffff88f0fffffcf9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1429,7 +4456,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &23
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1449,10 +4476,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1148
-    y: 81
-    width: 413
-    height: 910
+    x: 1521
+    y: 73
+    width: 398
+    height: 926
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

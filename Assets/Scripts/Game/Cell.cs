@@ -4,7 +4,10 @@ using UnityEngine.EventSystems;
 using GameClasses;
 using TMPro;
 
-public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+
+namespace Game
+{
+    public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     [SerializeField] Color defaultColor;
     [SerializeField] Color availableColor;
@@ -159,3 +162,6 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     }
 
 }
+}
+
+
