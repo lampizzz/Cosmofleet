@@ -170,6 +170,10 @@ MonoBehaviour:
     m_Localized: The opponent's turn
     m_Metadata:
       m_Items: []
+  - m_Id: 3373997086642176
+    m_Localized: Connecting...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameClasses;
 using Photon.Pun;
+using Photon.Realtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -89,6 +90,33 @@ namespace Game
         else
         {
             menuController.LoseGame(int.Parse(scoreText.text)); // Вызываем LoseGame
+        }
+        
+        CloseRoom();
+    }
+    private void CloseRoom()
+    {
+        // Если этот игрок является MasterClient, то закрываем комнату
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.CurrentRoom.IsOpen = false;  // Закрываем комнату
+            PhotonNetwork.CurrentRoom.IsVisible = false; // Отключаем видимость комнаты
+            Debug.Log("Room is now closed and invisible.");
+        }
+    }
+    
+    // Handling when an opponent leaves the room
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("Opponent left the room. You win!");
+            EndGame(1);
+        }
+        else
+        {
+            Debug.Log("Opponent left the room. You win!");
+            EndGame(2);
         }
     }
 

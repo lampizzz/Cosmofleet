@@ -167,6 +167,10 @@ MonoBehaviour:
     m_Key: OpponentTurn
     m_Metadata:
       m_Items: []
+  - m_Id: 3373997086642176
+    m_Key: Connection
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

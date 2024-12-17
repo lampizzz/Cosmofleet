@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
+using UnityEditor.AddressableAssets.HostingServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,20 +16,19 @@ public class ServerRoomManager : MonoBehaviourPunCallbacks
         // Проверяем, назначено ли поле textRoomName
         if (textRoomName == null)
         {
-            Debug.LogError("Поле textRoomName не назначено в инспекторе! Проверьте, чтобы оно было привязано.");
+            Debug.Log("Поле textRoomName не назначено в инспекторе! Проверьте, чтобы оно было привязано.");
             return;
         }
 
         // Проверяем, заполнено ли поле textRoomName
-        if (string.IsNullOrWhiteSpace(textRoomName.text))
+        if (string.IsNullOrWhiteSpace(textRoomName.text) && string.IsNullOrEmpty(textRoomName.text))
         {
-            Debug.LogError("Название комнаты не может быть пустым. Введите название комнаты.");
+            Debug.Log("Название комнаты не может быть пустым. Введите название комнаты.");
             return;
         }
 
         // Создаем комнату с указанным именем
         PhotonNetwork.CreateRoom(textRoomName.text, new RoomOptions() { MaxPlayers = 2, IsVisible = true, IsOpen = true }, TypedLobby.Default, null);
-        Debug.Log($"Комната \"{textRoomName.text}\" успешно создана!");
     }
 
     public void JoinRoom(string roomName)
@@ -36,7 +36,7 @@ public class ServerRoomManager : MonoBehaviourPunCallbacks
         // Проверяем, указано ли имя комнаты
         if (string.IsNullOrWhiteSpace(roomName))
         {
-            Debug.LogError("Название комнаты для подключения не может быть пустым.");
+            Debug.Log("Название комнаты для подключения не может быть пустым.");
             return;
         }
 

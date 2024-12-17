@@ -3,11 +3,11 @@ using TMPro;
 
 public class BlinkingText : MonoBehaviour
 {
-    [SerializeField] Color startColor = Color.white; // Начальный цвет текста
-    [SerializeField] Color targetColor = Color.red;  // Цвет, до которого текст мигает
+    [SerializeField] public Color startColor = Color.white; // Начальный цвет текста
+    [SerializeField] public Color targetColor = Color.red;  // Цвет, до которого текст мигает
     
     private TMP_Text textMeshPro; // Ссылка на компонент TextMeshPro
-    [SerializeField] float blinkSpeed = 1.0f;        // Скорость мигания
+    [SerializeField] public float blinkSpeed = 1.0f;        // Скорость мигания
 
     void Start()
     {
